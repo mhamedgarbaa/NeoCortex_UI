@@ -5,6 +5,8 @@ import ReviewPage   from './pages/ReviewPage.jsx'
 import GraphPage    from './pages/GraphPage.jsx'
 import MemoryPage   from './pages/MemoryPage.jsx'
 import AgentPage    from './pages/AgentPage.jsx'
+import TestingPage  from './pages/TestingPage.jsx'
+import VisualizationPage from './pages/VisualizationPage.jsx'
 import { useNeocortex } from './store/useNeocortex.js'
 
 const PAGE_MAP = {
@@ -13,10 +15,12 @@ const PAGE_MAP = {
   graph:    GraphPage,
   memory:   MemoryPage,
   agent:    AgentPage,
+  testing:  TestingPage,
+  visualization: VisualizationPage,
 }
 
 // Pages that manage their own height (no outer scroll wrapper)
-const FULL_HEIGHT_PAGES = new Set(['review', 'graph', 'agent'])
+const FULL_HEIGHT_PAGES = new Set(['review', 'graph', 'agent', 'visualization'])
 
 export default function App() {
   const page = useNeocortex((s) => s.page)

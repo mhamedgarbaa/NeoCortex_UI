@@ -1,6 +1,28 @@
 import { motion } from 'framer-motion'
 import { useNeocortex } from '../../store/useNeocortex.js'
 
+function MCPBadge() {
+  const mcpStatus = useNeocortex((s) => s.mcpStatus)
+  const dotClass  = {
+    connected:    'dot-online',
+    disconnected: 'dot-offline',
+    connecting:   'dot-syncing',
+    error:        'dot-error',
+  }[mcpStatus] ?? 'dot-offline'
+  const label = {
+    connected:    'MCP · Active',
+    disconnected: 'MCP · Offline',
+    connecting:   'MCP · Init…',
+    error:        'MCP · Error',
+  }[mcpStatus] ?? 'MCP'
+  return (
+    <div className="flex items-center gap-2 text-xs font-mono text-ink-400">
+      <span className={dotClass} />
+      <span>{label}</span>
+    </div>
+  )
+}
+
 const TABS = [
   {
     id: 'ontology',
@@ -44,6 +66,19 @@ const TABS = [
     ),
   },
   {
+    id: 'visualization',
+    label: 'Knowledge',
+    sub: 'Graph',
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <circle cx="8" cy="4" r="2.5" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="2" cy="11" r="2.5" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="14" cy="11" r="2.5" stroke="currentColor" strokeWidth="1.5"/>
+        <path d="M7.2 5.8L2.8 9.8M8.8 5.8l4.2 4M3 11v-4M13 11v-4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+      </svg>
+    ),
+  },
+  {
     id: 'memory',
     label: 'Memory',
     sub: 'Connectivity',
@@ -68,22 +103,38 @@ const TABS = [
       </svg>
     ),
   },
+  {
+    id: 'testing',
+    label: 'Testing',
+    sub: 'Console',
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M5 2h6M6 2v4L3 13h10L10 6V2" stroke="currentColor" strokeWidth="1.5"
+              strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="8" cy="10" r="1" fill="currentColor"/>
+      </svg>
+    ),
+  },
 ]
 
 const ACCENT = {
   ontology: 'text-cortex-blue',
   review:   'text-cortex-purple',
   graph:    'text-cortex-cyan',
+  visualization: 'text-cyan-600',
   memory:   'text-cortex-green',
   agent:    'text-cortex-amber',
+  testing:  'text-rose-600',
 }
 
 const ACCENT_BG = {
   ontology: 'bg-cortex-blue',
   review:   'bg-cortex-purple',
   graph:    'bg-cortex-cyan',
+  visualization: 'bg-cyan-600',
   memory:   'bg-cortex-green',
   agent:    'bg-cortex-amber',
+  testing:  'bg-rose-500',
 }
 
 export default function NavBar() {
@@ -150,10 +201,7 @@ export default function NavBar() {
         </nav>
 
         {/* Right: MCP status */}
-        <div className="flex items-center gap-2 text-xs font-mono text-ink-400">
-          <span className="dot-online" />
-          <span>MCP · Ready</span>
-        </div>
+        <MCPBadge />
       </div>
     </header>
   )

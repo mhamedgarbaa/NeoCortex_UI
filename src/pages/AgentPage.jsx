@@ -45,9 +45,11 @@ function SourceBadge({ layer, entity, confidence }) {
     >
       <span className="font-medium" style={{ color: cfg.color }}>{layer}</span>
       <span className="text-ink-500 truncate max-w-[140px]">{entity}</span>
-      <span className="font-mono ml-auto" style={{ color: cfg.color }}>
-        {(confidence * 100).toFixed(0)}%
-      </span>
+      {confidence != null && (
+        <span className="font-mono ml-auto" style={{ color: cfg.color }}>
+          {(confidence * 100).toFixed(0)}%
+        </span>
+      )}
     </div>
   )
 }
@@ -72,6 +74,20 @@ function AgentMessage({ msg }) {
     )
   }
 
+  if (msg.error) {
+    return (
+      <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="flex gap-3">
+        <div className="w-8 h-8 rounded-xl bg-rose-100 border border-rose-200
+                        flex items-center justify-center shrink-0">
+          <span className="text-rose-500 text-xs font-bold">!</span>
+        </div>
+        <div className="flex-1 p-3 rounded-xl bg-rose-50 border border-rose-200 text-sm text-rose-700">
+          {msg.text}
+        </div>
+      </motion.div>
+    )
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 6 }}
@@ -85,14 +101,19 @@ function AgentMessage({ msg }) {
       </div>
 
       <div className="flex-1 min-w-0 space-y-2">
-        <div className="card p-4 text-sm text-ink-800 leading-relaxed">
+        <div className="card p-4 text-sm text-ink-800 leading-relaxed whitespace-pre-wrap">
           {msg.text}
+          {msg.mock && (
+            <span className="ml-2 text-[10px] font-mono text-ink-300 align-middle">[demo]</span>
+          )}
         </div>
 
         {/* Token meter */}
-        <div className="card px-4 py-3">
-          <TokenMeter raw={msg.tokensRaw} filtered={msg.tokensFiltered} />
-        </div>
+        {msg.tokensRaw > 0 && (
+          <div className="card px-4 py-3">
+            <TokenMeter raw={msg.tokensRaw} filtered={msg.tokensFiltered} />
+          </div>
+        )}
 
         {/* Sources toggle */}
         {msg.sources?.length > 0 && (
@@ -160,7 +181,10 @@ export default function AgentPage() {
 
   const cogneeConnected  = useNeocortex((s) => s.cogneeStatus  === 'connected')
   const graphragConnected= useNeocortex((s) => s.graphragStatus === 'connected')
+  const mcpStatus        = useNeocortex((s) => s.mcpStatus)
+  const mcpSessionId     = useNeocortex((s) => s.mcpSessionId)
   const setPage          = useNeocortex((s) => s.setPage)
+  const extractedEntities = useNeocortex((s) => s.extractedEntities)
 
   const [input, setInput] = useState('')
   const endRef = useRef(null)
@@ -202,7 +226,25 @@ export default function AgentPage() {
             <span className="text-ink-300">·</span>
             <span className={graphragConnected ? 'dot-online' : 'dot-offline'} />
             <span className="text-ink-500">GraphRAG</span>
+            <span className="text-ink-300">·</span>
+            <span className={
+              mcpStatus === 'connected' ? 'dot-online'
+              : mcpStatus === 'connecting' ? 'dot-syncing'
+              : mcpStatus === 'error' ? 'dot-error'
+              : 'dot-offline'
+            } />
+            <span className="text-ink-500 font-mono">
+              MCP{mcpSessionId ? ` · ${mcpSessionId.slice(0, 8)}…` : ''}
+            </span>
           </div>
+          {extractedEntities.length > 0 && (
+            <button
+              onClick={() => setPage('visualization')}
+              className="text-xs px-3 py-1.5 rounded-lg bg-cyan-100 text-cyan-700 hover:bg-cyan-200 transition font-medium"
+            >
+              📊 {extractedEntities.length} entities
+            </button>
+          )}
           {messages.length > 0 && (
             <button
               onClick={clearChat}
@@ -304,7 +346,9 @@ export default function AgentPage() {
           </button>
         </div>
         <p className="text-[10px] text-ink-300 font-mono mt-2 text-center">
-          Context compressed via Neocortex adapter · MCP connected
+          {mcpStatus === 'connected'
+            ? `MCP session active · searching Cognee graph`
+            : `MCP offline — demo responses active`}
         </p>
       </div>
     </div>

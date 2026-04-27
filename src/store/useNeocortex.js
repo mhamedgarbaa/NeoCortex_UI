@@ -1,5 +1,7 @@
 import { create } from 'zustand'
 import { generatedOntologyFile } from '../data/mockOntology.js'
+import { connectivityAPI } from '../api/connectivity.js'
+import { mcpClient, mcp } from '../api/mcpClient.js'
 
 // ── Agent log lines ──────────────────────────────────────────────────────────
 const AGENT_LOG = [
@@ -52,6 +54,18 @@ const MOCK_RESPONSES = [
 ]
 
 let responseIdx = 0
+
+// ── Entity type inference ────────────────────────────────────────────────────
+function inferEntityType(text) {
+  const lower = text.toLowerCase()
+  if (/policy|regulation|gdpr|dpa|requirement/.test(lower)) return 'Policy'
+  if (/contract|agreement|sla|nda|mou/.test(lower)) return 'Contract'
+  if (/person|customer|employee|user|officer|ceo|director/.test(lower)) return 'Person'
+  if (/company|organization|firm|corporation|enterprise|segment/.test(lower)) return 'Organization'
+  if (/location|country|region|city|area|eu|us|uk/.test(lower)) return 'Location'
+  if (/event|milestone|date|quarter|year|phase/.test(lower)) return 'Event'
+  return 'Concept'
+}
 
 export const useNeocortex = create((set, get) => ({
 
@@ -194,21 +208,68 @@ export const useNeocortex = create((set, get) => ({
     set({ validationResult: { errors, warnings, ok: errors.length === 0 } })
   },
 
-  // ── Cognee connectivity ──────────────────────────────────────────────────────
+  // ── Cognee connectivity (REST → 8001, MCP → 8002) ───────────────────────────
   cogneeStatus:     'disconnected',
   cogneeStats:      null,
   cogneePingMs:     null,
+  mcpStatus:        'disconnected',   // 'disconnected' | 'connecting' | 'connected' | 'error'
+  mcpSessionId:     null,
+
   connectCognee: async () => {
-    set({ cogneeStatus: 'syncing', cogneeStats: null, cogneePingMs: null })
-    await new Promise((r) => setTimeout(r, 1400))
-    set({
-      cogneeStatus: 'connected', cogneePingMs: 38,
-      cogneeStats: { entities: 412, relations: 1847, memifiedNodes: 312,
-                     ontologyPath: get().ontologyFilePath || '/ontology/enterprise_ontology.jsonld',
-                     lastSync: new Date().toISOString() },
-    })
+    set({ cogneeStatus: 'syncing', cogneeStats: null, cogneePingMs: null,
+          mcpStatus: 'connecting', mcpSessionId: null })
+
+    // 1. MCP session init (port 8002) — primary; required for agent chat
+    let mcpOk = false
+    try {
+      const sessionId = await mcp.connect()
+      const displayId = (sessionId && sessionId !== '__stateless__') ? sessionId : null
+      set({ mcpStatus: 'connected', mcpSessionId: displayId })
+      mcpOk = true
+    } catch (mcpErr) {
+      console.warn('MCP session init failed:', mcpErr)
+      set({ mcpStatus: 'error', mcpSessionId: null })
+    }
+
+    // 2. REST health check (port 8001) — optional; only for stats panel
+    try {
+      const start  = Date.now()
+      const health = await connectivityAPI.checkHealth()
+      const stats  = health.status === 'connected' ? await connectivityAPI.getGraphStats() : null
+      set({
+        cogneeStatus: 'connected',
+        cogneePingMs: health.pingMs ?? (Date.now() - start),
+        cogneeStats: {
+          entities:      stats?.entities      ?? health.details?.entities      ?? '—',
+          relations:     stats?.relations     ?? health.details?.relations     ?? '—',
+          memifiedNodes: stats?.memifiedNodes ?? health.details?.memified_nodes ?? '—',
+          ontologyPath:  get().ontologyFilePath || '/ontology/enterprise_ontology.jsonld',
+          lastSync:      new Date().toISOString(),
+        },
+      })
+    } catch {
+      // REST unavailable — still mark connected if MCP succeeded
+      if (mcpOk) {
+        set({
+          cogneeStatus: 'connected',
+          cogneePingMs: null,
+          cogneeStats: {
+            entities: '—', relations: '—', memifiedNodes: '—',
+            ontologyPath: get().ontologyFilePath || '/ontology/enterprise_ontology.jsonld',
+            lastSync: new Date().toISOString(),
+          },
+        })
+      } else {
+        set({ cogneeStatus: 'error', cogneePingMs: null, cogneeStats: null })
+      }
+    }
   },
-  disconnectCognee: () => set({ cogneeStatus: 'disconnected', cogneeStats: null, cogneePingMs: null }),
+
+  disconnectCognee: () => {
+    mcpClient.disconnect()
+    set({ cogneeStatus: 'disconnected', cogneeStats: null, cogneePingMs: null,
+          mcpStatus: 'disconnected', mcpSessionId: null })
+  },
 
   // ── GraphRAG connectivity ────────────────────────────────────────────────────
   graphragStatus:   'disconnected',
@@ -227,16 +288,106 @@ export const useNeocortex = create((set, get) => ({
   // ── Agent chat ───────────────────────────────────────────────────────────────
   chatMessages: [],
   chatLoading:  false,
+  chatError:    null,
 
   sendMessage: async (text) => {
     const userMsg = { id: Date.now(), role: 'user', text, ts: new Date() }
-    set((s) => ({ chatMessages: [...s.chatMessages, userMsg], chatLoading: true }))
-    await new Promise((r) => setTimeout(r, 1200 + Math.random() * 800))
-    const resp = MOCK_RESPONSES[responseIdx % MOCK_RESPONSES.length]
-    responseIdx++
-    const agentMsg = { id: Date.now() + 1, role: 'agent', ...resp, ts: new Date() }
-    set((s) => ({ chatMessages: [...s.chatMessages, agentMsg], chatLoading: false }))
+    set((s) => ({ chatMessages: [...s.chatMessages, userMsg], chatLoading: true, chatError: null }))
+
+    const mcpReady = get().mcpStatus === 'connected'
+
+    if (mcpReady) {
+      try {
+        const raw = await mcp.search(text)
+        const tokensRaw      = Math.round(raw.length / 4)
+        const tokensFiltered = Math.round(tokensRaw * 0.18)
+        const agentMsg = {
+          id:             Date.now() + 1,
+          role:           'agent',
+          text:           raw,
+          sources:        [{ layer: 'Cognee', entity: 'Graph search', confidence: null }],
+          tokensRaw,
+          tokensFiltered,
+          ts:             new Date(),
+        }
+        set((s) => ({ chatMessages: [...s.chatMessages, agentMsg], chatLoading: false }))
+        get().extractEntitiesFromMessages()
+      } catch (err) {
+        const errMsg = {
+          id:   Date.now() + 1,
+          role: 'agent',
+          text: `Search failed: ${err.message}`,
+          error: true,
+          ts:   new Date(),
+        }
+        set((s) => ({ chatMessages: [...s.chatMessages, errMsg], chatLoading: false, chatError: err.message }))
+      }
+    } else {
+      // Fallback to mock when MCP not connected
+      await new Promise((r) => setTimeout(r, 1200 + Math.random() * 800))
+      const resp = MOCK_RESPONSES[responseIdx % MOCK_RESPONSES.length]
+      responseIdx++
+      const agentMsg = { id: Date.now() + 1, role: 'agent', ...resp, ts: new Date(), mock: true }
+      set((s) => ({ chatMessages: [...s.chatMessages, agentMsg], chatLoading: false }))
+      get().extractEntitiesFromMessages()
+    }
   },
 
-  clearChat: () => set({ chatMessages: [] }),
+  clearChat: () => set({ chatMessages: [], chatError: null, extractedEntities: [] }),
+
+  // ── Graph visualization ──────────────────────────────────────────────────────
+  graphHTML:       null,
+  graphLoading:    false,
+  graphError:      null,
+  extractedEntities: [],
+
+  loadVisualizationGraph: async () => {
+    set({ graphLoading: true, graphError: null })
+    try {
+      const response = await mcp.visualizeGraph()
+      // Response contains path/URL to the generated HTML file
+      // MCP returns: /graph/cognee_graph.html or http://localhost:8000/graph/cognee_graph.html
+      let graphUrl = response.trim()
+
+      // Convert to relative path for Vite proxy in dev mode
+      if (graphUrl.includes('localhost:8000') || graphUrl.includes('/graph/')) {
+        graphUrl = graphUrl.includes('/graph/')
+          ? graphUrl.substring(graphUrl.indexOf('/graph/'))
+          : '/graph/cognee_graph.html'
+      }
+
+      set({ graphHTML: graphUrl || '/graph/cognee_graph.html', graphLoading: false })
+    } catch (err) {
+      set({ graphError: err.message, graphLoading: false })
+      console.error('Failed to load graph:', err)
+    }
+  },
+
+  // ── Entity extraction ────────────────────────────────────────────────────────
+  extractEntitiesFromMessages: () => {
+    const messages = get().chatMessages
+    const entities = new Map()
+
+    messages.forEach((msg) => {
+      if (msg.sources?.length > 0) {
+        msg.sources.forEach((source) => {
+          const key = `${source.layer}:${source.entity}`
+          if (!entities.has(key)) {
+            entities.set(key, {
+              id: key,
+              name: source.entity,
+              type: inferEntityType(source.entity),
+              confidence: source.confidence,
+              layer: source.layer,
+              description: null,
+              metadata: {},
+              relationships: [],
+            })
+          }
+        })
+      }
+    })
+
+    set({ extractedEntities: Array.from(entities.values()) })
+  },
 }))
