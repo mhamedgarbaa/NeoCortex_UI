@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import { useNeocortex } from '../store/useNeocortex.js'
 
 // ── Line-numbered editor ─────────────────────────────────────────────────────
@@ -8,8 +8,8 @@ function CodeEditor({ value, onChange }) {
   return (
     <div className="flex h-full min-h-0 font-mono text-[12.5px] leading-6 overflow-auto scrollbar-thin">
       {/* Line numbers */}
-      <div className="select-none px-3 py-4 text-right bg-ink-50 border-r border-ink-100
-                      text-ink-300 min-w-[3rem] shrink-0">
+      <div className="select-none px-3 py-4 text-right bg-ink-200/5 border-r border-ink-100/10
+                      text-ink-400 min-w-[3rem] shrink-0">
         {lines.map((_, i) => (
           <div key={i}>{i + 1}</div>
         ))}
@@ -19,7 +19,7 @@ function CodeEditor({ value, onChange }) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         spellCheck={false}
-        className="flex-1 py-4 px-4 outline-none resize-none bg-white text-ink-800
+        className="flex-1 py-4 px-4 outline-none resize-none bg-transparent text-ink-700
                    font-mono text-[12.5px] leading-6 whitespace-pre"
         style={{ minHeight: `${Math.max(lines.length * 24 + 32, 300)}px` }}
       />
@@ -46,8 +46,8 @@ function ValidationPanel() {
         <button
           onClick={run}
           disabled={loading}
-          className="text-xs px-3 py-1.5 rounded-lg bg-ink-900 text-white font-medium
-                     hover:bg-ink-700 transition disabled:opacity-50"
+          className="text-xs px-3 py-1.5 rounded-lg bg-cortex-blue text-white font-medium
+                     hover:bg-blue-600 transition disabled:opacity-50"
         >
           {loading ? 'Validating…' : '▷ Run Validation'}
         </button>
@@ -62,17 +62,17 @@ function ValidationPanel() {
             className="space-y-2"
           >
             {result.ok
-              ? <div className="flex items-center gap-2 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-sm text-cortex-green font-medium">
-                  ✓ Valid JSON-LD — no errors found
+              ? <div className="flex items-center gap-2 p-3 rounded-lg bg-cortex-green/10 border border-cortex-green/30 text-sm text-cortex-green font-medium">
+                  ✓ Valid Turtle — no errors found
                 </div>
               : result.errors.map((e, i) => (
-                <div key={i} className="flex items-start gap-2 p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-cortex-rose">
+                <div key={i} className="flex items-start gap-2 p-3 rounded-lg bg-rose-900/20 border border-rose-500/30 text-sm text-rose-400">
                   <span className="shrink-0 font-bold">✕</span> {e.msg}
                 </div>
               ))
             }
             {result.warnings.map((w, i) => (
-              <div key={i} className="flex items-start gap-2 p-3 rounded-lg bg-amber-50 border border-amber-200 text-sm text-cortex-amber">
+              <div key={i} className="flex items-start gap-2 p-3 rounded-lg bg-amber-900/20 border border-amber-500/30 text-sm text-amber-400">
                 <span className="shrink-0 font-bold">⚠</span> {w.msg}
               </div>
             ))}
@@ -84,11 +84,12 @@ function ValidationPanel() {
 }
 
 // ── Commit panel ─────────────────────────────────────────────────────────────
+const COMMIT_PATH = '/ontologies/ontology.ttl'
+
 function CommitPanel() {
-  const path        = useNeocortex((s) => s.commitPath)
-  const setPath     = useNeocortex((s) => s.setCommitPath)
   const commit      = useNeocortex((s) => s.commitOntology)
   const status      = useNeocortex((s) => s.commitStatus)
+  const commitError = useNeocortex((s) => s.commitError)
   const resetCommit = useNeocortex((s) => s.resetCommit)
   const validation  = useNeocortex((s) => s.validationResult)
 
@@ -96,16 +97,11 @@ function CommitPanel() {
 
   return (
     <div className="space-y-3">
-      <span className="section-title">Commit to Cognee</span>
+      <span className="section-title">Inject into Cognee</span>
 
-      <div className="space-y-2">
-        <label className="text-xs font-medium text-ink-600">Target path</label>
-        <input
-          className="input font-mono text-xs"
-          value={path}
-          onChange={(e) => setPath(e.target.value)}
-          placeholder="/ontology/enterprise_ontology.jsonld"
-        />
+      <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-200/50 border border-ink-100/10">
+        <span className="text-[10px] font-mono text-cortex-purple font-bold shrink-0">TTL</span>
+        <span className="font-mono text-xs text-ink-500 truncate">{COMMIT_PATH}</span>
       </div>
 
       <AnimatePresence mode="wait">
@@ -114,21 +110,21 @@ function CommitPanel() {
             key="committed"
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
-            className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 space-y-2"
+            className="p-4 rounded-xl bg-cortex-green/10 border border-cortex-green/30 space-y-2"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-cortex-green font-semibold text-sm">
-                <span>✓ Committed successfully</span>
+                <span>✓ Injected into Cognee</span>
               </div>
-              <button onClick={resetCommit} className="text-xs text-ink-400 hover:text-ink-600 transition">
+              <button onClick={resetCommit} className="text-xs text-ink-300 hover:text-ink-100 transition">
                 Reset
               </button>
             </div>
-            <p className="font-mono text-xs text-emerald-700 bg-emerald-100 px-3 py-1.5 rounded-lg">
-              {path}
+            <p className="font-mono text-xs text-cortex-green bg-cortex-green/20 px-3 py-1.5 rounded-lg border border-cortex-green/10">
+              {COMMIT_PATH}
             </p>
-            <p className="text-xs text-ink-500">
-              Cognee will now ingest this path for memification and graph traversal.
+            <p className="text-xs text-ink-400">
+              Active ontology updated — next cognify call will use the new schema.
             </p>
           </motion.div>
         ) : (
@@ -149,15 +145,18 @@ function CommitPanel() {
                 <svg className="animate-spin w-4 h-4" viewBox="0 0 24 24" fill="none">
                   <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" strokeDasharray="60" strokeDashoffset="20"/>
                 </svg>
-                Committing…
+                Injecting…
               </>
             ) : (
-              '→ Commit to Cognee'
+              '→ Inject into Cognee'
             )}
           </motion.button>
         )}
       </AnimatePresence>
 
+      {status === 'error' && commitError && (
+        <p className="text-xs text-cortex-rose">{commitError}</p>
+      )}
       {!canCommit && validation && (
         <p className="text-xs text-cortex-rose">Fix validation errors before committing.</p>
       )}
@@ -167,12 +166,12 @@ function CommitPanel() {
 
 // ── Main page ────────────────────────────────────────────────────────────────
 export default function ReviewPage() {
-  const text      = useNeocortex((s) => s.ontologyFileText)
-  const setText   = useNeocortex((s) => s.setOntologyFileText)
-  const path      = useNeocortex((s) => s.ontologyFilePath)
-  const status    = useNeocortex((s) => s.agentStatus)
-  const meta      = useNeocortex((s) => s.ontologyFile?._meta)
-  const setPage   = useNeocortex((s) => s.setPage)
+  const text         = useNeocortex((s) => s.ontologyFileText)
+  const setText      = useNeocortex((s) => s.setOntologyFileText)
+  const path         = useNeocortex((s) => s.ontologyFilePath)
+  const agentStatus  = useNeocortex((s) => s.agentStatus)
+  const uploadStatus = useNeocortex((s) => s.ontologyUploadStatus)
+  const setPage      = useNeocortex((s) => s.setPage)
 
   const [isDirty, setIsDirty] = useState(false)
   const [charCount, setCharCount] = useState(text.length)
@@ -184,7 +183,12 @@ export default function ReviewPage() {
     setIsDirty(true)
   }
 
-  if (status !== 'done') {
+  const hasContent = text.trim().length > 0
+  const source = agentStatus === 'done' ? 'generated'
+               : uploadStatus === 'done' ? 'uploaded'
+               : null
+
+  if (!hasContent) {
     return (
       <div className="flex flex-col items-center justify-center h-[60vh] gap-4 text-center">
         <div className="w-16 h-16 rounded-2xl bg-ink-100 flex items-center justify-center">
@@ -194,8 +198,10 @@ export default function ReviewPage() {
           </svg>
         </div>
         <div>
-          <p className="text-base font-semibold text-ink-700">No ontology file yet</p>
-          <p className="text-sm text-ink-400 mt-1">Run the pipeline on the Ontology page first</p>
+          <p className="text-base font-semibold text-ink-700">No ontology loaded</p>
+          <p className="text-sm text-ink-400 mt-1">
+            Upload a .ttl / .owl file or run the generation pipeline
+          </p>
         </div>
         <button
           onClick={() => setPage('ontology')}
@@ -207,10 +213,12 @@ export default function ReviewPage() {
     )
   }
 
+  const filename = path ? path.split('/').pop() : 'ontology.ttl'
+
   return (
     <div className="h-[calc(100vh-3.5rem)] flex flex-col">
       {/* Page header */}
-      <div className="px-6 py-4 border-b border-ink-100 bg-white/70 backdrop-blur-sm
+      <div className="px-6 py-4 border-b border-ink-100/10 bg-surface-100/70 backdrop-blur-sm
                       flex items-center justify-between gap-4 shrink-0">
         <div className="flex items-center gap-3 min-w-0">
           <div className="w-8 h-8 rounded-lg bg-cortex-purple-tint flex items-center justify-center">
@@ -220,32 +228,34 @@ export default function ReviewPage() {
             </svg>
           </div>
           <div className="min-w-0">
-            <h1 className="page-title">enterprise_ontology.jsonld</h1>
-            <p className="text-xs text-ink-400 font-mono truncate">{path}</p>
+            <h1 className="page-title">{filename}</h1>
+            <p className="text-xs text-ink-400 font-mono truncate">{path || '/ontologies/ontology.ttl'}</p>
           </div>
+          {source && (
+            <span className={`badge shrink-0 ${source === 'uploaded' ? 'badge-blue' : 'badge-green'}`}>
+              {source === 'uploaded' ? '↑ uploaded' : '⚡ generated'}
+            </span>
+          )}
           {isDirty && <span className="badge-amber shrink-0">Unsaved changes</span>}
         </div>
 
-        {meta && (
-          <div className="hidden lg:flex items-center gap-4 text-xs font-mono text-ink-400 shrink-0">
-            <span>{charCount.toLocaleString()} chars</span>
-            <span>{meta.totalNodes} nodes · {meta.totalEdges} edges</span>
-            <span className="text-cortex-green">{meta.resolved}/{meta.conflicts} conflicts resolved</span>
-          </div>
-        )}
+        <div className="hidden lg:flex items-center gap-4 text-xs font-mono text-ink-400 shrink-0">
+          <span>{charCount.toLocaleString()} chars</span>
+          <span>{text.split('\n').length} lines</span>
+        </div>
       </div>
 
       {/* Main split */}
       <div className="flex-1 min-h-0 flex gap-0">
         {/* Editor */}
-        <div className="flex-1 min-w-0 border-r border-ink-100 bg-white flex flex-col min-h-0">
-          <div className="px-4 py-2 border-b border-ink-100 bg-ink-50 flex items-center gap-2 shrink-0">
+        <div className="flex-1 min-w-0 border-r border-ink-100/10 bg-surface-50 flex flex-col min-h-0">
+          <div className="px-4 py-2 border-b border-ink-100/10 bg-surface-100 flex items-center gap-2 shrink-0">
             <div className="flex gap-1.5">
               <div className="w-3 h-3 rounded-full bg-red-400/60" />
               <div className="w-3 h-3 rounded-full bg-amber-400/60" />
               <div className="w-3 h-3 rounded-full bg-emerald-400/60" />
             </div>
-            <span className="text-[11px] font-mono text-ink-400 ml-2">JSON-LD · editable</span>
+            <span className="text-[11px] font-mono text-ink-400 ml-2">Turtle / OWL · editable</span>
           </div>
           <div className="flex-1 min-h-0 overflow-auto scrollbar-thin">
             <CodeEditor value={text} onChange={handleChange} />
@@ -257,26 +267,6 @@ export default function ReviewPage() {
           <ValidationPanel />
           <div className="divider" />
           <CommitPanel />
-
-          {/* Metadata */}
-          {meta && (
-            <>
-              <div className="divider" />
-              <div className="space-y-2">
-                <span className="section-title">File metadata</span>
-                {[
-                  ['Generated',  new Date(meta.generated).toLocaleString()],
-                  ['Agent',      meta.agent],
-                  ['Format',     'JSON-LD / OWL'],
-                ].map(([k, v]) => (
-                  <div key={k} className="flex justify-between text-xs">
-                    <span className="text-ink-400">{k}</span>
-                    <span className="font-mono text-ink-700 text-right max-w-[160px] truncate">{v}</span>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
         </div>
       </div>
     </div>

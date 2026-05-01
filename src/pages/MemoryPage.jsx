@@ -160,7 +160,7 @@ export default function MemoryPage() {
   const commitStatus = useNeocortex((s) => s.commitStatus)
 
   const commitPath = useNeocortex((s) => s.commitPath)
-  const effectivePath = commitStatus === 'committed' ? commitPath : ontologyPath
+  const effectivePath = (commitStatus === 'committed' ? commitPath : ontologyPath) || null
 
   const cogneeStatDisplay = cogneeStats ? {
     'Entities':        cogneeStats.entities,
@@ -235,8 +235,8 @@ export default function MemoryPage() {
           <ConnCard
             name="Cognee"
             description="Graph-based temporal memory · memification"
-            accentColor="#7C3AED"
-            accentTint="#F5F3FF"
+            accentColor="#9333EA"
+            accentTint="rgba(147, 51, 234, 0.1)"
             status={cogneeStatus}
             pingMs={cogneePingMs}
             stats={cogneeStatDisplay}
@@ -251,8 +251,8 @@ export default function MemoryPage() {
           <ConnCard
             name="GraphRAG"
             description="Community-based knowledge clustering"
-            accentColor="#059669"
-            accentTint="#ECFDF5"
+            accentColor="#10B981"
+            accentTint="rgba(16, 185, 129, 0.1)"
             status={graphragStatus}
             pingMs={graphragPingMs}
             stats={graphragStatDisplay}

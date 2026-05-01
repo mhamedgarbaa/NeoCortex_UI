@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
 import { useNeocortex } from '../store/useNeocortex.js'
 
 // ── Token efficiency bar ─────────────────────────────────────────────────────
@@ -12,9 +12,9 @@ function TokenMeter({ raw, filtered }) {
         <span>Context window</span>
         <span className="text-cortex-green font-semibold">−{reduction}% compressed</span>
       </div>
-      <div className="relative h-2 rounded-full overflow-hidden bg-ink-100">
+      <div className="relative h-2 rounded-full overflow-hidden bg-ink-200/20">
         {/* raw */}
-        <div className="absolute inset-y-0 left-0 w-full bg-red-100" />
+        <div className="absolute inset-y-0 left-0 w-full bg-rose-900/40" />
         {/* filtered */}
         <motion.div
           className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400"
@@ -34,9 +34,9 @@ function TokenMeter({ raw, filtered }) {
 // ── Source badge ─────────────────────────────────────────────────────────────
 function SourceBadge({ layer, entity, confidence }) {
   const cfg = {
-    Cognee:   { bg: '#F5F3FF', color: '#7C3AED', border: '#DDD6FE' },
-    GraphRAG: { bg: '#ECFDF5', color: '#059669', border: '#A7F3D0' },
-  }[layer] || { bg: '#F8FAFF', color: '#475569', border: '#E2E8F0' }
+    Cognee:   { bg: 'rgba(147, 51, 234, 0.1)', color: '#A855F7', border: 'rgba(147, 51, 234, 0.2)' },
+    GraphRAG: { bg: 'rgba(16, 185, 129, 0.1)', color: '#34D399', border: 'rgba(16, 185, 129, 0.2)' },
+  }[layer] || { bg: 'rgba(14, 165, 233, 0.1)', color: '#38BDF8', border: 'rgba(14, 165, 233, 0.2)' }
 
   return (
     <div
@@ -66,8 +66,8 @@ function AgentMessage({ msg }) {
         animate={{ opacity: 1, y: 0 }}
         className="flex justify-end"
       >
-        <div className="max-w-[72%] px-4 py-3 rounded-2xl rounded-tr-sm
-                        bg-gradient-to-br from-cortex-blue to-blue-700 text-white text-sm leading-relaxed shadow-sm">
+        <div className="max-w-[72%] px-4 py-3 rounded-2xl rounded-tr-sm text-sm leading-relaxed"
+             style={{ background: 'linear-gradient(135deg, #0EA5E9, #0369A1)', color: '#fff', boxShadow: '0 0 20px rgba(14,165,233,0.25)' }}>
           {msg.text}
         </div>
       </motion.div>
@@ -77,11 +77,11 @@ function AgentMessage({ msg }) {
   if (msg.error) {
     return (
       <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="flex gap-3">
-        <div className="w-8 h-8 rounded-xl bg-rose-100 border border-rose-200
+        <div className="w-8 h-8 rounded-xl bg-rose-900/20 border border-rose-500/30
                         flex items-center justify-center shrink-0">
-          <span className="text-rose-500 text-xs font-bold">!</span>
+          <span className="text-rose-400 text-xs font-bold">!</span>
         </div>
-        <div className="flex-1 p-3 rounded-xl bg-rose-50 border border-rose-200 text-sm text-rose-700">
+        <div className="flex-1 p-3 rounded-xl bg-rose-900/20 border border-rose-500/30 text-sm text-rose-300">
           {msg.text}
         </div>
       </motion.div>
@@ -101,7 +101,7 @@ function AgentMessage({ msg }) {
       </div>
 
       <div className="flex-1 min-w-0 space-y-2">
-        <div className="card p-4 text-sm text-ink-800 leading-relaxed whitespace-pre-wrap">
+        <div className="card p-4 text-sm text-ink-900 leading-relaxed whitespace-pre-wrap">
           {msg.text}
           {msg.mock && (
             <span className="ml-2 text-[10px] font-mono text-ink-300 align-middle">[demo]</span>
@@ -213,8 +213,8 @@ export default function AgentPage() {
     <div className="h-[calc(100vh-3.5rem)] flex flex-col">
 
       {/* Header */}
-      <div className="px-6 py-4 border-b border-ink-100 bg-white/70 backdrop-blur-sm
-                      flex items-center justify-between gap-4 shrink-0">
+      <div className="px-6 py-4 flex items-center justify-between gap-4 shrink-0"
+           style={{ borderBottom: '1px solid rgba(14,165,233,0.12)', background: 'rgba(2,10,22,0.6)', backdropFilter: 'blur(12px)' }}>
         <div>
           <h1 className="page-title">Agent Chat</h1>
           <p className="page-sub mt-0.5">Ask questions — context filtered by the adapter</p>
@@ -226,21 +226,11 @@ export default function AgentPage() {
             <span className="text-ink-300">·</span>
             <span className={graphragConnected ? 'dot-online' : 'dot-offline'} />
             <span className="text-ink-500">GraphRAG</span>
-            <span className="text-ink-300">·</span>
-            <span className={
-              mcpStatus === 'connected' ? 'dot-online'
-              : mcpStatus === 'connecting' ? 'dot-syncing'
-              : mcpStatus === 'error' ? 'dot-error'
-              : 'dot-offline'
-            } />
-            <span className="text-ink-500 font-mono">
-              MCP{mcpSessionId ? ` · ${mcpSessionId.slice(0, 8)}…` : ''}
-            </span>
           </div>
           {extractedEntities.length > 0 && (
             <button
               onClick={() => setPage('visualization')}
-              className="text-xs px-3 py-1.5 rounded-lg bg-cyan-100 text-cyan-700 hover:bg-cyan-200 transition font-medium"
+              className="text-xs px-3 py-1.5 rounded-lg bg-cortex-cyan/10 text-cortex-cyan border border-cortex-cyan/20 hover:bg-cortex-cyan/20 transition font-medium"
             >
               📊 {extractedEntities.length} entities
             </button>
@@ -258,14 +248,14 @@ export default function AgentPage() {
 
       {/* Memory warning */}
       {!memoryReady && (
-        <div className="mx-6 mt-4 p-3 rounded-xl bg-amber-50 border border-amber-200
+        <div className="mx-6 mt-4 p-3 rounded-xl bg-amber-900/20 border border-amber-500/30
                         flex items-center justify-between gap-3 text-sm">
-          <span className="text-cortex-amber">
+          <span className="text-amber-400">
             ⚠ Memory layer not connected — connect Cognee or GraphRAG for live context
           </span>
           <button
             onClick={() => setPage('memory')}
-            className="shrink-0 text-xs font-medium text-cortex-amber underline underline-offset-2"
+            className="shrink-0 text-xs font-medium text-amber-500 hover:text-amber-400 underline underline-offset-2"
           >
             Go to Memory →
           </button>
@@ -281,7 +271,7 @@ export default function AgentPage() {
                               border border-cortex-purple/20 flex items-center justify-center mx-auto">
                 <span className="text-2xl">🧠</span>
               </div>
-              <p className="font-semibold text-ink-800">Ask Neocortex anything</p>
+              <p className="font-semibold text-ink-200 text-lg">Ask Neocortex anything</p>
               <p className="text-sm text-ink-400">
                 Context is filtered from the memory layer before reaching the agent
               </p>
@@ -309,11 +299,14 @@ export default function AgentPage() {
       </div>
 
       {/* Input */}
-      <div className="px-6 py-4 border-t border-ink-100 bg-white/80 backdrop-blur-sm shrink-0">
-        <div className={[
-          'flex items-end gap-3 p-3 rounded-2xl border transition-all duration-200 bg-white',
-          input ? 'border-cortex-blue shadow-glow-blue' : 'border-ink-200',
-        ].join(' ')}>
+      <div className="px-6 py-4 shrink-0"
+           style={{ borderTop: '1px solid rgba(14,165,233,0.12)', background: 'rgba(2,10,22,0.7)', backdropFilter: 'blur(12px)' }}>
+        <div className="flex items-end gap-3 p-3 rounded-2xl transition-all duration-200"
+             style={{
+               background: 'rgba(7,20,48,0.8)',
+               border: `1px solid ${input ? 'rgba(14,165,233,0.45)' : 'rgba(14,165,233,0.15)'}`,
+               boxShadow: input ? '0 0 16px rgba(14,165,233,0.15)' : 'none',
+             }}>
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -322,9 +315,9 @@ export default function AgentPage() {
             }}
             placeholder="Ask the agent… (Enter to send, Shift+Enter for new line)"
             rows={1}
-            className="flex-1 bg-transparent outline-none resize-none text-sm text-ink-900
-                       placeholder:text-ink-300 max-h-32 overflow-auto scrollbar-thin leading-relaxed"
-            style={{ height: 'auto', minHeight: '24px' }}
+            className="flex-1 bg-transparent outline-none resize-none text-sm max-h-32 overflow-auto scrollbar-thin leading-relaxed"
+            style={{ color: '#E8F4FF', height: 'auto', minHeight: '24px' }}
+            onFocus={e => e.target.style.color = '#E8F4FF'}
             onInput={(e) => {
               e.target.style.height = 'auto'
               e.target.style.height = Math.min(e.target.scrollHeight, 128) + 'px'
@@ -345,7 +338,7 @@ export default function AgentPage() {
             </svg>
           </button>
         </div>
-        <p className="text-[10px] text-ink-300 font-mono mt-2 text-center">
+        <p className="text-[10px] font-mono mt-2 text-center" style={{ color: 'rgba(14,165,233,0.4)' }}>
           {mcpStatus === 'connected'
             ? `MCP session active · searching Cognee graph`
             : `MCP offline — demo responses active`}

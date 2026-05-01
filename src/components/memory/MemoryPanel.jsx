@@ -94,7 +94,7 @@ export default function MemoryPanel() {
             status={cogneeStatus}
             pingMs={cogneePingMs}
             stats={cogneeStatDisplay}
-            ontologyPath={ontologyFilePath || '/ontology/enterprise_ontology.jsonld'}
+            ontologyPath={ontologyFilePath || null}
             onConnect={connectCognee}
             onDisconnect={disconnectCognee}
           />

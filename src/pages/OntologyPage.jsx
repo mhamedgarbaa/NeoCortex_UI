@@ -1,6 +1,219 @@
-import { useState, useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useNeocortex, PREPROCESS_STEPS } from '../store/useNeocortex.js'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
+import { useNeocortex } from '../store/useNeocortex.js'
+
+// ── Ontology Upload Section ──────────────────────────────────────────────────
+function OntologyUploadSection() {
+  const status    = useNeocortex((s) => s.ontologyUploadStatus)
+  const path      = useNeocortex((s) => s.ontologyUploadPath)
+  const error     = useNeocortex((s) => s.ontologyUploadError)
+  const upload    = useNeocortex((s) => s.uploadOntologyFile)
+  const reset     = useNeocortex((s) => s.resetOntologyUpload)
+  const [over, setOver] = useState(false)
+  const inputRef  = useRef(null)
+
+  function handle(files) {
+    const f = files[0]
+    if (!f) return
+    const ext = f.name.split('.').pop().toLowerCase()
+    if (!['ttl', 'owl'].includes(ext)) {
+      alert('Only .ttl and .owl files are supported.')
+      return
+    }
+    upload(f)
+  }
+
+  return (
+    <div className="card p-5 space-y-4">
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="section-title">Ontology File</h2>
+          <p className="text-xs text-ink-400 mt-0.5">Upload a .ttl or .owl file to replace the active ontology</p>
+        </div>
+        {status === 'done' && (
+          <button onClick={reset} className="text-xs text-ink-400 hover:text-cortex-rose transition">↺ Replace</button>
+        )}
+      </div>
+
+      {status === 'done' ? (
+        <motion.div initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
+          className="flex items-center gap-3 px-4 py-3 rounded-xl bg-cortex-green/10 border border-cortex-green/30">
+          <span className="text-cortex-green text-lg">✓</span>
+          <div className="min-w-0">
+            <p className="text-sm font-medium text-cortex-green">Ontology uploaded</p>
+            <p className="text-xs font-mono text-ink-500 truncate mt-0.5">{path}</p>
+          </div>
+        </motion.div>
+      ) : (
+        <label
+          onDragOver={(e) => { e.preventDefault(); setOver(true) }}
+          onDragLeave={() => setOver(false)}
+          onDrop={(e) => { e.preventDefault(); setOver(false); handle(e.dataTransfer.files) }}
+          className={[
+            'flex items-center justify-center gap-4 rounded-xl border-2 border-dashed cursor-pointer',
+            'transition-all duration-200 py-7 px-6',
+            over ? 'border-cortex-purple bg-cortex-purple/10 scale-[1.01]'
+                 : 'border-ink-200/20 hover:border-cortex-purple/50 hover:bg-cortex-purple/5 bg-transparent',
+          ].join(' ')}
+        >
+          <input ref={inputRef} type="file" accept=".ttl,.owl" className="hidden"
+                 onChange={(e) => handle(e.target.files)} />
+          <div className="w-10 h-10 rounded-xl bg-surface-200/50 flex items-center justify-center shrink-0">
+            <span className="text-xs font-mono font-bold text-cortex-purple">OWL</span>
+          </div>
+          <div className="text-left">
+            {status === 'uploading' ? (
+              <p className="text-sm font-medium text-cortex-purple animate-pulse">Uploading…</p>
+            ) : (
+              <>
+                <p className="text-sm font-medium text-ink-200">
+                  {over ? 'Release to upload' : 'Drop ontology file here'}
+                </p>
+                <p className="text-xs text-ink-400 mt-0.5">.ttl · .owl — or <span className="text-cortex-purple underline">browse</span></p>
+              </>
+            )}
+            {error && <p className="text-xs text-cortex-rose mt-1">{error}</p>}
+          </div>
+        </label>
+      )}
+    </div>
+  )
+}
+
+// ── Cognify Data Section ─────────────────────────────────────────────────────
+function CognifyDataSection() {
+  const running  = useNeocortex((s) => s.cognifyRunning)
+  const log      = useNeocortex((s) => s.cognifyLog)
+  const files_fn = useNeocortex((s) => s.cognifyFiles)
+  const text_fn  = useNeocortex((s) => s.cognifyText)
+  const clearLog = useNeocortex((s) => s.clearCognifyLog)
+
+  const [over, setOver]   = useState(false)
+  const [text, setText]   = useState('')
+  const logRef            = useRef(null)
+  const inputRef          = useRef(null)
+
+  useEffect(() => {
+    if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight
+  }, [log])
+
+  function handleDrop(fileList) {
+    const arr = Array.from(fileList)
+    if (arr.length) files_fn(arr)
+  }
+
+  function handleText() {
+    if (!text.trim()) return
+    text_fn(text.trim(), 'text input')
+    setText('')
+  }
+
+  const kindClass = { info: 'text-ink-400', success: 'text-cortex-green', error: 'text-cortex-rose' }
+
+  return (
+    <div className="card p-5 space-y-4">
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="section-title">Cognify Data</h2>
+          <p className="text-xs text-ink-400 mt-0.5">
+            Upload files or paste text — content is extracted and ingested into the knowledge graph
+          </p>
+        </div>
+        {log.length > 0 && !running && (
+          <button onClick={clearLog} className="text-xs text-ink-400 hover:text-cortex-rose transition">
+            Clear log
+          </button>
+        )}
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* File drop */}
+        <label
+          onDragOver={(e) => { e.preventDefault(); setOver(true) }}
+          onDragLeave={() => setOver(false)}
+          onDrop={(e) => { e.preventDefault(); setOver(false); handleDrop(e.dataTransfer.files) }}
+          className={[
+            'flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed',
+            'cursor-pointer transition-all duration-200 py-8 px-4 text-center',
+            running ? 'opacity-50 pointer-events-none' : '',
+            over ? 'border-cortex-blue bg-cortex-blue/10 scale-[1.01]'
+                 : 'border-ink-200 hover:border-cortex-blue/50 hover:bg-cortex-blue/5 bg-ink-200/5',
+          ].join(' ')}
+        >
+          <input ref={inputRef} type="file" multiple className="hidden"
+                 onChange={(e) => handleDrop(e.target.files)} disabled={running} />
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+               className={over ? 'text-cortex-blue' : 'text-ink-400'}>
+            <path d="M4 16l4-4 4 4M12 12V4M8 8l4-4 4 4M4 20h16"
+                  stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          <p className="text-sm font-medium text-ink-200">
+            {over ? 'Release to cognify' : 'Drop files to cognify'}
+          </p>
+          <p className="text-xs text-ink-400">PDF · CSV · JSON · TXT · MD · XML</p>
+          <span className="text-xs text-cortex-blue underline underline-offset-2">or browse</span>
+        </label>
+
+        {/* Text input */}
+        <div className="flex flex-col gap-2">
+          <textarea
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            disabled={running}
+            placeholder="Or paste text, a document excerpt, or any knowledge you want to store in the graph…"
+            className={[
+              'flex-1 min-h-[140px] resize-none rounded-xl border border-ink-200 bg-ink-200/5 px-4 py-3',
+              'text-sm text-ink-200 placeholder-ink-400 focus:outline-none focus:ring-2 focus:ring-cortex-blue/30',
+              'focus:border-cortex-blue transition',
+              running ? 'opacity-50' : '',
+            ].join(' ')}
+          />
+          <button
+            onClick={handleText}
+            disabled={!text.trim() || running}
+            className={[
+              'w-full py-2.5 rounded-xl text-sm font-medium transition',
+              text.trim() && !running
+                ? 'bg-cortex-blue text-white hover:bg-blue-700 shadow-sm'
+                : 'bg-ink-100 text-ink-400 cursor-not-allowed',
+            ].join(' ')}
+          >
+            {running ? 'Cognifying…' : '▷ Cognify text'}
+          </button>
+        </div>
+      </div>
+
+      {/* Log terminal */}
+      <AnimatePresence>
+        {log.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+          >
+            <div ref={logRef} className="terminal h-36 overflow-auto">
+              {log.map((line) => (
+                <div key={line.id} className={`flex gap-2 text-xs font-mono ${kindClass[line.kind] || 'text-ink-400'}`}>
+                  <span className="opacity-40 select-none">
+                    {line.kind === 'success' ? '✓' : line.kind === 'error' ? '✗' : '›'}
+                  </span>
+                  {line.text}
+                </div>
+              ))}
+              {running && (
+                <motion.span
+                  animate={{ opacity: [1, 0] }}
+                  transition={{ duration: 0.55, repeat: Infinity }}
+                  className="text-cyan-400 text-xs font-mono"
+                >█</motion.span>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  )
+}
 
 // ── File type icons ──────────────────────────────────────────────────────────
 function fileIcon(name) {
@@ -26,7 +239,7 @@ function FileCard({ file }) {
       animate={{ opacity: 1, y: 0 }}
       className={[
         'card p-4 space-y-3 transition-all duration-300',
-        done ? 'border-emerald-200 bg-emerald-50/30' : '',
+        done ? 'border-cortex-green/30 bg-cortex-green/5' : '',
       ].join(' ')}
     >
       {/* File header */}
@@ -172,15 +385,15 @@ function DropZone({ onFiles }) {
         'flex flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed',
         'cursor-pointer transition-all duration-200 py-12 px-8 text-center',
         over
-          ? 'border-cortex-blue bg-cortex-blue-tint scale-[1.01]'
-          : 'border-ink-200 hover:border-cortex-blue/50 hover:bg-cortex-blue-tint/50 bg-white',
+          ? 'border-cortex-blue bg-cortex-blue/10 scale-[1.01]'
+          : 'border-ink-200/20 hover:border-cortex-blue/50 hover:bg-cortex-blue/5 bg-transparent',
       ].join(' ')}
     >
       <input ref={inputRef} type="file" multiple className="hidden"
              onChange={(e) => handle(e.target.files)} />
       <div className={[
         'w-14 h-14 rounded-2xl flex items-center justify-center transition-colors',
-        over ? 'bg-cortex-blue/10' : 'bg-ink-100',
+        over ? 'bg-cortex-blue/10' : 'bg-surface-200/50',
       ].join(' ')}>
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
              className={over ? 'text-cortex-blue' : 'text-ink-400'}>
@@ -189,7 +402,7 @@ function DropZone({ onFiles }) {
         </svg>
       </div>
       <div>
-        <p className="text-sm font-medium text-ink-700">
+        <p className="text-sm font-medium text-ink-200">
           {over ? 'Release to ingest' : 'Drop enterprise data here'}
         </p>
         <p className="text-xs text-ink-400 mt-1">
@@ -240,6 +453,9 @@ export default function OntologyPage() {
         )}
       </div>
 
+      {/* Ontology upload */}
+      <OntologyUploadSection />
+
       {/* Flow indicator */}
       <div className="flex items-center gap-3 flex-wrap">
         {[
@@ -251,9 +467,9 @@ export default function OntologyPage() {
             {i > 0 && <div className="w-8 h-px bg-ink-200" />}
             <div className={[
               'flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium border',
-              step.done   ? 'bg-emerald-50 text-cortex-green border-emerald-200'
-              : step.active ? `bg-cortex-${step.color}-tint text-cortex-${step.color} border-blue-200 animate-pulse`
-              : 'bg-white text-ink-400 border-ink-200',
+              step.done   ? 'bg-emerald-900/30 text-cortex-green border-cortex-green/30'
+              : step.active ? `bg-cortex-${step.color}/20 text-cortex-${step.color} border-cortex-${step.color}/30 animate-pulse`
+              : 'bg-ink-100/30 text-ink-400 border-ink-200/30',
             ].join(' ')}>
               {step.done ? '✓' : step.active ? '…' : '○'} {step.label}
             </div>
@@ -346,6 +562,10 @@ export default function OntologyPage() {
           </AnimatePresence>
         </div>
       </div>
+
+      {/* Cognify data */}
+      <CognifyDataSection />
+
     </div>
   )
 }

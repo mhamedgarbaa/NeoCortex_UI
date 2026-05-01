@@ -1,29 +1,21 @@
 import { motion } from 'framer-motion'
 import { useNeocortex } from '../../store/useNeocortex.js'
 
-function MCPBadge() {
-  const mcpStatus = useNeocortex((s) => s.mcpStatus)
-  const dotClass  = {
-    connected:    'dot-online',
-    disconnected: 'dot-offline',
-    connecting:   'dot-syncing',
-    error:        'dot-error',
-  }[mcpStatus] ?? 'dot-offline'
-  const label = {
-    connected:    'MCP · Active',
-    disconnected: 'MCP · Offline',
-    connecting:   'MCP · Init…',
-    error:        'MCP · Error',
-  }[mcpStatus] ?? 'MCP'
-  return (
-    <div className="flex items-center gap-2 text-xs font-mono text-ink-400">
-      <span className={dotClass} />
-      <span>{label}</span>
-    </div>
-  )
-}
 
 const TABS = [
+  {
+    id: 'dashboard',
+    label: 'Dashboard',
+    sub: 'Overview',
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <rect x="1" y="1" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/>
+        <rect x="9" y="1" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/>
+        <rect x="1" y="9" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/>
+        <rect x="9" y="9" width="6" height="6" rx="1.5" stroke="currentColor" strokeWidth="1.5"/>
+      </svg>
+    ),
+  },
   {
     id: 'ontology',
     label: 'Ontology',
@@ -103,63 +95,49 @@ const TABS = [
       </svg>
     ),
   },
-  {
-    id: 'testing',
-    label: 'Testing',
-    sub: 'Console',
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M5 2h6M6 2v4L3 13h10L10 6V2" stroke="currentColor" strokeWidth="1.5"
-              strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="8" cy="10" r="1" fill="currentColor"/>
-      </svg>
-    ),
-  },
 ]
 
 const ACCENT = {
-  ontology: 'text-cortex-blue',
-  review:   'text-cortex-purple',
-  graph:    'text-cortex-cyan',
-  visualization: 'text-cyan-600',
-  memory:   'text-cortex-green',
-  agent:    'text-cortex-amber',
-  testing:  'text-rose-600',
+  dashboard:     'text-cortex-blue',
+  ontology:      'text-cortex-blue',
+  review:        'text-cortex-purple',
+  graph:         'text-cortex-cyan',
+  visualization: 'text-cortex-cyan',
+  memory:        'text-cortex-green',
+  agent:         'text-cortex-amber',
 }
 
-const ACCENT_BG = {
-  ontology: 'bg-cortex-blue',
-  review:   'bg-cortex-purple',
-  graph:    'bg-cortex-cyan',
-  visualization: 'bg-cyan-600',
-  memory:   'bg-cortex-green',
-  agent:    'bg-cortex-amber',
-  testing:  'bg-rose-500',
+const GLOW_COLOR = {
+  dashboard:     'rgba(14,165,233,0.6)',
+  ontology:      'rgba(14,165,233,0.6)',
+  review:        'rgba(129,140,248,0.6)',
+  graph:         'rgba(34,211,238,0.6)',
+  visualization: 'rgba(34,211,238,0.6)',
+  memory:        'rgba(16,185,129,0.6)',
+  agent:         'rgba(245,158,11,0.6)',
 }
 
 export default function NavBar() {
   const page    = useNeocortex((s) => s.page)
   const setPage = useNeocortex((s) => s.setPage)
-
-  // Badge for review tab when file is ready
   const agentStatus = useNeocortex((s) => s.agentStatus)
 
   return (
-    <header className="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-ink-100 shadow-nav">
+    <header
+      className="sticky top-0 z-40 backdrop-blur-md shadow-nav"
+      style={{
+        background: 'rgba(4, 18, 36, 0.85)',
+        borderBottom: '1px solid rgba(14,165,233,0.15)',
+      }}
+    >
       <div className="max-w-screen-2xl mx-auto px-6 flex items-center justify-between h-14">
 
         {/* Brand */}
-        <div className="flex items-center gap-3 shrink-0">
-          <div className="relative w-7 h-7 flex items-center justify-center">
-            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cortex-blue via-cortex-purple to-cortex-green opacity-90" />
-            <span className="relative text-white font-display font-bold text-xs">N</span>
-          </div>
-          <div className="leading-tight">
-            <span className="font-display font-semibold text-[15px] text-ink-900">Neocortex</span>
-            <span className="ml-2 text-[10px] font-mono uppercase tracking-widest text-ink-300">
-              v2.0
-            </span>
-          </div>
+        <div className="flex items-center gap-2.5 shrink-0">
+          <img src="/logo.png" alt="Neocortex" className="w-8 h-8 rounded-lg object-cover" />
+          <span className="font-display font-semibold text-[15px]" style={{ color: '#E8F4FF' }}>
+            Neocortex
+          </span>
         </div>
 
         {/* Tabs */}
@@ -172,26 +150,28 @@ export default function NavBar() {
                 onClick={() => setPage(tab.id)}
                 className={[
                   'relative flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150',
-                  active
-                    ? `${ACCENT[tab.id]} bg-ink-100/60`
-                    : 'text-ink-500 hover:text-ink-900 hover:bg-ink-100/40',
+                  active ? ACCENT[tab.id] : 'hover:text-ink-900',
                 ].join(' ')}
+                style={active
+                  ? { background: 'rgba(14,165,233,0.08)', color: undefined }
+                  : { color: 'rgba(192,216,240,0.55)' }
+                }
               >
-                <span className={active ? ACCENT[tab.id] : 'text-ink-400'}>
+                <span style={{ color: active ? undefined : 'rgba(14,165,233,0.4)' }}>
                   {tab.icon}
                 </span>
                 {tab.label}
 
-                {/* Review badge when ontology ready */}
                 {tab.id === 'review' && agentStatus === 'done' && (
-                  <span className="w-1.5 h-1.5 rounded-full bg-cortex-purple animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full animate-pulse"
+                        style={{ background: '#818CF8', boxShadow: '0 0 6px #818CF8' }} />
                 )}
 
-                {/* Active underline */}
                 {active && (
                   <motion.div
                     layoutId="nav-indicator"
-                    className={`absolute bottom-0 left-3 right-3 h-0.5 rounded-full ${ACCENT_BG[tab.id]}`}
+                    className="absolute bottom-0 left-3 right-3 h-0.5 rounded-full"
+                    style={{ background: GLOW_COLOR[tab.id], boxShadow: `0 0 8px ${GLOW_COLOR[tab.id]}` }}
                     transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                   />
                 )}
@@ -200,8 +180,7 @@ export default function NavBar() {
           })}
         </nav>
 
-        {/* Right: MCP status */}
-        <MCPBadge />
+        <div />
       </div>
     </header>
   )

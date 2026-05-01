@@ -4,38 +4,46 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ── Light-mode surfaces ──────────────────────────────────────
+        // ── Dark neural surfaces ─────────────────────────────────────
         surface: {
-          50:  '#FFFFFF',
-          100: '#F8FAFF',
-          200: '#EEF2FF',
-          300: '#E0E7FF',
+          50:  '#020C18',
+          100: '#040F22',
+          200: '#071428',
+          300: '#0A1A35',
+          400: '#0F2347',
         },
-        // ── Text ────────────────────────────────────────────────────
+        // ── Text (light on dark) ─────────────────────────────────────
         ink: {
-          900: '#0F172A',
-          700: '#1E293B',
-          500: '#475569',
-          400: '#64748B',
-          300: '#94A3B8',
-          200: '#CBD5E1',
-          100: '#E2E8F0',
+          900: '#E8F4FF',
+          700: '#C0D8F0',
+          500: '#7AAED4',
+          400: '#5590C0',
+          300: '#2E6A9E',
+          200: '#1A3D66',
+          100: '#0D2240',
         },
-        // ── Brand accents ───────────────────────────────────────────
+        // ── Neural glow accents ──────────────────────────────────────
         cortex: {
-          blue:   '#2563EB',
-          purple: '#7C3AED',
-          green:  '#059669',
-          amber:  '#D97706',
-          cyan:   '#0891B2',
-          rose:   '#E11D48',
-          // Soft tints (for backgrounds)
-          'blue-tint':   '#EFF6FF',
-          'purple-tint': '#F5F3FF',
-          'green-tint':  '#ECFDF5',
-          'amber-tint':  '#FFFBEB',
-          'cyan-tint':   '#ECFEFF',
-          'rose-tint':   '#FFF1F2',
+          blue:   '#0EA5E9',
+          purple: '#818CF8',
+          green:  '#10B981',
+          amber:  '#F59E0B',
+          cyan:   '#22D3EE',
+          rose:   '#FB7185',
+          // Glow tints (dark translucent)
+          'blue-tint':   'rgba(14,165,233,0.08)',
+          'purple-tint': 'rgba(129,140,248,0.08)',
+          'green-tint':  'rgba(16,185,129,0.08)',
+          'amber-tint':  'rgba(245,158,11,0.08)',
+          'cyan-tint':   'rgba(34,211,238,0.08)',
+          'rose-tint':   'rgba(251,113,133,0.08)',
+        },
+        // ── Neural electric colors ───────────────────────────────────
+        neural: {
+          glow:   '#00AAFF',
+          bright: '#38BDF8',
+          deep:   '#0369A1',
+          dark:   '#020C18',
         },
       },
       fontFamily: {
@@ -44,15 +52,17 @@ export default {
         sans:    ['Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'card':      '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)',
-        'card-md':   '0 4px 16px -2px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04)',
-        'card-lg':   '0 8px 32px -4px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.04)',
-        'nav':       '0 1px 0 rgba(0,0,0,0.06)',
-        'glow-blue':   '0 0 0 3px rgba(37,99,235,0.15)',
-        'glow-purple': '0 0 0 3px rgba(124,58,237,0.15)',
-        'glow-green':  '0 0 0 3px rgba(5,150,105,0.15)',
-        'glow-amber':  '0 0 0 3px rgba(217,119,6,0.15)',
-        'ring-blue':   '0 0 0 2px #2563EB',
+        'card':      '0 1px 12px rgba(0,170,255,0.06), 0 0 0 1px rgba(14,165,233,0.12)',
+        'card-md':   '0 4px 24px rgba(0,170,255,0.10), 0 0 0 1px rgba(14,165,233,0.15)',
+        'card-lg':   '0 8px 40px rgba(0,170,255,0.14), 0 0 0 1px rgba(14,165,233,0.2)',
+        'nav':       '0 1px 0 rgba(14,165,233,0.12)',
+        'glow-blue':   '0 0 16px rgba(14,165,233,0.35), 0 0 0 1px rgba(14,165,233,0.3)',
+        'glow-purple': '0 0 16px rgba(129,140,248,0.35), 0 0 0 1px rgba(129,140,248,0.3)',
+        'glow-green':  '0 0 16px rgba(16,185,129,0.35), 0 0 0 1px rgba(16,185,129,0.3)',
+        'glow-amber':  '0 0 16px rgba(245,158,11,0.35), 0 0 0 1px rgba(245,158,11,0.3)',
+        'glow-cyan':   '0 0 20px rgba(34,211,238,0.4),  0 0 0 1px rgba(34,211,238,0.3)',
+        'ring-blue':   '0 0 0 2px #0EA5E9',
+        'neural':      '0 0 30px rgba(0,170,255,0.2), inset 0 0 30px rgba(0,170,255,0.03)',
       },
       backgroundImage: {
         'page-gradient':

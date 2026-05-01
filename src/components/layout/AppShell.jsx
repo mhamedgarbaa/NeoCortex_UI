@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion'
-import TopBar from './TopBar.jsx'
+import AdapterPanel from '../adapter/AdapterPanel.jsx'
+import MemoryPanel from '../memory/MemoryPanel.jsx'
+import OntologyPanel from '../ontology/OntologyPanel.jsx'
 import BrainCore from './BrainCore.jsx'
 import FloatingAgentPanel from './FloatingAgentPanel.jsx'
-import OntologyPanel from '../ontology/OntologyPanel.jsx'
-import MemoryPanel from '../memory/MemoryPanel.jsx'
-import AdapterPanel from '../adapter/AdapterPanel.jsx'
+import TopBar from './TopBar.jsx'
 
 export default function AppShell() {
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       {/* backdrop grid */}
-      <div className="absolute inset-0 neural-grid opacity-40 pointer-events-none" />
+      <div className="absolute inset-0 neural-grid opacity-20 pointer-events-none" />
 
       {/* central living brain */}
       <BrainCore />

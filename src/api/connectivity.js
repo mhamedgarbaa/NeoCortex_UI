@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8001'
+const API_BASE = 'http://localhost:8000'
 
 export const connectivityAPI = {
   async checkHealth() {
@@ -65,5 +65,45 @@ export const connectivityAPI = {
     } catch {
       return null
     }
+  },
+
+  async uploadOntologyFile(file) {
+    const form = new FormData()
+    form.append('file', file)
+    const resp = await fetch(`${API_BASE}/ontology/upload`, { method: 'POST', body: form })
+    const data = await resp.json()
+    if (!resp.ok) throw new Error(data.error || 'Upload failed')
+    return data   // { path, filename, size }
+  },
+
+  async commitOntologyContent(content) {
+    const resp = await fetch(`${API_BASE}/ontology/commit`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ content }),
+    })
+    const data = await resp.json()
+    if (!resp.ok) throw new Error(data.error || 'Commit failed')
+    return data   // { path, size, injected }
+  },
+
+  async cognifyData(text) {
+    const resp = await fetch(`${API_BASE}/add`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ data: text }),
+    })
+    const data = await resp.json()
+    if (!resp.ok) throw new Error(data.error || 'Cognify failed')
+    return data
+  },
+
+  async extractFileText(file) {
+    const form = new FormData()
+    form.append('file', file)
+    const resp = await fetch(`${API_BASE}/cognify/extract`, { method: 'POST', body: form })
+    const data = await resp.json()
+    if (!resp.ok) throw new Error(data.error || 'Extraction failed')
+    return data   // { text, filename, chars }
   },
 }

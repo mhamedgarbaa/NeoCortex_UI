@@ -14,8 +14,8 @@ const AGENT_LOG = [
   { id: 7,  t: 4000, text: 'Building class hierarchy (rdfs:subClassOf)…',       kind: 'info'    },
   { id: 8,  t: 4600, text: 'Detecting redundant / conflicting axioms…',          kind: 'warn'    },
   { id: 9,  t: 5200, text: 'Resolved 3 conflicts via domain-rule priority',      kind: 'success' },
-  { id: 10, t: 5900, text: 'Serialising → enterprise_ontology.jsonld',          kind: 'info'    },
-  { id: 11, t: 6400, text: '✓ Ontology committed · /ontology/enterprise_ontology.jsonld', kind: 'done' },
+  { id: 10, t: 5900, text: 'Serialising → ontology.ttl',                         kind: 'info'    },
+  { id: 11, t: 6400, text: '✓ Ontology committed · /ontologies/ontology.ttl',   kind: 'done' },
 ]
 
 // ── Preprocessing step labels ────────────────────────────────────────────────
@@ -167,7 +167,7 @@ export const useNeocortex = create((set, get) => ({
     set({
       agentStatus:      'done',
       ontologyFile:     generatedOntologyFile,
-      ontologyFilePath: '/ontology/enterprise_ontology.jsonld',
+      ontologyFilePath: '/ontologies/ontology.ttl',
       ontologyFileText: text,
     })
   },
@@ -181,31 +181,128 @@ export const useNeocortex = create((set, get) => ({
   setOntologyFileText: (t) => set({ ontologyFileText: t }),
 
   commitStatus: 'idle',     // 'idle' | 'committing' | 'committed' | 'error'
-  commitPath:   '/ontology/enterprise_ontology.jsonld',
+  commitPath:   '/ontologies/ontology.ttl',
   setCommitPath: (p) => set({ commitPath: p }),
 
   commitOntology: async () => {
     set({ commitStatus: 'committing' })
-    await new Promise((r) => setTimeout(r, 1600))
-    set({ commitStatus: 'committed' })
+    try {
+      const text = get().ontologyFileText
+      const result = await connectivityAPI.commitOntologyContent(text)
+      set({
+        commitStatus:     'committed',
+        ontologyFilePath: result.path,
+        ontologyUploadStatus: 'done',
+        ontologyUploadPath:   result.path,
+      })
+    } catch (err) {
+      set({ commitStatus: 'error', commitError: err.message })
+    }
   },
 
-  resetCommit: () => set({ commitStatus: 'idle' }),
+  resetCommit: () => set({ commitStatus: 'idle', commitError: null }),
 
   // ── Validation ───────────────────────────────────────────────────────────────
   validationResult: null,
 
   validateOntology: async () => {
     set({ validationResult: null })
-    await new Promise((r) => setTimeout(r, 900))
-    const text = get().ontologyFileText
+    await new Promise((r) => setTimeout(r, 400))
+    const text = get().ontologyFileText.trim()
     const errors = []
     const warnings = []
-    try { JSON.parse(text) }
-    catch { errors.push({ line: null, msg: 'Invalid JSON — cannot parse file.' }) }
-    if (!text.includes('@context')) warnings.push({ msg: 'Missing @context — recommended for JSON-LD.' })
-    if (!text.includes('@graph'))   warnings.push({ msg: 'Missing @graph — entities may not be indexed.' })
+    if (!text) {
+      errors.push({ msg: 'File is empty.' })
+    } else {
+      const hasPrefix  = /@prefix\s/i.test(text) || /^PREFIX\s/im.test(text)
+      const hasTriple  = /[<\w].*\s+[<\w].*\s+[<\w"'].+\s*[.;,]/.test(text)
+      const hasClass   = /owl:Class|rdfs:Class|a\s+owl:Class/i.test(text)
+      if (!hasPrefix)  warnings.push({ msg: 'No @prefix / PREFIX declarations found — may not be valid Turtle.' })
+      if (!hasTriple)  errors.push({ msg: 'No RDF triples detected — file does not look like Turtle/OWL.' })
+      if (!hasClass)   warnings.push({ msg: 'No owl:Class declarations found — ontology may have no types.' })
+    }
     set({ validationResult: { errors, warnings, ok: errors.length === 0 } })
+  },
+
+  // ── Ontology upload (real) ───────────────────────────────────────────────────
+  ontologyUploadStatus: 'idle',   // 'idle' | 'uploading' | 'done' | 'error'
+  ontologyUploadPath:   null,
+  ontologyUploadError:  null,
+
+  uploadOntologyFile: async (file) => {
+    set({ ontologyUploadStatus: 'uploading', ontologyUploadError: null })
+    try {
+      // Read text so the ReviewPage editor can show the uploaded content
+      let text = ''
+      try { text = await file.text() } catch { /* binary — skip */ }
+      const result = await connectivityAPI.uploadOntologyFile(file)
+      set({
+        ontologyUploadStatus: 'done',
+        ontologyUploadPath:   result.path,
+        ontologyFilePath:     result.path,
+        ...(text ? { ontologyFileText: text, commitStatus: 'idle' } : {}),
+      })
+    } catch (err) {
+      set({ ontologyUploadStatus: 'error', ontologyUploadError: err.message })
+    }
+  },
+
+  resetOntologyUpload: () => set({
+    ontologyUploadStatus: 'idle', ontologyUploadPath: null, ontologyUploadError: null,
+  }),
+
+  // ── Cognify data (real — MCP) ────────────────────────────────────────────────
+  cognifyRunning: false,
+  cognifyLog:     [],             // [{id, text, kind}]
+  cognifyQueue:   [],             // [{id, name, status, chars}]
+
+  _appendCognifyLog: (text, kind = 'info') =>
+    set((s) => ({
+      cognifyLog: [...s.cognifyLog, { id: Date.now() + Math.random(), text, kind }],
+    })),
+
+  clearCognifyLog: () => set({ cognifyLog: [], cognifyQueue: [] }),
+
+  cognifyText: async (text, label = 'text input') => {
+    const { _appendCognifyLog } = get()
+    set({ cognifyRunning: true })
+    _appendCognifyLog(`Cognifying "${label}" (${text.length} chars)…`)
+    try {
+      const result = await connectivityAPI.cognifyData(text)
+      _appendCognifyLog(`✓ ${label} ingested into graph`, 'success')
+      if (result.response) _appendCognifyLog(String(result.response).slice(0, 120), 'info')
+    } catch (err) {
+      _appendCognifyLog(`✗ ${label}: ${err.message}`, 'error')
+    } finally {
+      set({ cognifyRunning: false })
+    }
+  },
+
+  cognifyFiles: async (files) => {
+    const { _appendCognifyLog, cognifyText } = get()
+    set({ cognifyRunning: true })
+    const TEXT_EXTS = new Set(['.txt', '.md', '.csv', '.json', '.xml', '.html', '.ttl', '.owl'])
+
+    for (const file of files) {
+      const ext = '.' + file.name.split('.').pop().toLowerCase()
+      _appendCognifyLog(`Reading ${file.name}…`)
+      try {
+        let text
+        if (TEXT_EXTS.has(ext)) {
+          text = await file.text()
+        } else {
+          // Binary file — send to backend for extraction
+          _appendCognifyLog(`Extracting text from ${file.name} via backend…`)
+          const result = await connectivityAPI.extractFileText(file)
+          text = result.text
+          _appendCognifyLog(`Extracted ${result.chars} chars from ${file.name}`)
+        }
+        await get().cognifyText(text, file.name)
+      } catch (err) {
+        _appendCognifyLog(`✗ ${file.name}: ${err.message}`, 'error')
+      }
+    }
+    set({ cognifyRunning: false })
   },
 
   // ── Cognee connectivity (REST → 8001, MCP → 8002) ───────────────────────────
@@ -243,7 +340,7 @@ export const useNeocortex = create((set, get) => ({
           entities:      stats?.entities      ?? health.details?.entities      ?? '—',
           relations:     stats?.relations     ?? health.details?.relations     ?? '—',
           memifiedNodes: stats?.memifiedNodes ?? health.details?.memified_nodes ?? '—',
-          ontologyPath:  get().ontologyFilePath || '/ontology/enterprise_ontology.jsonld',
+          ontologyPath:  get().ontologyFilePath || '/ontologies/ontology.ttl',
           lastSync:      new Date().toISOString(),
         },
       })
@@ -255,7 +352,7 @@ export const useNeocortex = create((set, get) => ({
           cogneePingMs: null,
           cogneeStats: {
             entities: '—', relations: '—', memifiedNodes: '—',
-            ontologyPath: get().ontologyFilePath || '/ontology/enterprise_ontology.jsonld',
+            ontologyPath: get().ontologyFilePath || '/ontologies/ontology.ttl',
             lastSync: new Date().toISOString(),
           },
         })

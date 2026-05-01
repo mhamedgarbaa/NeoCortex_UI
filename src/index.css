@@ -6,119 +6,127 @@
   html, body, #root { height: 100%; }
 
   body {
-    /* custom tokens can't be @apply'd — use direct values */
-    background-color: #F8FAFF;
-    color: #0F172A;
+    background-color: #041224; /* Less stark-dark */
+    color: #C0D8F0;
     @apply font-sans antialiased;
     background-image:
-      radial-gradient(at 20% 0%,  rgba(37,99,235,0.07)  0px, transparent 50%),
-      radial-gradient(at 80% 5%,  rgba(124,58,237,0.05) 0px, transparent 50%),
-      radial-gradient(at 50% 100%,rgba(5,150,105,0.05)  0px, transparent 50%),
-      linear-gradient(160deg, #EEF2FF 0%, #F8FAFF 40%, #F0FDF4 100%);
+      radial-gradient(ellipse at 20% 0%,   rgba(0,100,220,0.22)  0px, transparent 55%),
+      radial-gradient(ellipse at 80% 10%,  rgba(0,180,255,0.15)  0px, transparent 50%),
+      radial-gradient(ellipse at 50% 100%, rgba(0,60,160,0.20)   0px, transparent 55%),
+      radial-gradient(ellipse at 0%  50%,  rgba(0,40,120,0.15)   0px, transparent 40%);
     background-attachment: fixed;
     overflow: hidden;
   }
 
-  ::selection { background: rgba(37,99,235,0.15); color: #0F172A; }
+  ::selection { background: rgba(14,165,233,0.3); color: #E8F4FF; }
   * { -webkit-font-smoothing: antialiased; }
 }
 
 @layer components {
   /* ── Card surfaces ──────────────────────────────────────── */
   .card {
-    background: white;
-    @apply rounded-2xl border border-slate-200 shadow-card;
+    background: rgba(7, 20, 48, 0.75);
+    backdrop-filter: blur(12px);
+    @apply rounded-2xl border shadow-card;
+    border-color: rgba(14, 165, 233, 0.14);
   }
   .card-md {
-    background: white;
-    @apply rounded-2xl border border-slate-200 shadow-card-md;
+    background: rgba(7, 20, 48, 0.80);
+    backdrop-filter: blur(16px);
+    @apply rounded-2xl border shadow-card-md;
+    border-color: rgba(14, 165, 233, 0.18);
   }
   .card-inset {
-    background: #F8FAFF;
-    @apply rounded-xl border border-slate-200;
+    background: rgba(2, 12, 24, 0.6);
+    @apply rounded-xl border;
+    border-color: rgba(14, 165, 233, 0.10);
   }
 
   /* ── Typography helpers ─────────────────────────────────── */
   .section-title {
-    @apply text-xs font-mono uppercase tracking-[0.18em] text-slate-400;
+    @apply text-xs font-mono uppercase tracking-[0.18em];
+    color: rgba(14, 165, 233, 0.6);
   }
-  .page-title {
-    @apply text-lg font-display font-semibold text-slate-900;
-  }
-  .page-sub {
-    @apply text-sm text-slate-400;
-  }
+  .page-title  { @apply text-lg font-display font-semibold; color: #E8F4FF; }
+  .page-sub    { @apply text-sm; color: rgba(192, 216, 240, 0.55); }
 
   /* ── Badges ─────────────────────────────────────────────── */
   .badge {
     @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
   }
-  .badge-blue   { @apply badge bg-blue-50   text-blue-700   border border-blue-200;   }
-  .badge-purple { @apply badge bg-purple-50 text-purple-700 border border-purple-200; }
-  .badge-green  { @apply badge bg-emerald-50 text-emerald-700 border border-emerald-200; }
-  .badge-amber  { @apply badge bg-amber-50  text-amber-700  border border-amber-200;  }
-  .badge-rose   { @apply badge bg-rose-50   text-rose-700   border border-rose-200;   }
-  .badge-gray   { @apply badge bg-slate-100 text-slate-500  border border-slate-200;  }
+  .badge-blue   { @apply badge; background: rgba(14,165,233,0.15);  color: #38BDF8;  border: 1px solid rgba(14,165,233,0.25);  }
+  .badge-purple { @apply badge; background: rgba(129,140,248,0.15); color: #A5B4FC;  border: 1px solid rgba(129,140,248,0.25); }
+  .badge-green  { @apply badge; background: rgba(16,185,129,0.15);  color: #34D399;  border: 1px solid rgba(16,185,129,0.25);  }
+  .badge-amber  { @apply badge; background: rgba(245,158,11,0.15);  color: #FCD34D;  border: 1px solid rgba(245,158,11,0.25);  }
+  .badge-rose   { @apply badge; background: rgba(251,113,133,0.15); color: #FCA5A5;  border: 1px solid rgba(251,113,133,0.25); }
+  .badge-gray   { @apply badge; background: rgba(14,165,233,0.08);  color: #7AAED4;  border: 1px solid rgba(14,165,233,0.15);  }
 
   /* ── Form ───────────────────────────────────────────────── */
   .input {
-    @apply w-full px-3 py-2 rounded-lg border border-slate-200 bg-white text-sm text-slate-900
-           placeholder:text-slate-300 outline-none transition
-           focus:border-blue-500 focus:ring-2 focus:ring-blue-500/15;
+    @apply w-full px-3 py-2 rounded-lg text-sm outline-none transition;
+    background: rgba(2, 12, 24, 0.7);
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    color: #E8F4FF;
+  }
+  .input::placeholder { color: rgba(14, 165, 233, 0.3); }
+  .input:focus {
+    border-color: rgba(14, 165, 233, 0.5);
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.15);
   }
 
   /* ── Divider ────────────────────────────────────────────── */
-  .divider { @apply h-px w-full bg-slate-100; }
+  .divider { @apply h-px w-full; background: rgba(14,165,233,0.12); }
 
   /* ── Scrollbar ──────────────────────────────────────────── */
-  .scrollbar-thin::-webkit-scrollbar         { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar         { width: 4px; height: 4px; }
   .scrollbar-thin::-webkit-scrollbar-track   { background: transparent; }
-  .scrollbar-thin::-webkit-scrollbar-thumb   { background: #CBD5E1; border-radius: 999px; }
-  .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+  .scrollbar-thin::-webkit-scrollbar-thumb   { background: rgba(14,165,233,0.25); border-radius: 999px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: rgba(14,165,233,0.45); }
 
   /* ── Status dots ────────────────────────────────────────── */
-  .dot-online  { @apply inline-block w-2 h-2 rounded-full bg-emerald-500; }
-  .dot-offline { @apply inline-block w-2 h-2 rounded-full bg-slate-300; }
-  .dot-syncing { @apply inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse; }
-  .dot-error   { @apply inline-block w-2 h-2 rounded-full bg-rose-500; }
+  .dot-online  { @apply inline-block w-2 h-2 rounded-full; background: #10B981; box-shadow: 0 0 6px #10B981; }
+  .dot-offline { @apply inline-block w-2 h-2 rounded-full; background: rgba(14,165,233,0.25); }
+  .dot-syncing { @apply inline-block w-2 h-2 rounded-full animate-pulse; background: #F59E0B; box-shadow: 0 0 6px #F59E0B; }
+  .dot-error   { @apply inline-block w-2 h-2 rounded-full; background: #FB7185; box-shadow: 0 0 6px #FB7185; }
 
   /* ── Terminal (agent log) ───────────────────────────────── */
   .terminal {
-    @apply font-mono text-[11.5px] leading-relaxed rounded-xl border border-slate-700
-           overflow-auto;
-    background: #0F172A;
-    color: #CBD5E1;
+    @apply font-mono text-[11.5px] leading-relaxed rounded-xl overflow-auto;
+    background: rgba(1, 6, 15, 0.9);
+    border: 1px solid rgba(14,165,233,0.15);
+    color: #7AAED4;
     padding: 1rem;
+    box-shadow: inset 0 0 20px rgba(0,100,200,0.05);
   }
-  .terminal .t-info    { color: #94A3B8; }
-  .terminal .t-success { color: #34D399; }
-  .terminal .t-warn    { color: #FBBF24; }
-  .terminal .t-done    { color: #67E8F9; font-weight: 600; }
+  .terminal .t-info    { color: rgba(14,165,233,0.6); }
+  .terminal .t-success { color: #34D399; text-shadow: 0 0 8px rgba(52,211,153,0.4); }
+  .terminal .t-warn    { color: #FCD34D; }
+  .terminal .t-done    { color: #38BDF8; font-weight: 600; text-shadow: 0 0 8px rgba(56,189,248,0.5); }
 }
 
-/* ── React Flow light overrides ──────────────────────────── */
-.react-flow__background { opacity: 0.6; }
-.react-flow__edge-path  { stroke-width: 1.5; }
+/* ── React Flow dark overrides ───────────────────────────── */
+.react-flow__background { opacity: 0.3; }
+.react-flow__edge-path  { stroke: rgba(14,165,233,0.4); stroke-width: 1.5; }
 .react-flow__attribution { display: none !important; }
 .react-flow__controls {
-  background: white !important;
-  border: 1px solid #E2E8F0 !important;
+  background: rgba(7,20,48,0.9) !important;
+  border: 1px solid rgba(14,165,233,0.2) !important;
   border-radius: 10px !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  box-shadow: 0 0 20px rgba(0,100,200,0.15) !important;
   overflow: hidden;
 }
 .react-flow__controls-button {
   background: transparent !important;
-  border-bottom: 1px solid #F1F5F9 !important;
-  color: #475569 !important;
+  border-bottom: 1px solid rgba(14,165,233,0.12) !important;
+  color: #7AAED4 !important;
 }
 .react-flow__controls-button:hover {
-  background: #EFF6FF !important;
-  color: #2563EB !important;
+  background: rgba(14,165,233,0.1) !important;
+  color: #38BDF8 !important;
 }
 .react-flow__handle {
-  background: #CBD5E1 !important;
-  border: 2px solid white !important;
+  background: rgba(14,165,233,0.5) !important;
+  border: 2px solid rgba(7,20,48,0.9) !important;
   width: 7px !important;
   height: 7px !important;
 }

@@ -1,8 +1,8 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useNeocortex } from '../store/useNeocortex.js'
 import { connectivityAPI } from '../api/connectivity.js'
 import { mcp, MCP_BASE_DISPLAY as MCP_BASE } from '../api/mcpClient.js'
+import { useNeocortex } from '../store/useNeocortex.js'
 
 // ── Reusable status dot ──────────────────────────────────────────────────────
 function StatusDot({ status }) {
@@ -172,7 +172,7 @@ function ResultViewer({ result, onClear }) {
         </span>
         <button onClick={onClear} className="opacity-60 hover:opacity-100 transition">✕ clear</button>
       </div>
-      <pre className="p-4 text-xs font-mono text-slate-700 bg-white overflow-auto max-h-64 scrollbar-thin">
+      <pre className="p-4 text-xs font-mono text-ink-300 bg-ink-200/5 overflow-auto max-h-64 scrollbar-thin">
         {JSON.stringify(result, null, 2)}
       </pre>
     </motion.div>
