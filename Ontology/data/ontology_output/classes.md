@@ -1,0 +1,3169 @@
+# Ontology — Class Hierarchy
+
+- **AcceleratorPrograms** — Accelerator program offered to start-ups, SMEs, and mid-caps.
+- **AccountingEstimate** — An estimate used in preparing financial statements where outcomes involve uncertainty.
+  - **PostEmploymentCommitment** — Post-employment obligations measured using actuarial valuation referenced in the preparation process.
+- **AccountingStandard** — A set of rules governing accounting and financial reporting (e.g., IFRS, IAS, IFRS 9, IFRS 11, IFRS 13, IAS 1, IAS 36).
+  - **AccountingAmendment** — An amendment to existing accounting standards or interpretations.
+  - **AccountingInterpretation** — An interpretation issued as part of the mandatory or optional accounting requirements.
+  - **IFRSStandard** — International Financial Reporting Standards referenced as applied in the preparation of statements.
+  - **ImpairmentOfAssets** — The impairment framework referenced for testing equity investments and goodwill when objective evidence exists.
+  - **InternationalAccountingStandard** — International Accounting Standards (IAS) referenced as part of the IFRS framework.
+  - **InternationalAccountingStandards** — International accounting standards (IAS) referenced for consolidation and impairment rules.
+  - **InternationalFinancialReportingStandard** — International Financial Reporting Standards (IFRS) referenced as the basis for consolidated financial statements.
+  - **InternationalFinancialReportingStandards** — International standards for financial reporting, including IFRS as adopted and applied for consolidation and measurement.
+- **AccountingStandardsAuthority** — An authority referenced as having a board where a representative of the State is delegated.
+- **AccountingStandardsFramework** — Framework of applicable accounting standards (IFRS as adopted by the EU) used for consolidated financial statements.
+- **ACPR** — A regulatory authority referenced for climate stress tests.
+- **AdministrativeBodyCompensation** — Compensation paid to members of administrative bodies disclosed in the notes.
+- **AdministrativeBodyMember** — A member of administrative bodies referenced for compensation disclosures.
+- **AdministrativeBodyMemberCompensation** — Disclosure category for compensation paid to members of administrative bodies.
+- **AdministrativeFile** — The administrative file compiled for selected candidates as part of recruitment.
+- **AdministrativeProcedure** — An administrative process where personal data may be disclosed to authorities.
+- **AdviceServices** — Support services providing advice to entrepreneurs.
+- **AffiliateCompany** — An investee over which the group has significant influence, typically accounted for using the equity method.
+  - **EquityAffiliate** — An affiliate accounted for using the equity method, with the investor’s share of net profit presented accordingly.
+- **AgencyForEcologicalTransition** — The agency responsible for ecological transition implementation referenced in agreements.
+- **Agreement** — Inter-institutional agreements used to implement missions and programmes (e.g., PIA, aid schemes, deployment agreements).
+  - **AmendmentToAgreement** — Amendments to existing agreements referenced throughout governance decisions.
+  - **FrameworkAgreement** — Framework agreements referenced for long-term management of major projects.
+  - **ServiceAgreement** — Service agreements concluded between entities for management or support activities.
+- **AllocationAndImpactReport** — Annual reporting package describing allocation of proceeds and environmental impact metrics for eligible green loans categories.
+- **ALMCommittee** — An asset-liability management committee receiving interest rate and currency risk measurements.
+- **AML_CFT** — Anti-money laundering and combating the financing of terrorism training referenced in non-financial reporting.
+- **Annex** — An annex section referenced for structured regulatory content (e.g., Annex I and II headings).
+- **AnnualReport** — A published report covering a specific financial year, including consolidated and separate financial statements and related notes.
+  - **ConsolidatedFinancialStatements** — Financial statements prepared on a consolidated basis for the group, including notes on accounting standards, consolidation, and financial statement items.
+    - **BalanceSheet** — A consolidated statement presenting assets and liabilities at a reporting date.
+      - **ConsolidatedBalanceSheet** — Balance sheet presented within consolidated financial statements.
+      - **CurrentAssets** — Assets expected to be realized within the operating cycle (current assets).
+        - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+        - **OtherReceivables** — Receivables other than cash and cash equivalents.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+          - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+          - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+      - **FinancialAssets** — Assets classified as financial assets, including equity investments, portfolio securities, and loans.
+        - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+        - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+          - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+          - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+          - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+            - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+          - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+            - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+              - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+            - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+            - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+            - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+            - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+            - **GrowthFund** — A fund category focused on growth-stage investments.
+              - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+              - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+            - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+            - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+            - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+            - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+              - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+              - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+            - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+            - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+            - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+            - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+            - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+            - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+            - **PSIMFund** — PSIM Fund referenced in equity investments.
+            - **RegionalFunds** — Regional funds referenced in the organizational chart.
+            - **SeedFund** — A fund category focused on seed-stage investments.
+              - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+              - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+              - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+            - **VentureCapitalFund** — A venture capital fund.
+            - **VentureFund** — A venture-oriented fund category referenced in the document.
+        - **Loans** — A financing product category used to finance businesses.
+        - **LongTermInvestmentsInPortfolioSecurities** — Long-term holdings of portfolio securities intended for portfolio activity.
+        - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+          - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+          - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+          - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+            - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+              - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+              - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+        - **Receivables** — Amounts receivable, including other receivables and related receivables.
+      - **Liabilities** — The liabilities section of financial statements, including total liabilities and their breakdown.
+        - **DeferredIncome** — Income recognized over time (e.g., deferred income such as guarantee commissions to be spread).
+          - **GuaranteeCommissionToBeSpread** — Bpifrance guarantee commissions to be spread included in deferred income.
+        - **FinancialDebts** — Debts issued by the group, including financial debts to credit institutions and miscellaneous financial debts.
+          - **FinancialLoansAndFinancialDebts** — Subcategory covering financial loans and related financial debts.
+          - **MiscellaneousFinancialDebts** — Financial debts other than those specifically classified as loans to credit institutions.
+        - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+          - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+        - **OperatingDebts** — Debt obligations arising from operations, including trade, tax/social security, and other debts.
+          - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+            - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+          - **OtherDebts** — Other operational debt obligations not classified as trade payables or tax/social security debts.
+            - **BpifranceAccruedExpenses** — Bpifrance accrued expenses referenced in other debts.
+            - **BpifranceParticipationsAllocation** — Allocation payable to Bpifrance Participations referenced in other debts.
+            - **InnovationAndIndustryFundAllocation** — Allocation payable to the Innovation and Industry Fund referenced in other debts.
+            - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+            - **StateAccruedExpenses** — State accrued expenses referenced in other debts.
+          - **SecuritiesRemainingToBeReleased** — Securities remaining to be released to funds referenced in debts on fixed assets and related accounts.
+          - **SharesToBeReleased** — Shares remaining to be released referenced in debts on fixed assets and related accounts.
+          - **TaxAndSocialSecurityDebts** — Debts related to taxes and social security contributions.
+            - **SocialSecurityDebts** — Social security debts referenced in tax and social security debts note.
+            - **TaxDebts** — Tax debts referenced in tax and social security debts note.
+          - **TradePayables** — Payables to suppliers and related accounts.
+            - **TradeDebts** — Trade debts referenced in trade debts and related accounts note.
+          - **TradePayablesAndRelatedAccounts** — Trade payables and related accounts.
+        - **ShareholdersEquity** — Equity items presented within the liabilities/equity section, including capital, retained earnings, and current-year profit or loss.
+          - **Capital** — Subscribed capital component of shareholders’ equity.
+          - **MinorityInterest** — Portion of equity attributable to interests other than the group’s share.
+          - **NonRecyclableEquityItem** — Equity items that cannot be reclassified (non-recyclable) to profit or loss.
+          - **ProfitOrLoss** — The result of the financial year included in shareholders’ equity and income statement.
+          - **ProfitOrLossForFinancialYear** — Result for the financial year included in shareholders’ equity.
+          - **RecyclableEquityItem** — Equity items that can be reclassified (recyclable) to profit or loss.
+          - **RetainedEarnings** — Accumulated earnings component of shareholders’ equity.
+      - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **CashFlowStatement** — A financial statement detailing cash flows and their components such as operating, investing, financing, and exchange-rate impacts.
+      - **FinancingActivities** — Cash flows resulting from changes in the financial structure, including equity and long-term borrowings.
+        - **NetCashFlowFromFinancingOperations** — Net cash flow from financing operations.
+      - **InvestingActivities** — Cash flows related to acquisition and disposal of investments and other investment operations.
+        - **NetCashFlowFromInvestingActivities** — Net cash flow from investing activities.
+      - **NetCash** — The net cash concept corresponding to cash and cash equivalents.
+      - **OperatingActivities** — Cash flows generated by the business’s revenue-generating activities.
+        - **NetCashFlowFromOperatingActivities** — Net cash flow from operating activities computed using the indirect method.
+        - **WorkingCapitalRequirements** — The net working capital requirement changes used to compute cash flow from operating activities.
+    - **ConsolidatedBalanceSheet** — Balance sheet presented within consolidated financial statements.
+    - **ConsolidatedIncomeStatement** — Income statement presented within consolidated financial statements.
+    - **ConsolidatedProfitAndLossStatement** — Consolidated profit and loss statement including net banking income and net income.
+    - **ConsolidationMethod** — The accounting approach used to consolidate entities depending on the nature of control (full consolidation vs equity method).
+      - **EquityConsolidation** — A consolidation approach using the equity method for joint ventures and equity-accounted companies.
+      - **EquityMethod** — A method that replaces the investment’s carrying amount with the investor’s share of investee equity and recognizes the investor’s share of profit or loss.
+        - **EquityAccountedInvestment** — An investment whose carrying value is adjusted for the investor’s share of equity and net profit or loss.
+        - **EquityConsolidationAdjustments** — Adjustments made when applying the equity method, including restatements and eliminations.
+        - **InvestmentInCompanyAccountedForUsingEquityMethod** — An equity investment accounted for using the equity method, including goodwill and impairment testing.
+      - **EquityMethodConsolidation** — Consolidation method used for joint ventures and significant influence holdings.
+      - **FullConsolidation** — A consolidation method used for entities over which complete control is exercised.
+      - **FullConsolidationMethod** — A consolidation method used when complete control is exercised over an entity.
+    - **ConsolidationPrinciple** — A rule describing how entities are included in consolidation based on control, joint control, or significant influence.
+      - **Control** — The condition under which the group is exposed to variable returns and can direct relevant activities to influence those returns.
+      - **JointControl** — Contractual sharing of control over a partnership requiring unanimous consent for relevant activities.
+      - **SignificantInfluence** — The power to participate in decisions regarding financial and operating policies of an investee without controlling or jointly controlling it.
+    - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+      - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+      - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+        - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+          - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+    - **EquityMethodInvestments** — Investments accounted for using the equity method within consolidation.
+      - **InvestmentsAccountedForUsingEquityMethod** — Specific investments treated under the equity method.
+    - **HalfYearConsolidatedFinancialStatements** — Condensed half-year consolidated financial statements prepared for the group.
+    - **NotesToFinancialStatements** — Supplementary disclosures accompanying financial statements, including accounting principles, events, and fair value information.
+      - **AccountingPrinciplesAndMethods** — Disclosures describing the accounting principles, valuation methods, and regulatory framework used to prepare the statements.
+        - **IFRSICDecision** — An IFRS Interpretations Committee decision applied to post-employment benefits.
+        - **IFRSStandards** — International Financial Reporting Standards applied in preparing the consolidated financial statements.
+        - **InterimFinancialReporting** — Interim financial reporting framework used for half-year condensed statements.
+        - **RegulatoryFramework** — The regulatory and recommendation context governing the presentation and preparation of consolidated financial statements.
+      - **ActivitiesOnBehalfOfThirdParties** — Operations managed on behalf of third parties (e.g., the State) not appearing on the balance sheet of the public company.
+        - **FrenchTechSovereignty** — Activity on behalf of third parties involving equity interests in companies developing future technologies.
+        - **FrenchTechSovereigntyActivity** — French Tech Sovereignty activity representing equity interests in companies developing future technologies on behalf of the French State.
+        - **SATTActivity** — SATT activity representing equity interests in Technology Transfer Accelerator Companies on behalf of the French State.
+      - **ActivitiesOnBehalfOfThirdPartiesNote** — Note section describing activities on behalf of third parties.
+      - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+      - **CashAndCashEquivalentsNote** — Note section detailing cash and cash equivalents.
+      - **CompensationPaidToAdministrativeBodiesNote** — Note section detailing compensation paid to members of administrative bodies.
+      - **CompensationPaidToMembersOfAdministrativeBodies** — Note category for compensation paid to members of administrative bodies.
+      - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+        - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+        - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+          - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+            - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+            - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+              - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+              - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+              - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+            - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+      - **CorporateIncomeTaxNote** — Note section dealing with corporate income tax.
+      - **DebtsOnFixedAssetsAndRelatedAccountsNote** — Note section detailing debts on fixed assets and related accounts.
+      - **DeferredIncomeNote** — Note section dealing with deferred income.
+      - **DividendsNote** — Note section dealing with dividends.
+      - **DividendsPaid** — Disclosures about dividends distributed during the period.
+      - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+        - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+        - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+        - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+          - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+        - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+          - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+            - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+          - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+          - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+          - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+          - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+          - **GrowthFund** — A fund category focused on growth-stage investments.
+            - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+            - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+          - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+          - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+          - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+          - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+          - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+          - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+          - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+          - **PSIMFund** — PSIM Fund referenced in equity investments.
+          - **RegionalFunds** — Regional funds referenced in the organizational chart.
+          - **SeedFund** — A fund category focused on seed-stage investments.
+            - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+            - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+            - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+          - **VentureCapitalFund** — A venture capital fund.
+          - **VentureFund** — A venture-oriented fund category referenced in the document.
+      - **EquityInvestmentsNote** — Note section detailing equity investments.
+      - **EventsDuringThePeriod** — Disclosures about significant events occurring during the reporting period.
+      - **ExtraordinaryExpensesNote** — Note section dealing with extraordinary expenses.
+      - **ExtraordinaryIncomeNote** — Note section dealing with extraordinary income.
+      - **FairValueInformation** — Disclosures about fair value measurement, including valuation levels and sensitivity for financial instruments.
+      - **FinancialLoansAndFinancialDebtsNote** — Note category detailing financial loans and financial debts.
+      - **InterestAndSimilarExpensesNote** — Note section dealing with interest and similar expenses.
+      - **InterestAndSimilarIncomeNote** — Note section dealing with interest and similar income.
+      - **Loans** — A financing product category used to finance businesses.
+      - **LoansNote** — Note section detailing loans.
+      - **LongTermInvestmentsInPortfolioSecuritiesNote** — Note section detailing long-term investments in portfolio securities.
+      - **OffBalanceSheetCommitments** — Commitments given and received disclosed outside the balance sheet.
+        - **Commitment** — A generic commitment disclosed off-balance sheet.
+        - **CommitmentsGiven** — Off-balance-sheet commitments given by the entity.
+          - **FinancingCommitments** — Financing commitments given or received.
+          - **GuaranteeCommitments** — Guarantee commitments given or received.
+          - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+        - **CommitmentsReceived** — Off-balance-sheet commitments received by the entity.
+        - **FinancingCommitment** — Financing commitments given or received (e.g., commitments to credit institutions/customers).
+        - **FinancingCommitments** — Financing commitments given or received.
+        - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+          - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+            - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+            - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+              - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+            - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+            - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+          - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+        - **GuaranteeCommitments** — Guarantee commitments given or received.
+        - **OffBalanceSheetCommitmentProgram** — General category for off-balance-sheet commitment programs such as financing, guarantees, and securities commitments.
+        - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+          - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+          - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+        - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+      - **OffBalanceSheetCommitmentsNote** — Note section detailing off-balance sheet commitments.
+      - **OperatingExpensesNote** — Note section dealing with operating expenses.
+      - **OtherDebtsNote** — Note section detailing other debts.
+      - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+        - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+          - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+        - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+        - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+      - **OtherFinancialAssetsNote** — Note section detailing other financial assets.
+      - **OtherReceivables** — Receivables other than cash and cash equivalents.
+        - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+          - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+          - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+        - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+        - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+        - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+        - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+      - **OtherReceivablesNote** — Note section detailing other receivables.
+      - **PresentationAndAssessmentRules** — Note describing presentation and assessment rules for the financial statements.
+      - **RelatedPartiesInformation** — Note category for information on related parties and related transactions.
+      - **RelatedPartiesInformationNote** — Note section providing information on related parties.
+      - **Resources** — Disclosures about the group’s resources such as loans, financing commitments, guarantees, and related business activity breakdowns.
+      - **ShareholdersEquityNote** — Note category detailing shareholders’ equity movements and components.
+      - **SignificantEvents** — Note section describing significant events and post-balance-sheet events.
+      - **SignificantEventsAndPostBalanceSheetEvents** — Note covering significant events during the year and post-balance-sheet events.
+      - **TableOfSubsidiariesAndInvestments** — Note category providing a table of subsidiaries and investments.
+      - **TableOfSubsidiariesAndInvestmentsNote** — Note section providing a table of subsidiaries and investments.
+      - **TaxAndSocialSecurityDebtsNote** — Note section detailing tax and social security debts.
+      - **TradeDebtsAndRelatedAccounts** — Note category for trade debts and related accounts.
+      - **TradeDebtsAndRelatedAccountsNote** — Note section detailing trade debts and related accounts.
+    - **ProfitAndLossStatement** — A consolidated statement presenting income and expenses and resulting net income.
+    - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **PublishableIncomeStatement** — A publishable income statement (income statement) section of financial reporting.
+      - **CorporateIncomeTaxes** — Corporate income tax line item.
+      - **CurrentIncomeBeforeTaxes** — Income before taxes line item.
+      - **ExceptionalProfitOrLoss** — Exceptional profit or loss derived from extraordinary income and expenses.
+      - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+        - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+      - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+        - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+        - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+        - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+      - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+        - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+      - **FinancialIncome** — Income from financial activities such as dividends and interest.
+        - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+        - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+        - **InterestAndSimilarIncome** — Interest and similar income line item.
+          - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+          - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+          - **LoanInterest** — Interest income arising from loans.
+          - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+      - **FinancialResult** — Net financial result after financial income and financial expenses.
+      - **FinancialYearEarnings** — Earnings for the financial year after tax.
+      - **NetOperatingIncome** — Net operating income derived from operating earnings and operating expenses.
+      - **OperatingEarnings** — Operating earnings line item in the income statement.
+      - **OperatingExpenses** — Operating expenses line item in the income statement.
+        - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+        - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+        - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+    - **ScopeOfConsolidation** — Section/note describing the scope of consolidation.
+    - **StatementOfCashFlows** — Statement of cash flows describing flows related to transactions and taxes paid.
+  - **FinancialStatementNote** — A structured section of notes accompanying the financial statements (e.g., significant events, accounting standards, balance sheet items, income statement items).
+    - **SegmentReporting** — Disclosure of contributions within the group by sector/segment.
+  - **SeparateFinancialStatements** — Financial statements prepared for the parent entity only, including publishable balance sheet and income statement and related notes.
+- **AntiCorruption** — Anti-corruption training referenced in non-financial reporting.
+- **AntiCorruptionPurpose** — A purpose for processing personal data to fight corruption.
+- **AntiMoneyLaunderingCompliance** — A compliance domain referenced as part of legal texts governing responsible investment policy.
+- **AntiMoneyLaunderingPurpose** — A purpose for processing personal data to fight money laundering.
+- **ApplicableRegulation** — The set of applicable regulations referenced for processing personal data, including GDPR and national provisions.
+- **ArbitralAuthority** — An arbitral authority that may receive personal data under legal procedures.
+- **ArticlesOfAssociation** — The company’s governing charter, including the company object and mission provisions.
+- **AuditedData** — Financial figures derived from internal approved sources and accounts, noted as not audited in the press release.
+- **BankFinancing** — Financing provided by banks that may be supported by guarantees and insurance.
+- **BankingInstitution** — An institution referenced as part of interdependent links that can fail and create systemic effects.
+- **BiodiversityClub** — A business club referenced as supporting positive biodiversity initiatives.
+- **BiodiversityConservationGoal** — International biodiversity conservation objectives used as reference points for alignment and measurement.
+- **BiodiversityConservationPolicy** — A policy held by companies with commitments and objectives for biodiversity conservation.
+- **BiodiversityFootprint** — A measurement of biodiversity impact/footprint of portfolio companies or funds.
+- **BiodiversityProgram** — Diag Biodiversité program involving expert visits, biodiversity materiality analysis, and action levers for implementation.
+- **BiodiversityProtectionProject** — Projects and expenditures aimed at protecting and restoring biodiversity.
+- **BiodiversityScore** — A scoring methodology (e.g., global biodiversity score) used to measure biodiversity footprint.
+- **BMTNProgramme** — Medium-term refinancing programme referenced alongside EMTN in outstanding amounts.
+- **Board** — A governance body where the investment branch may seek seats and provide oversight and engagement.
+  - **BoardOfDirectors** — The board that determines corporate matters and updates drafts/resolutions for general meetings.
+    - **Director** — Member roles serving on the board of directors, including directors representing the State.
+- **BoardOfDirectorsManagementReport** — Management report of the board of directors referenced in audit responsibilities.
+- **BoardOfDirectorsReport** — A management report to the general meeting prepared/updated by the board, including corporate governance information.
+- **BondIssueProgramme** — A programme framework for issuing debt securities (e.g., EMTN/NEU MTN/CP programmes).
+- **BpifranceGroupEntity** — An entity within the Bpifrance group that may receive personal data for commercial prospecting or legal/regulatory obligations.
+- **BpifranceNetwork** — Bpifrance network referenced as having an organisational chart in the appendix.
+- **Building** — Real-estate asset financed under eligible green building loans, evaluated for environmental norms and renovation programs.
+- **BusinessCreationBusinessLine** — Mission and business line supporting business creation through entrepreneurship support networks.
+  - **CreationActivity** — Creation activity including disbursement of unsecured loans for business creation.
+- **CarbonFootprint** — A carbon footprint attributed to the investment portfolio and used for trajectory and reporting.
+- **CarbonIntensity** — A metric measuring carbon intensity of financing, investment, and insurance activities.
+- **CarbonNeutralityObjective** — An objective of carbon neutrality referenced for alignment with climate goals.
+- **CashAndCashEquivalent** — Cash and cash equivalents, including bank accounts and current accounts.
+  - **BankAccount** — A bank account included in cash and cash equivalents.
+  - **CurrentAccount** — A current account included in cash and cash equivalents (e.g., Bpifrance current account, State current accounts).
+    - **StateCurrentAccountInnovationCapital** — Expendable cash from the Innovation and Industry Fund held in the State current account via Agence France Trésor Innovation.
+- **CentralBank** — A monetary authority referenced as supplying additional liquidity to markets and banks.
+  - **EuropeanCentralBank** — European Central Bank referenced as a source of refinancing via monetary policy programmes.
+- **CEO** — Chief executive officer responsible for certifying information in the amendment.
+- **ChairmanAndChiefExecutiveOfficer** — A combined role of chairman and chief executive officer for the entity.
+- **CinemaAndCulturalIndustriesInstitute** — An institute referenced as a partner in deploying cinema/audio-visual and video games accelerators.
+  - **NationalCentreForCinemaAndAnimatedImage** — The national centre referenced as a partner in accelerator deployment agreements.
+- **ClaimsManagement** — A processing purpose covering management of possible disputes and claims.
+- **CleanTransportationProject** — Projects for clean transportation and acquisition of clean vehicles/equipment.
+- **ClearingAgent** — A financial intermediary whose interruption or malfunction can create operational risk.
+- **ClimateAndEnvironmentalRiskCommittee** — Dedicated governance and advisory committee overseeing climate and environmental risk.
+- **ClimateKit** — A communication and guidance kit on climate and ESG good practices distributed to invested funds and management companies.
+- **ClimateMaturityIndex** — Index used to evaluate exposure and maturity of companies regarding green transition challenges.
+- **ClimatePlan** — Climate plan described as the organization’s strategy for ecological and energy transition and as aligned with green financing.
+- **ClimateRiskManagement** — Internal tool used to assess physical climate risks during credit granting.
+- **ClimateRiskManagementTool** — Internal tool used during credit granting to assess physical climate risks under multiple hazards, scenarios, and time horizons.
+- **CollectionActions** — A group of processing purposes related to collecting personal data for compliance and due diligence.
+  - **CorruptionAndInfluencePrevention** — Processing aimed at detecting and preventing corruption and influence peddling.
+  - **MoneyLaunderingAndTerroristFinancingDetection** — Processing aimed at detecting and preventing money laundering and terrorist financing.
+  - **ProspectIdentification** — Processing to identify prospects as part of pre-contractual and relationship management.
+- **CommercialProspecting** — Activities related to receiving commercial prospecting communications and related processing.
+- **CommercialProspectingPurpose** — A purpose for processing personal data for commercial prospecting and newsletters.
+  - **NewsletterSending** — A process of sending newsletters to individuals under the policy.
+  - **ProfilingForCommercialProspecting** — Profiling related to commercial prospecting referenced in the context of objections.
+- **CommercialRelationship** — The commercial relationship between the controller and customers/prospects, including management and reporting.
+  - **CustomerRelationshipManagement** — Processing activities for managing and developing relationships with customers.
+- **CommissionNationaleDeLInformatiqueEtDesLibertes** — A national data protection authority where individuals may lodge a complaint.
+- **CompensationPaidToAdministrativeBodiesMembers** — Compensation paid to members of administrative bodies.
+- **CompetentAuthority** — A regulatory body competent to approve or receive filings under applicable securities regulations.
+- **ComplaintAuthority** — A regulatory body where data subjects may lodge complaints regarding data protection matters.
+- **ComplaintBody** — An authority where individuals can lodge complaints regarding data protection.
+  - **CNIL** — A French data protection supervisory authority referenced as a place to lodge complaints.
+- **ComplaintManagement** — A process for handling complaints under applicable regulatory frameworks.
+- **ComplaintsAndLitigationManagement** — Processing activities for managing complaints and litigation and defending rights in court.
+- **ComplianceAndPermanentControlDepartment** — A department responsible for steering procedures and controls for non-compliance risk management.
+  - **OperationalRiskDepartment** — A department within compliance and permanent control responsible for organisation and functioning of operational risk and non-compliance control.
+- **ComplianceDepartment** — Organizational unit ensuring compliance with applicable rules, eligibility criteria, and governance requirements.
+- **ComplianceWithLegalRegulatoryTaxProvision** — Processing to comply with other legal, regulatory, or tax provisions applicable to the organization.
+- **ConnectedSpace** — A user-accessible connected environment for which identification and authentication data are processed.
+- **ConnectionData** — Category of personal data related to identification/authentication and online activity (e.g., IP address, logs).
+- **Consent** — A legal basis for processing where the candidate provides permission for certain communications.
+- **ConsolidatedGroup** — The group whose consolidated financial statements include entities controlled or significantly influenced.
+- **Contract** — A legal agreement whose lifecycle drives parts of personal data processing (pre-contractual, execution, management, termination).
+  - **ContractExecution** — The execution and management of the life of a contract, including disbursement and repayment.
+  - **ContractLifecycleManagement** — Overall management of the contract lifecycle including execution and follow-up.
+    - **CommercialRelationshipManagement** — Management of the commercial relationship between the organization and prospects.
+  - **PreContractualPhase** — The phase before a contract is concluded, including reception, study, eligibility checks, and decision-making.
+- **ContractPerformanceLegalBasis** — A legal basis for processing personal data based on performance of a contract.
+- **ControversialWeapons** — A category referenced in legal compliance exclusions for controversial weapons.
+- **CorporateCustomer** — A customer entity receiving guarantees for counterparty risk related to long-term contracts.
+- **CorporateGovernanceRegime** — The applicable corporate governance framework referenced for compliance.
+- **CorporateGovernanceReport** — A report section describing corporate governance information for the issuer.
+  - **CorporateGovernanceInformation** — Information on directors and governance matters included within the corporate governance report.
+- **CounterTerroristFinancingPurpose** — A purpose for processing personal data to fight terrorist financing.
+- **CourtOfAuditors** — The Court of Auditors referenced as an institution where roles were held.
+- **CourtProceeding** — Legal proceedings referenced for defending rights in court.
+- **CoverLetter** — A cover letter document that may contain personal data used in recruitment.
+- **CreditCommittee** — A committee of the group receiving credit-risk files for decision.
+- **CreditInsuranceProduct** — An insurance product type referenced as part of the contexts where personal data may be shared.
+- **CreditRiskBucket** — A classification bucket used to allocate exposures based on credit risk increase and expected losses.
+  - **NonPerformingExposure** — An exposure classified in the highest risk bucket (bucket 3) as non-performing.
+  - **PerformingExposure** — An exposure classified in performing buckets (bucket 1 or 2) based on criteria.
+- **CreditRiskCommittee** — A committee receiving credit-risk files for decision.
+- **CreditRiskDepartment** — A department responsible for counter-analysis of credit-risk files and presenting them to committees.
+- **CreditRiskScoreModel** — A model creation and improvement activity for assessing credit and counterparty risk.
+- **CrossReferenceTable** — A table mapping headings between the universal registration document and its amendment.
+- **CSR** — Corporate social responsibility approach referenced as part of ESG integration and monitoring.
+- **CSRClause** — A contractual clause formalizing ESG progress expectations in shareholder agreements.
+- **CurrentAndDeferredTaxes** — The combined tax accounting treatment covering current and deferred taxes.
+- **CurrentNonCurrentClassification** — The classification of assets and liabilities as current or non-current based on expected settlement or sale within twelve months.
+- **CurriculumVitae** — A CV document that may contain personal data used in recruitment.
+- **CustodianBank** — A financial intermediary used in executing or facilitating financial instrument transactions.
+- **DataController** — The entity that determines the purposes and means of processing personal data in the recruitment context.
+  - **Company** — A general business entity that may be invested in, assessed for ESG risks, and engaged with through governance and questionnaires.
+    - **ControlledCompany** — A company exclusively controlled and therefore fully consolidated in the group accounts.
+    - **Counterparty** — An entity that may be unable to meet its financial obligations, referenced in credit risk discussions.
+    - **EquityAffiliate** — An affiliate accounted for using the equity method, with the investor’s share of net profit presented accordingly.
+    - **EquityConsolidatedCompany** — Company whose net profit/loss is included in the group’s income statement via the equity method (equity-consolidated).
+      - **Affiliate** — An entity over which the group has significant influence, typically accounted for using the equity method.
+      - **EquityAffiliate** — An affiliate accounted for using the equity method, with the investor’s share of net profit presented accordingly.
+      - **EquityMethodInvestee** — A company accounted for using the equity method within consolidated financial statements.
+      - **Partnership** — A contractual arrangement subject to joint control, accounted for using the equity method under IFRS 11.
+        - **JointVenture** — A partnership arrangement where control is contractually shared and decisions require unanimous consent.
+      - **Subsidiary** — An entity controlled by the group, consolidated using full consolidation when complete control is exercised.
+        - **BpifranceAssuranceExport** — A subsidiary managing public export guarantees on behalf of and under control of the French State.
+        - **BpifranceInvestissement** — An entity within the group associated with equity activity and investment management.
+        - **BpifranceParticipations** — An entity within the group referenced as participating in accelerator deployments and support activities.
+        - **BpifranceRegions** — A subsidiary operating financing activities within the group.
+        - **ForeignSubsidiary** — A subsidiary located outside France (not included in the detailed paragraph for major holdings).
+        - **FrenchSubsidiary** — A subsidiary located in France (not included in the detailed paragraph for major holdings).
+    - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+      - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+    - **Fintech** — A company meeting conditions of being a start-up/fast-growing SME with innovative technology/business model and offering financial products/services.
+      - **FintechWithBankingOrInsuranceAuthorisations** — A fintech that holds or is developing banking or insurance authorisations, enabling exceptional investment eligibility.
+    - **FrenchCompany** — A company located in France referenced as the group’s client base for scenarios and exposures.
+    - **IntermediateSizedEnterprise** — Intermediate-sized enterprises supported in creation, innovation, and development phases.
+    - **JointVenture** — A partnership arrangement where control is contractually shared and decisions require unanimous consent.
+    - **MidSizedBusiness** — A company category referenced alongside SMEs as a concentration area for customer loans and receivables.
+    - **PublicInterestCompany** — A company category defined by governance and market admission criteria for non-financial reporting.
+    - **RealEstateStructure** — A real estate structure referenced as part of the 'Other' business activities.
+    - **SmallAndMediumSizedEnterprise** — A company category referenced as a concentration area for customer loans and as recipients of equity investments.
+    - **StartUp** — Start-ups supported as part of the Investing in the Future Programme financing of innovation.
+    - **VerySmallEnterprise** — Very small enterprises supported through public interest missions and financing/guarantee tools.
+- **DataProcessingActivity** — An activity involving collection, processing, retention, disclosure, and management of personal data.
+  - **DisputeManagement** — Processing to manage disputes, including defense of rights in court and related dispute data handling.
+  - **EventInvitation** — Processing undertaken to invite a public or media figure to an event organized by or for the organization.
+  - **PersonalDataCollection** — Collection of personal data directly from the data subject or indirectly from third parties/sources.
+    - **DirectCollection** — Collection of personal data directly from the data subject.
+    - **IndirectCollection** — Collection of personal data indirectly via third-party sources such as publications, databases, directories, or press/social media.
+  - **PersonalDataDisclosure** — Disclosure/transfer of personal data to internal group entities and, where applicable, outside the European Union.
+    - **InternationalDataTransfer** — Transfer of personal data outside the European Union under GDPR adequacy decisions or derogations/appropriate safeguards.
+    - **IntraGroupDisclosure** — Disclosure of personal data to other entities within the same corporate group to meet legal/regulatory obligations or deploy systems.
+  - **PersonalDataRequest** — A request to exercise rights from data subjects, including management of access/right-of-exercise handling.
+  - **RelationshipManagement** — Processing to identify, exchange, and manage the business relationship with a public or media personality.
+- **DataProcessor** — An entity that processes personal data on behalf of a data controller (implied by outsourcing/service providers).
+  - **ServiceProvider** — A third party service provider or subcontractor that processes personal data on behalf of the group for recruitment-related services.
+    - **AccountingDelegate** — An entity to whom accounting management of funds is delegated.
+    - **CreditInstitution** — A banking institution providing financing activities and subject to banking regulations and prudential supervision.
+      - **Bank** — A credit institution referenced as providing personal data and as a potential support customer for solutions.
+      - **EquityFundingInstitution** — An institution providing equity funding referenced in guarantee coverage.
+    - **Depositary** — An entity responsible for missions under applicable laws and regulations for the vehicle in which a person subscribed.
+    - **HostingService** — A service responsible for hosting and maintaining a platform.
+    - **ITServiceProvider** — A service provider providing IT solutions, including those integrating databases used for indirect collection.
+    - **MaintenanceService** — A service providing maintenance for a platform.
+    - **RecruitmentOfferPublishingServiceProvider** — A service provider that publishes recruitment offers and may process CVs and related personal data.
+    - **TechnicalSupportService** — A service providing technical support for a platform.
+- **DataProtectionOfficer** — An officer responsible for data protection within the organization/group and contact point for exercising rights.
+- **DataSubject** — An individual whose personal data is processed in the recruitment context.
+  - **Agent** — A natural person acting as an agent of a supplier whose personal data is processed.
+  - **Employee** — A person acting on behalf of a public figure or media personality and involved in the connection with the organization.
+  - **LegalRepresentative** — A natural person acting as a legal representative of a supplier whose personal data is processed.
+  - **MediaPersonality** — A media-related figure (e.g., journalist, author, photographer) whose data is processed in the context of public affairs activities.
+  - **NaturalPerson** — A natural person whose data is necessary for implementing the described processing purposes.
+  - **PointOfContact** — A person designated as a contact for communications and coordination regarding financing/support.
+  - **PublicFigure** — A public and/or political figure whose data is processed in the context of public affairs activities.
+  - **SubcontractorRepresentative** — A natural person acting as a representative/agent of a subcontractor whose personal data is processed.
+  - **SupplierRepresentative** — A natural person acting as a legal representative or agent of a supplier whose personal data is processed.
+  - **User** — A natural person who accesses a platform and whose identity and access are managed.
+- **DataSubjectRights** — Rights available to data subjects under applicable regulations, including access, rectification, deletion, portability, limitation, objection, and post-mortem instructions.
+- **DataTransferOutsideEuropeanUnion** — A processing context involving transfer of personal data outside the European Union under GDPR mechanisms.
+- **DebtOnFixedAssetsAndRelatedAccounts** — Debts on fixed assets and related accounts.
+  - **SecuritiesRemainingToBeReleased** — Securities remaining to be released to funds referenced in debts on fixed assets and related accounts.
+- **DebtPortfolio** — A portfolio of debt instruments whose value can be reduced by adverse credit-quality impacts.
+- **DecisionSupportTool** — A tool used to support credit decisions through comprehensive analysis.
+- **Decree** — A regulatory instrument referenced for application of non-financial transparency requirements.
+- **DefinedBenefitPlan** — Employee benefit plan generating actuarial gains and losses recognized in equity when applicable.
+  - **ActuarialGainLoss** — Actuarial gains and losses arising from defined benefit plans.
+- **DeputyCEO** — Deputy chief executive officer responsible for certifying information in the amendment.
+- **DerecognitionEvent** — Events leading to derecognition of financial assets or liabilities (expiration of rights or extinguishment of obligations).
+- **DerecognitionOfFinancialAssets** — Accounting treatment for removing financial assets when contractual rights expire or risks/rewards are transferred.
+- **DerecognitionOfFinancialLiabilities** — Accounting treatment for removing financial liabilities when obligations are extinguished, cancelled, or expire.
+- **DiligencePack** — A pre-investment documentation package including an ESG questionnaire for fund-of-funds management companies.
+- **Dispute** — A complaint or dispute arising from recruitment operations that may require retention of personal data until remedies expire.
+- **DivestmentTransaction** — A transaction involving completion of divestment, including analysis of exit opportunities and selection of buyers.
+- **DividendDistribution** — Distribution of dividends referenced in equity changes and dividend paid.
+  - **Dividend** — A distribution of profits to shareholders referenced in dividends paid disclosures.
+- **DividendDistributionPolicy** — The policy and decisions regarding distribution of dividends and advance payments.
+- **Donor** — An entity providing funding/support and receiving statistics/reporting where appropriate.
+- **DoNoSignificantHarmCriteria** — Criteria requiring no significant harm to environmental objectives as referenced for eligible renewable energy loans.
+- **DueDiligence** — A compliance process including checks related to international sanctions, embargoes, and other regulatory requirements.
+  - **AntiCorruptionCompliance** — A compliance domain referenced as part of legal texts governing responsible investment policy.
+  - **AntiMoneyLaundering** — Compliance activities aimed at preventing money laundering.
+  - **CounterTerroristFinancing** — Compliance activities aimed at countering the financing of terrorism.
+  - **ESGDueDiligence** — Due diligence specifically focused on identifying priority ESG issues and risks to justify investment decisions.
+  - **ExternalAudit** — External third-party assurance/audit certifying allocation of proceeds and compliance of allocation reporting.
+  - **KnowYourSupplier** — A compliance program for verifying and assessing suppliers (KYS).
+  - **SanctionsAndEmbargoesCompliance** — Due diligence specifically related to international sanctions and embargoes.
+- **DueDiligenceProcess** — A compliance and assessment process performed for transactions and funds (e.g., legal, financial, tax, strategic, ESG, KYC).
+  - **AntiCorruptionProcess** — Due diligence and checks to counter corruption.
+  - **AntiMoneyLaunderingProcess** — Due diligence and checks to counter money laundering.
+  - **CounterTerrorismFinancingProcess** — Due diligence and checks to counter financing of terrorism.
+  - **KYCProcess** — Know Your Customer due diligence performed as part of regulatory checks.
+  - **SanctionsAndEmbargoDueDiligenceProcess** — Due diligence and checks related to international sanctions and embargoes.
+- **EBA** — A regulatory body referenced for sustainability roadmap guidance on climate risk management.
+- **ECB** — A regulatory body referenced for climate risk management guidance and stress tests.
+- **EcosystemServices** — Services provided by biodiversity that are referenced as relevant to business risks.
+- **ElectricitySupplyContract** — A long-term contract for electricity supplies using renewable energies.
+- **ElectricVehicle** — Vehicle type required for eligible clean transportation and equipment loans.
+- **ElectronicSignature** — A signature mechanism referenced for managing electronic signature processes and evidence reliability.
+  - **SubscriptionSignatureProcess** — The electronic signature and evidence management process for subscription forms.
+- **ElectronicSignatureProcess** — The advanced electronic signature process and related management of electronic signature evidence.
+  - **ElectronicSignatureEvidenceBody** — The body of evidence contributing to the reliability of the electronic signature process.
+- **EligibleGreenLoansPortfolio** — Portfolio of eligible green loans managed dynamically by adding/removing loans over the life of green financing instruments.
+- **EnergyAndEcologicalTransitionSupport** — Support measures for energy and ecological transition and related reindustrialisation initiatives.
+  - **ReindustrialisationSupport** — Support for reindustrialisation initiatives referenced in agreements and board decisions.
+- **Entity** — General concept of an organization or borrower entity referenced by eligibility definitions.
+  - **BorrowerEntity** — Entity that receives financing under the framework.
+    - **IndustrialEntity** — Industrial borrower entity targeted by eligible green industry loans.
+      - **IndustrialMidCap** — Industrial mid-cap entity targeted by eligible green industry loans.
+      - **SME** — Small and medium-sized enterprises supported through financing, guarantees, and innovation activities.
+        - **MicroAndSME** — Micro and small/medium enterprises referenced as beneficiaries of the organization’s missions.
+  - **GreentechEntity** — Entity providing an innovative service, product, or technology that enhances environmental impact aligned with EU environmental objectives.
+  - **PurePlayerEntity** — Entity deriving most revenue from economic activities directly or indirectly linked to EU environmental objectives and improving environmental impact.
+- **Entrepreneurs** — Individuals or entities seeking financing and support services.
+- **EntrepreneurshipAndRegions** — A business line referenced as part of the group’s activities under the “Other” item.
+- **EnvironmentalDiagnostic** — Environmental diagnostic tools/assessments used to justify eligible green industry loans (e.g., carbon footprint, action plans).
+- **EnvironmentalObjective** — EU environmental objectives that eligible activities and loans aim to support.
+  - **EUEnvironmentalObjective** — Specific EU environmental objectives listed in the framework (e.g., climate mitigation/adaptation, circular economy, pollution prevention, biodiversity).
+- **Equipment** — Non-vehicle equipment financed under eligible clean transportation and equipment loans.
+- **EquityAccountingMethod** — Equity-accounting method referenced as the consolidation approach for certain companies.
+  - **EquityConsolidation** — A consolidation approach using the equity method for joint ventures and equity-accounted companies.
+- **EquityCapitalOrganisation** — An organisation providing equity capital interventions referenced in guarantee and investment contexts.
+- **EquityConsolidatedCompanies** — Companies accounted for using the equity method due to joint control or significant influence.
+  - **EquityConsolidatedHolding** — The holding used to record impairments and allow reversal when conditions improve.
+  - **EquityMethodAccounting** — Accounting approach referenced as equity-accounting method used in consolidated financial statements.
+- **EquityConsolidatedCompanyShareOfNetProfit** — Share of net profit from equity-consolidated companies presented in the income statement.
+- **EquityInterest** — An ownership interest in another entity, with holdings described between 10% and 50% of capital held.
+  - **ForeignEquityInterest** — An equity interest in a foreign company not included in the detailed paragraph for major holdings.
+  - **FrenchEquityInterest** — An equity interest in a French company not included in the detailed paragraph for major holdings.
+- **EquityInvestmentActivity** — An activity involving equity investments, including direct investments and fund-based investments.
+  - **DevelopmentCapitalInvestment** — Direct development capital investment referenced as an equity investment activity.
+  - **DirectInvestment** — Direct equity investments referenced as part of equity investment activities.
+  - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+  - **IndirectInvestment** — Equity investments made indirectly via funds referenced in the text.
+  - **InvestmentInFundsOfFunds** — Indirect equity investment via funds of funds referenced in the text.
+- **EquityInvestmentFund** — An investment fund in which EPIC subscribes and invests (e.g., Deep Tech fund, National Seed Fund 3, Multicap Growth, EcoTech).
+- **EquityInvestor** — Investors providing equity support and co-investment alongside the group.
+- **EquityMethodCompany** — A company accounted for using the equity method, referenced for share of gains and losses in equity.
+- **EquityPortfolio** — The portfolio of equity investments designated for fair value through equity treatment.
+- **ESGControversy** — Major ESG controversy that can lead to withdrawal of a project from eligible green loans.
+- **ESGCriteria** — Environmental, social, and governance criteria used for analysis, exclusion, integration, and monitoring.
+  - **EnvironmentalCriteria** — Criteria related to pollution prevention, climate-change anticipation, and biodiversity damage risks.
+  - **GovernanceCriteria** — Criteria related to good governance, ethical conduct, transparency, and stakeholder-oriented stability.
+  - **SocialCriteria** — Criteria related to employee health and safety, training, diversity, social dialogue, and remuneration.
+- **ESGRating** — An ESG assessment output used to contribute to investment rating and evaluation.
+- **ESGRisk** — A risk category arising from ESG issues, including ethical, environmental, and social controversies.
+  - **ClimateRisk** — Risk arising from climate-related factors and constraints affecting borrowers and credit quality.
+    - **PhysicalClimateRisk** — Physical risk from financial consequences of extreme and/or chronic climate hazards.
+    - **TransitionClimateRisk** — Transition risk from losses due to inadequate adaptation to a low-carbon economy.
+    - **TransitionRisk** — Risks of losses from inadequate adaptation to a low-carbon economy and transition-related constraints.
+  - **SustainabilityRisk** — A sustainability risk integrated into investment processes and fund classification under disclosure regulation.
+- **ESGWorkforce** — The broader workforce involved in ESG activities, including correspondents and coordination teams.
+  - **ClimatePlanCoordinationTeam** — A team coordinating climate plan activities within the ESG workforce.
+  - **ESGCorrespondent** — An ESG role embedded in business lines and investment hubs to support ESG integration.
+  - **RiskTeam** — A team within the risk organization referenced as contributing FTEs to ESG-related work.
+- **ETI** — Mid-sized enterprises (ETIs) referenced as beneficiaries of Investing in the Future Programme financing.
+- **EU_GreenBondStandard** — EU Green Bond Standard referenced as a driver for updating the framework.
+- **EU_TaxonomyActivity** — EU taxonomy activities referenced as eligible categories for alignment.
+- **EU_TaxonomyRegulation** — EU regulatory framework (EU Taxonomy) referenced for sustainable investment classification and eligibility criteria.
+- **EUGreenBondFactsheet** — Factsheet published to support EU green bond issuance and pre-issuance review under EU GBS regulation.
+- **EuropeanCommission** — A European-level institution referenced as a recipient for certain disclosures and as a basis for adequacy decisions.
+- **EuropeanCommissionDelegatedRegulation** — A delegated regulation of the European Commission referenced for required cross-reference table headings.
+- **EuropeanGeneralDataProtectionRegulation** — The GDPR legal framework governing personal data protection in the European context.
+- **EuropeanInvestmentBank** — The European Investment Bank referenced as a cooperation partner.
+- **EuropeanInvestmentBankGroup** — EIB Group referenced as a partner providing financing in specific issues or strategic sectors.
+- **EuropeanRegulation** — A regulatory instrument referenced for personal data protection (e.g., GDPR).
+  - **GeneralDataProtectionRegulation** — The GDPR referenced as the main European regulation governing personal data protection.
+- **EuropeanUnion** — A supranational public actor providing policy support and participating in financing allocations and regulatory frameworks.
+- **EvaluationTeam** — Organizational unit performing evaluation activities for financing projects and supporting underwriting decisions.
+- **EventOrganization** — Organization and management of events involving individuals.
+- **EventParticipationManagement** — Processing to organize and manage a prospect’s participation in an event via forms or social networks.
+- **ExclusivelyControlledCompany** — A company exclusively controlled and therefore fully consolidated in the group accounts.
+- **ExpectedCreditLossCalculation** — Method for calculating expected credit losses (ECL) used to assess credit risk.
+  - **CreditRiskIncreaseAssessment** — Assessment process for determining significant increase in credit risk for ECL staging.
+    - **SignificantIncreaseInCreditRisk** — The determination of whether credit risk has significantly increased, including lifetime dimension adjustments.
+  - **ECLModel** — A model used to calculate expected credit losses, including calibration and methodological adjustments.
+  - **ECLSensitivityAnalysis** — Sensitivity analysis of ECL amounts to macroeconomic scenarios.
+- **Expenditure** — General concept of spending eligible under the framework.
+  - **EligibleBiodiversityRelatedExpenditure** — Short-term eligible expenditures dedicated to biodiversity-related activities such as biodiversity awareness and materiality analysis programs.
+- **ExpenseRatio** — Ratio comparing operating expenditure to assets under management for the investment business.
+- **ExportActivities** — Activities related to exporting that are supported through insurance products.
+- **ExportSupport** — Support for French exports, including guarantees and internationalisation activities.
+- **ExportSupportEntity** — An organization missioned to encourage, support, and secure French exports, including medium/long-term investments abroad.
+- **ExternalAdvisor** — A third-party advisor involved in transactions and potentially receiving or providing data under confidentiality constraints.
+- **ExternalAuditors** — Independent auditors certifying financial accounts.
+- **ExternalReview** — Pillar/recommendation covering independent external review of the framework and/or issuance.
+- **ExternalReviewer** — Third-party reviewer providing independent pre-issuance review and opinions referenced in the framework.
+  - **SecondPartyOpinion** — External second-party opinion assessing environmental credentials and alignment with green bond principles.
+- **ExternalServiceProvider** — An external provider whose services may fail and create operational risk.
+- **ExternalWorker** — A worker who is not directly employed by the recruiting entity (e.g., temporary worker) and for whom personal data may be processed.
+- **ExtraordinaryExpense** — Extraordinary expenses such as book value of financial assets sold and contributions to funds.
+  - **BookValueOfFinancialAssetsSold** — Book value of financial assets sold included in extraordinary expenses.
+  - **FinancialAssetSoldBookValue** — Book value of financial assets sold recognized as an extraordinary expense.
+- **FairValue** — The measurement concept of fair value used for financial assets and liabilities, including exit price basis.
+  - **FairValueHierarchyLevel** — A level in the fair value hierarchy (Level 1, Level 2, Level 3) based on observability of inputs.
+    - **FairValueLevel1** — Fair value determined using quoted prices in liquid active markets.
+    - **FairValueLevel2** — Fair value determined using observable market data and valuation techniques with observable parameters.
+    - **FairValueLevel3** — Fair value determined using unobservable market data and valuation models with unobservable parameters.
+- **FairValueMeasurement** — Fair value measurement framework referenced for transfers between fair value levels and sensitivity.
+  - **FairValueHierarchy** — The classification of fair value inputs into levels based on quoted prices, observable inputs, or unobservable inputs.
+    - **FairValueLevel** — A level within the fair value hierarchy (e.g., quoted prices, observable inputs, unobservable inputs).
+      - **Level3FinancialInstrument** — Financial instruments measured using Level 3 fair value inputs requiring judgement.
+  - **FairValueLevel** — A level within the fair value hierarchy (e.g., quoted prices, observable inputs, unobservable inputs).
+    - **Level3FinancialInstrument** — Financial instruments measured using Level 3 fair value inputs requiring judgement.
+- **FibenRatings** — Credit ratings provided by the Bank of France used in credit decision processes.
+- **FinancialAssistance** — General category of financial assistance from the State, local authorities, or their public limited companies.
+- **FinancialInstitution** — An entity subject to non-financial transparency and responsible investment disclosure obligations.
+  - **CommercialBank** — Private commercial banks referenced as partners in financing and as shareholders.
+- **FinancialInstrument** — A contract-based asset or liability whose fair value and accounting treatment are discussed (including financial assets and liabilities).
+  - **BondIssue** — A bond issuance referenced in the context of funding sources and liquidity risk.
+  - **DebtInstrument** — A debt instrument measured at amortised cost or fair value depending on business model and contractual cash flows.
+    - **BondsAndFixedIncomeSecurities** — Bonds and fixed-income securities referenced in fair value measurement.
+    - **Loan** — A contractual lending arrangement recognized as a financial asset and measured according to applicable IFRS rules.
+      - **BusinessLoan** — Business loans (co-financing) described as financing solutions for investments and operations.
+      - **CreditFinancingCommitment** — A commitment to provide credit financing to credit institutions or clients.
+      - **EligibleGreenLoan** — Loan aligned with EU environmental objectives and eligibility criteria under the green financing framework.
+        - **EligibleBiodiversityExpenditure** — Eligible expenditures supporting biodiversity protection and related services/projects.
+        - **EligibleCleanTransportationAndEquipmentLoan** — Eligible green loan for electric vehicles and related equipment, subject to climate risk due diligence and compliance with environmental laws.
+        - **EligibleGreenBuildingLoan** — Eligible green loan for construction or renovation of buildings assessed and monitored against environmental norms, labels, and certifications.
+        - **EligibleGreenIndustryLoan** — Eligible green loan dedicated to industrial entities, linked to environmental diagnostics and decarbonization/circular-economy objectives.
+        - **EligibleGreentechLoan** — Eligible green loan supporting Greentech entities and solutions that enhance environmental impact aligned with EU environmental objectives.
+        - **EligibleLoansDirectedToPurePlayers** — Eligible green loans directed to pure players whose revenue is predominantly generated by environmentally positive activities linked to EU environmental objectives.
+        - **EligibleRenewableEnergyLoan** — Eligible green loan fully aligned with EU taxonomy regulation and substantial contribution criteria for renewable energy activities.
+        - **EligibleTransportationAndEquipmentProjectLoan** — Eligible loans for clean transportation and related equipment, excluding fossil-fuel transport.
+        - **EligibleWasteManagementProjectLoan** — Eligible loans for waste management projects, including collection/transport and sorting/recovery of non-hazardous waste.
+        - **EligibleWasteManagementRelatedLoan** — Eligible green loan related to waste management activities, including financing electric vehicles and recycling centers.
+      - **EquipmentLeasing** — Leasing arrangements referenced as part of medium- and long-term financing.
+      - **FinanceLease** — A lease financing arrangement accounted for as finance leases and similar transactions.
+      - **FinanceLeasing** — Finance leasing referenced as part of medium- and long-term financing.
+      - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+      - **LoanInEuro** — A loan denominated in euros.
+      - **RAndDLoan** — Loans dedicated to research and development innovation projects.
+      - **RealEstateLeasing** — Real estate leasing referenced as part of medium- and long-term financing.
+      - **SoftLoan** — Innovation-focused loans described as soft loans for innovation.
+      - **StateLoan** — Loans from the State (excluding associated liabilities).
+      - **UnsecuredLoan** — Loans provided without guarantee or security against the company or its managers.
+        - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+        - **NewIndustryLoan** — New industry unsecured loan product referenced in innovation financing.
+        - **SeedLoan** — Seed-stage unsecured loan product referenced in innovation financing.
+          - **InnovationSeedLoan** — Innovation seed loan product referenced in innovation financing.
+      - **ZeroInterestInnovationLoan** — Innovation loans with zero interest used when traditional financing fails.
+  - **DebtSecurity** — A general category of debt instruments/securities issued under financing programmes.
+    - **BilateralLoan** — Debt financing provided through bilateral loans referenced in guarantee commitments.
+    - **BondProgramme** — Programme under which bonds are issued (e.g., EMTN programmes, NEU MTN/CP programmes).
+    - **PublicOfferingOfSecurities** — Public offering of securities and issuance of debt securities referenced as possible activities.
+  - **Derivative** — A derivative instrument referenced as part of financial transactions subject to counterparty risk.
+  - **EquityInstrument** — A financial instrument representing an equity interest, accounted for at fair value through equity or profit/loss depending on designation.
+  - **EquitySecurity** — Equity instruments such as shares and equity holdings referenced in capital structure and equity-accounted companies.
+  - **FinancialAsset** — A financial asset held by the group, measured under various IFRS categories such as fair value through profit or loss or equity.
+    - **AmortisedCostFinancialAsset** — A financial asset carried at amortised cost when contractual cash flows meet criteria such as SPPI.
+    - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+    - **Debt** — General concept of a debt obligation with a remaining term (e.g., less than 1 year, 1–5 years, more than 5 years).
+      - **FinancialDebt** — Debts recorded in the balance sheet under categories such as financial debts to credit institutions or other financial debts.
+      - **Loan** — A contractual lending arrangement recognized as a financial asset and measured according to applicable IFRS rules.
+        - **BusinessLoan** — Business loans (co-financing) described as financing solutions for investments and operations.
+        - **CreditFinancingCommitment** — A commitment to provide credit financing to credit institutions or clients.
+        - **EligibleGreenLoan** — Loan aligned with EU environmental objectives and eligibility criteria under the green financing framework.
+          - **EligibleBiodiversityExpenditure** — Eligible expenditures supporting biodiversity protection and related services/projects.
+          - **EligibleCleanTransportationAndEquipmentLoan** — Eligible green loan for electric vehicles and related equipment, subject to climate risk due diligence and compliance with environmental laws.
+          - **EligibleGreenBuildingLoan** — Eligible green loan for construction or renovation of buildings assessed and monitored against environmental norms, labels, and certifications.
+          - **EligibleGreenIndustryLoan** — Eligible green loan dedicated to industrial entities, linked to environmental diagnostics and decarbonization/circular-economy objectives.
+          - **EligibleGreentechLoan** — Eligible green loan supporting Greentech entities and solutions that enhance environmental impact aligned with EU environmental objectives.
+          - **EligibleLoansDirectedToPurePlayers** — Eligible green loans directed to pure players whose revenue is predominantly generated by environmentally positive activities linked to EU environmental objectives.
+          - **EligibleRenewableEnergyLoan** — Eligible green loan fully aligned with EU taxonomy regulation and substantial contribution criteria for renewable energy activities.
+          - **EligibleTransportationAndEquipmentProjectLoan** — Eligible loans for clean transportation and related equipment, excluding fossil-fuel transport.
+          - **EligibleWasteManagementProjectLoan** — Eligible loans for waste management projects, including collection/transport and sorting/recovery of non-hazardous waste.
+          - **EligibleWasteManagementRelatedLoan** — Eligible green loan related to waste management activities, including financing electric vehicles and recycling centers.
+        - **EquipmentLeasing** — Leasing arrangements referenced as part of medium- and long-term financing.
+        - **FinanceLease** — A lease financing arrangement accounted for as finance leases and similar transactions.
+        - **FinanceLeasing** — Finance leasing referenced as part of medium- and long-term financing.
+        - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+        - **LoanInEuro** — A loan denominated in euros.
+        - **RAndDLoan** — Loans dedicated to research and development innovation projects.
+        - **RealEstateLeasing** — Real estate leasing referenced as part of medium- and long-term financing.
+        - **SoftLoan** — Innovation-focused loans described as soft loans for innovation.
+        - **StateLoan** — Loans from the State (excluding associated liabilities).
+        - **UnsecuredLoan** — Loans provided without guarantee or security against the company or its managers.
+          - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+          - **NewIndustryLoan** — New industry unsecured loan product referenced in innovation financing.
+          - **SeedLoan** — Seed-stage unsecured loan product referenced in innovation financing.
+            - **InnovationSeedLoan** — Innovation seed loan product referenced in innovation financing.
+        - **ZeroInterestInnovationLoan** — Innovation loans with zero interest used when traditional financing fails.
+      - **OtherDebt** — A residual category of debts other than trade debts and tax/social security debts.
+        - **AccruedExpense** — Accrued expenses included in other debts.
+        - **AllocationPayable** — An allocation payable to funds or entities (e.g., Innovation and Industry Fund, Bpifrance Participations, Bpifrance).
+        - **BpifranceAccruedExpense** — Accrued expenses of Bpifrance included in other debts.
+        - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+        - **InvestingInTheFutureAndFrance2030PublicResources** — Public resources under the Investing in the Future and France 2030 program included in other debts.
+        - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+      - **TaxAndSocialSecurityDebt** — A specific category of liabilities for taxes and social security obligations.
+      - **TradeDebt** — Trade debts and related accounts with maturity less than one year.
+    - **DebtInstrument** — A debt instrument measured at amortised cost or fair value depending on business model and contractual cash flows.
+      - **BondsAndFixedIncomeSecurities** — Bonds and fixed-income securities referenced in fair value measurement.
+      - **Loan** — A contractual lending arrangement recognized as a financial asset and measured according to applicable IFRS rules.
+        - **BusinessLoan** — Business loans (co-financing) described as financing solutions for investments and operations.
+        - **CreditFinancingCommitment** — A commitment to provide credit financing to credit institutions or clients.
+        - **EligibleGreenLoan** — Loan aligned with EU environmental objectives and eligibility criteria under the green financing framework.
+          - **EligibleBiodiversityExpenditure** — Eligible expenditures supporting biodiversity protection and related services/projects.
+          - **EligibleCleanTransportationAndEquipmentLoan** — Eligible green loan for electric vehicles and related equipment, subject to climate risk due diligence and compliance with environmental laws.
+          - **EligibleGreenBuildingLoan** — Eligible green loan for construction or renovation of buildings assessed and monitored against environmental norms, labels, and certifications.
+          - **EligibleGreenIndustryLoan** — Eligible green loan dedicated to industrial entities, linked to environmental diagnostics and decarbonization/circular-economy objectives.
+          - **EligibleGreentechLoan** — Eligible green loan supporting Greentech entities and solutions that enhance environmental impact aligned with EU environmental objectives.
+          - **EligibleLoansDirectedToPurePlayers** — Eligible green loans directed to pure players whose revenue is predominantly generated by environmentally positive activities linked to EU environmental objectives.
+          - **EligibleRenewableEnergyLoan** — Eligible green loan fully aligned with EU taxonomy regulation and substantial contribution criteria for renewable energy activities.
+          - **EligibleTransportationAndEquipmentProjectLoan** — Eligible loans for clean transportation and related equipment, excluding fossil-fuel transport.
+          - **EligibleWasteManagementProjectLoan** — Eligible loans for waste management projects, including collection/transport and sorting/recovery of non-hazardous waste.
+          - **EligibleWasteManagementRelatedLoan** — Eligible green loan related to waste management activities, including financing electric vehicles and recycling centers.
+        - **EquipmentLeasing** — Leasing arrangements referenced as part of medium- and long-term financing.
+        - **FinanceLease** — A lease financing arrangement accounted for as finance leases and similar transactions.
+        - **FinanceLeasing** — Finance leasing referenced as part of medium- and long-term financing.
+        - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+        - **LoanInEuro** — A loan denominated in euros.
+        - **RAndDLoan** — Loans dedicated to research and development innovation projects.
+        - **RealEstateLeasing** — Real estate leasing referenced as part of medium- and long-term financing.
+        - **SoftLoan** — Innovation-focused loans described as soft loans for innovation.
+        - **StateLoan** — Loans from the State (excluding associated liabilities).
+        - **UnsecuredLoan** — Loans provided without guarantee or security against the company or its managers.
+          - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+          - **NewIndustryLoan** — New industry unsecured loan product referenced in innovation financing.
+          - **SeedLoan** — Seed-stage unsecured loan product referenced in innovation financing.
+            - **InnovationSeedLoan** — Innovation seed loan product referenced in innovation financing.
+        - **ZeroInterestInnovationLoan** — Innovation loans with zero interest used when traditional financing fails.
+    - **Equity** — Shareholders’ equity, including components such as reserves and gains/losses recognized directly in equity.
+      - **ChangesInEquity** — A statement section describing movements in equity over time, including group share and minority interests.
+      - **GainsAndLossesRecognisedDirectlyInEquity** — Components of income and losses recognized directly in equity rather than through profit or loss.
+        - **NonRecyclableGainsAndLosses** — Equity-recognized gains and losses that cannot be reclassified into net income.
+        - **RecyclableGainsAndLosses** — Equity-recognized gains and losses that can be reclassified (recycled) into net income.
+      - **MinorityInterest** — Portion of equity attributable to interests other than the group’s share.
+      - **TreasuryShares** — Shares held by the company itself, affecting dividend allocation and retained earnings adjustments.
+    - **EquityInstrument** — A financial instrument representing an equity interest, accounted for at fair value through equity or profit/loss depending on designation.
+    - **EquityInvestment** — An investment in equity instruments, including those measured at fair value through equity or through profit or loss.
+      - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+        - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+    - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+      - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+    - **FairValueThroughProfitOrLoss** — A measurement category for financial assets whose fair value changes are recognized in profit or loss.
+    - **FairValueThroughShareholdersEquity** — A measurement category for financial assets whose fair value changes are recognized through shareholders’ equity.
+    - **FinanceLease** — A lease financing arrangement accounted for as finance leases and similar transactions.
+    - **FinancialAssetAtFairValueThroughEquity** — A category of financial assets measured at fair value with changes recognized in equity.
+    - **FinancialAssetAtFairValueThroughProfitOrLoss** — A category of financial assets measured at fair value with changes recognized in profit or loss.
+    - **FinancialAssetsAtAmortisedCost** — Financial assets carried at amortised cost when contractual cash flows meet criteria such as SPPI.
+    - **FinancialAssetsAtFairValueThroughEquity** — Financial assets measured at fair value with changes recognized in shareholders’ equity.
+    - **FinancialAssetsAtFairValueThroughProfitOrLoss** — Financial assets measured at fair value with changes recognized in profit or loss.
+    - **GreenBond** — Green bond issued under the framework, subject to EU green bond eligibility and reporting requirements.
+      - **EU_GreenBond** — Green bond issuance reflected when the EU green bond factsheet is used and aligned with EU GBS regulation.
+    - **InvestmentFundUnit** — A unit in an investment fund held as part of the investment portfolio.
+    - **InvestmentProperty** — A property investment category referenced in the balance sheet classification.
+    - **Loan** — A contractual lending arrangement recognized as a financial asset and measured according to applicable IFRS rules.
+      - **BusinessLoan** — Business loans (co-financing) described as financing solutions for investments and operations.
+      - **CreditFinancingCommitment** — A commitment to provide credit financing to credit institutions or clients.
+      - **EligibleGreenLoan** — Loan aligned with EU environmental objectives and eligibility criteria under the green financing framework.
+        - **EligibleBiodiversityExpenditure** — Eligible expenditures supporting biodiversity protection and related services/projects.
+        - **EligibleCleanTransportationAndEquipmentLoan** — Eligible green loan for electric vehicles and related equipment, subject to climate risk due diligence and compliance with environmental laws.
+        - **EligibleGreenBuildingLoan** — Eligible green loan for construction or renovation of buildings assessed and monitored against environmental norms, labels, and certifications.
+        - **EligibleGreenIndustryLoan** — Eligible green loan dedicated to industrial entities, linked to environmental diagnostics and decarbonization/circular-economy objectives.
+        - **EligibleGreentechLoan** — Eligible green loan supporting Greentech entities and solutions that enhance environmental impact aligned with EU environmental objectives.
+        - **EligibleLoansDirectedToPurePlayers** — Eligible green loans directed to pure players whose revenue is predominantly generated by environmentally positive activities linked to EU environmental objectives.
+        - **EligibleRenewableEnergyLoan** — Eligible green loan fully aligned with EU taxonomy regulation and substantial contribution criteria for renewable energy activities.
+        - **EligibleTransportationAndEquipmentProjectLoan** — Eligible loans for clean transportation and related equipment, excluding fossil-fuel transport.
+        - **EligibleWasteManagementProjectLoan** — Eligible loans for waste management projects, including collection/transport and sorting/recovery of non-hazardous waste.
+        - **EligibleWasteManagementRelatedLoan** — Eligible green loan related to waste management activities, including financing electric vehicles and recycling centers.
+      - **EquipmentLeasing** — Leasing arrangements referenced as part of medium- and long-term financing.
+      - **FinanceLease** — A lease financing arrangement accounted for as finance leases and similar transactions.
+      - **FinanceLeasing** — Finance leasing referenced as part of medium- and long-term financing.
+      - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+      - **LoanInEuro** — A loan denominated in euros.
+      - **RAndDLoan** — Loans dedicated to research and development innovation projects.
+      - **RealEstateLeasing** — Real estate leasing referenced as part of medium- and long-term financing.
+      - **SoftLoan** — Innovation-focused loans described as soft loans for innovation.
+      - **StateLoan** — Loans from the State (excluding associated liabilities).
+      - **UnsecuredLoan** — Loans provided without guarantee or security against the company or its managers.
+        - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+        - **NewIndustryLoan** — New industry unsecured loan product referenced in innovation financing.
+        - **SeedLoan** — Seed-stage unsecured loan product referenced in innovation financing.
+          - **InnovationSeedLoan** — Innovation seed loan product referenced in innovation financing.
+      - **ZeroInterestInnovationLoan** — Innovation loans with zero interest used when traditional financing fails.
+    - **OtherFinancialAsset** — A category of financial assets including loans, grants receivables, and reserve fund-related receivables.
+      - **FrenchStateCurrentAccount** — A current account receivable from the French State via Agence France Trésor (Innovation Capital).
+      - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+      - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+      - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+    - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+      - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+      - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+        - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+        - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+        - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+      - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+      - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+      - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+    - **QuasiEquity** — A financing instrument category treated similarly to equity for investment and ESG purposes.
+    - **TradeAndOtherReceivables** — Receivables arising from trade and other activities, including grants and guarantee-related receivables.
+    - **TradeReceivable** — Receivables arising from trade and other receivable categories, including grants and guarantee commissions to be received.
+  - **FinancialLiability** — A financial obligation (e.g., debts, trade debts, other financial liabilities) recognized and measured under IFRS rules.
+    - **Borrowing** — A debt obligation arising from loans and borrowings issued by the group.
+      - **FinancialDebt** — Debts recorded in the balance sheet under categories such as financial debts to credit institutions or other financial debts.
+    - **Debt** — General concept of a debt obligation with a remaining term (e.g., less than 1 year, 1–5 years, more than 5 years).
+      - **FinancialDebt** — Debts recorded in the balance sheet under categories such as financial debts to credit institutions or other financial debts.
+      - **Loan** — A contractual lending arrangement recognized as a financial asset and measured according to applicable IFRS rules.
+        - **BusinessLoan** — Business loans (co-financing) described as financing solutions for investments and operations.
+        - **CreditFinancingCommitment** — A commitment to provide credit financing to credit institutions or clients.
+        - **EligibleGreenLoan** — Loan aligned with EU environmental objectives and eligibility criteria under the green financing framework.
+          - **EligibleBiodiversityExpenditure** — Eligible expenditures supporting biodiversity protection and related services/projects.
+          - **EligibleCleanTransportationAndEquipmentLoan** — Eligible green loan for electric vehicles and related equipment, subject to climate risk due diligence and compliance with environmental laws.
+          - **EligibleGreenBuildingLoan** — Eligible green loan for construction or renovation of buildings assessed and monitored against environmental norms, labels, and certifications.
+          - **EligibleGreenIndustryLoan** — Eligible green loan dedicated to industrial entities, linked to environmental diagnostics and decarbonization/circular-economy objectives.
+          - **EligibleGreentechLoan** — Eligible green loan supporting Greentech entities and solutions that enhance environmental impact aligned with EU environmental objectives.
+          - **EligibleLoansDirectedToPurePlayers** — Eligible green loans directed to pure players whose revenue is predominantly generated by environmentally positive activities linked to EU environmental objectives.
+          - **EligibleRenewableEnergyLoan** — Eligible green loan fully aligned with EU taxonomy regulation and substantial contribution criteria for renewable energy activities.
+          - **EligibleTransportationAndEquipmentProjectLoan** — Eligible loans for clean transportation and related equipment, excluding fossil-fuel transport.
+          - **EligibleWasteManagementProjectLoan** — Eligible loans for waste management projects, including collection/transport and sorting/recovery of non-hazardous waste.
+          - **EligibleWasteManagementRelatedLoan** — Eligible green loan related to waste management activities, including financing electric vehicles and recycling centers.
+        - **EquipmentLeasing** — Leasing arrangements referenced as part of medium- and long-term financing.
+        - **FinanceLease** — A lease financing arrangement accounted for as finance leases and similar transactions.
+        - **FinanceLeasing** — Finance leasing referenced as part of medium- and long-term financing.
+        - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+        - **LoanInEuro** — A loan denominated in euros.
+        - **RAndDLoan** — Loans dedicated to research and development innovation projects.
+        - **RealEstateLeasing** — Real estate leasing referenced as part of medium- and long-term financing.
+        - **SoftLoan** — Innovation-focused loans described as soft loans for innovation.
+        - **StateLoan** — Loans from the State (excluding associated liabilities).
+        - **UnsecuredLoan** — Loans provided without guarantee or security against the company or its managers.
+          - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+          - **NewIndustryLoan** — New industry unsecured loan product referenced in innovation financing.
+          - **SeedLoan** — Seed-stage unsecured loan product referenced in innovation financing.
+            - **InnovationSeedLoan** — Innovation seed loan product referenced in innovation financing.
+        - **ZeroInterestInnovationLoan** — Innovation loans with zero interest used when traditional financing fails.
+      - **OtherDebt** — A residual category of debts other than trade debts and tax/social security debts.
+        - **AccruedExpense** — Accrued expenses included in other debts.
+        - **AllocationPayable** — An allocation payable to funds or entities (e.g., Innovation and Industry Fund, Bpifrance Participations, Bpifrance).
+        - **BpifranceAccruedExpense** — Accrued expenses of Bpifrance included in other debts.
+        - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+        - **InvestingInTheFutureAndFrance2030PublicResources** — Public resources under the Investing in the Future and France 2030 program included in other debts.
+        - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+      - **TaxAndSocialSecurityDebt** — A specific category of liabilities for taxes and social security obligations.
+      - **TradeDebt** — Trade debts and related accounts with maturity less than one year.
+    - **DeferredIncome** — Income recognized over time (e.g., deferred income such as guarantee commissions to be spread).
+      - **GuaranteeCommissionToBeSpread** — Bpifrance guarantee commissions to be spread included in deferred income.
+    - **FinancialDebt** — Debts recorded in the balance sheet under categories such as financial debts to credit institutions or other financial debts.
+    - **FinancialDebts** — Debts issued by the group, including financial debts to credit institutions and miscellaneous financial debts.
+      - **FinancialLoansAndFinancialDebts** — Subcategory covering financial loans and related financial debts.
+      - **MiscellaneousFinancialDebts** — Financial debts other than those specifically classified as loans to credit institutions.
+    - **FinancialLiabilityAtFairValueThroughProfitOrLoss** — A category of financial liabilities measured at fair value with changes recognized in profit or loss.
+    - **HedgingDerivative** — A derivative instrument used for hedging and referenced in fair value and revaluation differences on rate-hedged portfolios.
+      - **CashFlowHedging** — Hedging strategy where changes in cash flows are recognized according to cash flow hedge accounting.
+      - **DerivativeHedging** — Hedging activities reflected through derivative revaluation for recyclable items.
+      - **FairValueHedging** — Hedging strategy where changes in fair value are recognized for the hedged item and hedging instrument.
+      - **NetForeignCurrencyInvestmentHedging** — Hedging of net foreign currency investments.
+      - **TransactionDerivative** — A derivative arising from transactions, referenced under fair value through profit or loss.
+        - **CurrencyExchangeDerivative** — A derivative specifically related to foreign currency exchange.
+        - **ForwardForeignExchangeTransaction** — A forward FX transaction referenced as having outstanding receivables.
+    - **OtherDebt** — A residual category of debts other than trade debts and tax/social security debts.
+      - **AccruedExpense** — Accrued expenses included in other debts.
+      - **AllocationPayable** — An allocation payable to funds or entities (e.g., Innovation and Industry Fund, Bpifrance Participations, Bpifrance).
+      - **BpifranceAccruedExpense** — Accrued expenses of Bpifrance included in other debts.
+      - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+      - **InvestingInTheFutureAndFrance2030PublicResources** — Public resources under the Investing in the Future and France 2030 program included in other debts.
+      - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+    - **OtherFinancialLiabilities** — Financial liabilities other than trade debts, including allocations payable and accrued expenses.
+    - **TradeDebtsAndMiscellaneousDebts** — Trade payables and other miscellaneous debts, including deferred income.
+    - **TradePayable** — Payables arising from trade and other liabilities, including deferred income and tax/social security debts.
+      - **TaxAndSocialSecurityDebt** — A specific category of liabilities for taxes and social security obligations.
+  - **GreenFinancingInstrument** — Green financing instruments issued under the framework, whose proceeds are managed and allocated to eligible green loans.
+    - **GreenBond** — Green bond issued under the framework, subject to EU green bond eligibility and reporting requirements.
+      - **EU_GreenBond** — Green bond issuance reflected when the EU green bond factsheet is used and aligned with EU GBS regulation.
+    - **NegotiableEuropeanCommercialPaper** — Negotiable European commercial paper (NEU CP) issued as a green debt instrument under the framework.
+    - **NegotiableEuropeanMediumTermNote** — Negotiable European medium-term note (NEU MTN) issued as a green debt instrument under the framework.
+  - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+    - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+    - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+      - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+    - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+      - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+    - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+    - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+  - **HedgingDerivative** — A derivative instrument used for hedging and referenced in fair value and revaluation differences on rate-hedged portfolios.
+    - **CashFlowHedging** — Hedging strategy where changes in cash flows are recognized according to cash flow hedge accounting.
+    - **DerivativeHedging** — Hedging activities reflected through derivative revaluation for recyclable items.
+    - **FairValueHedging** — Hedging strategy where changes in fair value are recognized for the hedged item and hedging instrument.
+    - **NetForeignCurrencyInvestmentHedging** — Hedging of net foreign currency investments.
+    - **TransactionDerivative** — A derivative arising from transactions, referenced under fair value through profit or loss.
+      - **CurrencyExchangeDerivative** — A derivative specifically related to foreign currency exchange.
+      - **ForwardForeignExchangeTransaction** — A forward FX transaction referenced as having outstanding receivables.
+  - **Level3FairValueInstrument** — A financial instrument measured using Level 3 fair value inputs requiring significant judgement.
+  - **Loan** — A contractual lending arrangement recognized as a financial asset and measured according to applicable IFRS rules.
+    - **BusinessLoan** — Business loans (co-financing) described as financing solutions for investments and operations.
+    - **CreditFinancingCommitment** — A commitment to provide credit financing to credit institutions or clients.
+    - **EligibleGreenLoan** — Loan aligned with EU environmental objectives and eligibility criteria under the green financing framework.
+      - **EligibleBiodiversityExpenditure** — Eligible expenditures supporting biodiversity protection and related services/projects.
+      - **EligibleCleanTransportationAndEquipmentLoan** — Eligible green loan for electric vehicles and related equipment, subject to climate risk due diligence and compliance with environmental laws.
+      - **EligibleGreenBuildingLoan** — Eligible green loan for construction or renovation of buildings assessed and monitored against environmental norms, labels, and certifications.
+      - **EligibleGreenIndustryLoan** — Eligible green loan dedicated to industrial entities, linked to environmental diagnostics and decarbonization/circular-economy objectives.
+      - **EligibleGreentechLoan** — Eligible green loan supporting Greentech entities and solutions that enhance environmental impact aligned with EU environmental objectives.
+      - **EligibleLoansDirectedToPurePlayers** — Eligible green loans directed to pure players whose revenue is predominantly generated by environmentally positive activities linked to EU environmental objectives.
+      - **EligibleRenewableEnergyLoan** — Eligible green loan fully aligned with EU taxonomy regulation and substantial contribution criteria for renewable energy activities.
+      - **EligibleTransportationAndEquipmentProjectLoan** — Eligible loans for clean transportation and related equipment, excluding fossil-fuel transport.
+      - **EligibleWasteManagementProjectLoan** — Eligible loans for waste management projects, including collection/transport and sorting/recovery of non-hazardous waste.
+      - **EligibleWasteManagementRelatedLoan** — Eligible green loan related to waste management activities, including financing electric vehicles and recycling centers.
+    - **EquipmentLeasing** — Leasing arrangements referenced as part of medium- and long-term financing.
+    - **FinanceLease** — A lease financing arrangement accounted for as finance leases and similar transactions.
+    - **FinanceLeasing** — Finance leasing referenced as part of medium- and long-term financing.
+    - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+    - **LoanInEuro** — A loan denominated in euros.
+    - **RAndDLoan** — Loans dedicated to research and development innovation projects.
+    - **RealEstateLeasing** — Real estate leasing referenced as part of medium- and long-term financing.
+    - **SoftLoan** — Innovation-focused loans described as soft loans for innovation.
+    - **StateLoan** — Loans from the State (excluding associated liabilities).
+    - **UnsecuredLoan** — Loans provided without guarantee or security against the company or its managers.
+      - **InnovationLoan** — A loan type included in medium- and long-term financing for innovation.
+      - **NewIndustryLoan** — New industry unsecured loan product referenced in innovation financing.
+      - **SeedLoan** — Seed-stage unsecured loan product referenced in innovation financing.
+        - **InnovationSeedLoan** — Innovation seed loan product referenced in innovation financing.
+    - **ZeroInterestInnovationLoan** — Innovation loans with zero interest used when traditional financing fails.
+  - **NegotiableDebtSecurity** — Negotiable debt securities used for short-term financing under the framework.
+    - **MediumTermNegotiableDebtSecurity** — Medium-term negotiable debt securities (e.g., NEU MTN) used for green financing.
+      - **NegotiableEuropeanMediumTermNote** — Negotiable European medium-term note (NEU MTN) issued as a green debt instrument under the framework.
+    - **ShortTermNegotiableDebtSecurity** — Short-term negotiable debt securities (e.g., NEUCP) used to finance or refinance eligible green loans and expenditures.
+      - **NegotiableEuropeanCommercialPaper** — Negotiable European commercial paper (NEU CP) issued as a green debt instrument under the framework.
+  - **RepoTransaction** — A repurchase agreement transaction referenced as part of financial transactions subject to counterparty risk.
+  - **Securities** — Debt or equity securities referenced in fair value and amortised cost measurement categories.
+    - **Bond** — A fixed-income security referenced in fair value and amortised cost disclosures.
+      - **GovernmentBond** — A bond issued by a government referenced under securities at amortised cost.
+      - **NegotiableDebtInstrument** — A negotiable debt instrument category referenced under amortised cost securities.
+    - **CertificatesOfDeposit** — Certificates of deposit referenced as outstanding short-term refinancing instruments.
+    - **EquityInstrument** — A financial instrument representing an equity interest, accounted for at fair value through equity or profit/loss depending on designation.
+    - **UCITSUnit** — Units of UCITS funds referenced as part of fair value through profit or loss assets.
+  - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+    - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+    - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+  - **Security** — A securities instrument referenced in the context of market transactions and counterparty risk.
+  - **TransactionDerivative** — A derivative arising from transactions, referenced under fair value through profit or loss.
+    - **CurrencyExchangeDerivative** — A derivative specifically related to foreign currency exchange.
+    - **ForwardForeignExchangeTransaction** — A forward FX transaction referenced as having outstanding receivables.
+  - **UCITSUnit** — Units of UCITS funds referenced as part of fair value through profit or loss assets.
+- **FinancialIntermediary** — A generic category of intermediaries used to execute or facilitate financial transactions.
+- **FinancialLoanAndFinancialDebt** — A combined classification covering financial loans and financial debts.
+  - **LoanFromState** — Loans from the State included in financial loans and financial debts.
+  - **RelatedDebt** — Debts related to loans.
+- **FinancialMarketAuthority** — A financial markets authority referenced as having a board where a representative of the State is delegated.
+  - **AutoriteDesMarchesFinanciers** — The French financial markets authority referenced in governance delegation.
+- **FinancialMarketsAuthority** — A competent authority responsible for receiving filings and approving documentation for public offers or admissions to trading under EU securities regulations.
+- **FinancialProgramme** — A structured public financing programme such as PIA, France 2030, and Investing in the Future.
+  - **AcceleratorProgramme** — A programme/initiative that deploys support for specific sectors or regions (e.g., SME accelerators, energy transition accelerators).
+    - **GrowthAccelerator** — Growth accelerator programmes referenced as classes deployed under regional initiatives.
+    - **SMEAccelerator** — Accelerator programmes specifically for SMEs (e.g., SME accelerators referenced in board approvals).
+  - **France2030Programme** — The France 2030 investment plan/programme referenced as a framework for initiatives and funding.
+  - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+    - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+    - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+  - **InvestingInTheFutureProgramme** — The Investing in the Future Programme (PIA) referenced as a major source of endowments and initiatives.
+    - **InnovationAidScheme** — Aid scheme agreements under the Investing in the Future Programme for bottom-up innovation and related initiatives.
+    - **PIA4** — The fourth phase of the Investing in the Future Programme referenced as PIA4.
+    - **RegionalisedProgramme** — Regionalised implementation of PIA initiatives through regional agreements and steering committees.
+  - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+    - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+    - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+      - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+      - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+      - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+    - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+- **FinancialResults** — A set of reported financial performance metrics for a specific financial year.
+  - **CostOfRisk** — Provision-related cost of risk reflecting proven and expected risks.
+    - **ExpectedRisks** — Cost of risk component related to expected cost of risk and provisions.
+    - **ProvenRisks** — Cost of risk component reflecting normalization after prior low-risk periods.
+  - **EccContributionToNetIncome** — Contribution from equity-consolidated companies to net income.
+  - **GrossOperatingIncome** — Income before cost of risk and other operating items.
+  - **NetBankingIncome** — Aggregate banking income metric used in the income statement.
+    - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+    - **FundOfFundsBusiness** — Business line contributing distributions and changes in fund-of-funds value to income.
+    - **NetInterestMargin** — Component of net banking income representing net interest margin.
+  - **NetIncome** — Profit or loss measure used in the statement of net income and related equity movements.
+  - **OperatingExpenditure** — Expenditure figure used to compute operating performance ratios.
+  - **OperatingIncome** — Operating income used in the breakdown of results for tax purposes.
+- **FinancialStatement** — A financial statement document or section presenting financial position, performance, or notes (e.g., consolidated or parent entity statements).
+  - **BalanceSheet** — A consolidated statement presenting assets and liabilities at a reporting date.
+    - **ConsolidatedBalanceSheet** — Balance sheet presented within consolidated financial statements.
+    - **CurrentAssets** — Assets expected to be realized within the operating cycle (current assets).
+      - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+      - **OtherReceivables** — Receivables other than cash and cash equivalents.
+        - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+          - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+          - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+        - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+        - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+        - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+        - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+    - **FinancialAssets** — Assets classified as financial assets, including equity investments, portfolio securities, and loans.
+      - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+      - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+        - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+        - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+        - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+          - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+        - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+          - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+            - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+          - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+          - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+          - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+          - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+          - **GrowthFund** — A fund category focused on growth-stage investments.
+            - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+            - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+          - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+          - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+          - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+          - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+          - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+          - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+          - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+          - **PSIMFund** — PSIM Fund referenced in equity investments.
+          - **RegionalFunds** — Regional funds referenced in the organizational chart.
+          - **SeedFund** — A fund category focused on seed-stage investments.
+            - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+            - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+            - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+          - **VentureCapitalFund** — A venture capital fund.
+          - **VentureFund** — A venture-oriented fund category referenced in the document.
+      - **Loans** — A financing product category used to finance businesses.
+      - **LongTermInvestmentsInPortfolioSecurities** — Long-term holdings of portfolio securities intended for portfolio activity.
+      - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+        - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+          - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+        - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+        - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+      - **Receivables** — Amounts receivable, including other receivables and related receivables.
+    - **Liabilities** — The liabilities section of financial statements, including total liabilities and their breakdown.
+      - **DeferredIncome** — Income recognized over time (e.g., deferred income such as guarantee commissions to be spread).
+        - **GuaranteeCommissionToBeSpread** — Bpifrance guarantee commissions to be spread included in deferred income.
+      - **FinancialDebts** — Debts issued by the group, including financial debts to credit institutions and miscellaneous financial debts.
+        - **FinancialLoansAndFinancialDebts** — Subcategory covering financial loans and related financial debts.
+        - **MiscellaneousFinancialDebts** — Financial debts other than those specifically classified as loans to credit institutions.
+      - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+        - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+      - **OperatingDebts** — Debt obligations arising from operations, including trade, tax/social security, and other debts.
+        - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+          - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+        - **OtherDebts** — Other operational debt obligations not classified as trade payables or tax/social security debts.
+          - **BpifranceAccruedExpenses** — Bpifrance accrued expenses referenced in other debts.
+          - **BpifranceParticipationsAllocation** — Allocation payable to Bpifrance Participations referenced in other debts.
+          - **InnovationAndIndustryFundAllocation** — Allocation payable to the Innovation and Industry Fund referenced in other debts.
+          - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+          - **StateAccruedExpenses** — State accrued expenses referenced in other debts.
+        - **SecuritiesRemainingToBeReleased** — Securities remaining to be released to funds referenced in debts on fixed assets and related accounts.
+        - **SharesToBeReleased** — Shares remaining to be released referenced in debts on fixed assets and related accounts.
+        - **TaxAndSocialSecurityDebts** — Debts related to taxes and social security contributions.
+          - **SocialSecurityDebts** — Social security debts referenced in tax and social security debts note.
+          - **TaxDebts** — Tax debts referenced in tax and social security debts note.
+        - **TradePayables** — Payables to suppliers and related accounts.
+          - **TradeDebts** — Trade debts referenced in trade debts and related accounts note.
+        - **TradePayablesAndRelatedAccounts** — Trade payables and related accounts.
+      - **ShareholdersEquity** — Equity items presented within the liabilities/equity section, including capital, retained earnings, and current-year profit or loss.
+        - **Capital** — Subscribed capital component of shareholders’ equity.
+        - **MinorityInterest** — Portion of equity attributable to interests other than the group’s share.
+        - **NonRecyclableEquityItem** — Equity items that cannot be reclassified (non-recyclable) to profit or loss.
+        - **ProfitOrLoss** — The result of the financial year included in shareholders’ equity and income statement.
+        - **ProfitOrLossForFinancialYear** — Result for the financial year included in shareholders’ equity.
+        - **RecyclableEquityItem** — Equity items that can be reclassified (recyclable) to profit or loss.
+        - **RetainedEarnings** — Accumulated earnings component of shareholders’ equity.
+    - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+  - **CashFlowStatement** — A financial statement detailing cash flows and their components such as operating, investing, financing, and exchange-rate impacts.
+    - **FinancingActivities** — Cash flows resulting from changes in the financial structure, including equity and long-term borrowings.
+      - **NetCashFlowFromFinancingOperations** — Net cash flow from financing operations.
+    - **InvestingActivities** — Cash flows related to acquisition and disposal of investments and other investment operations.
+      - **NetCashFlowFromInvestingActivities** — Net cash flow from investing activities.
+    - **NetCash** — The net cash concept corresponding to cash and cash equivalents.
+    - **OperatingActivities** — Cash flows generated by the business’s revenue-generating activities.
+      - **NetCashFlowFromOperatingActivities** — Net cash flow from operating activities computed using the indirect method.
+      - **WorkingCapitalRequirements** — The net working capital requirement changes used to compute cash flow from operating activities.
+  - **ConsolidatedFinancialStatement** — A financial statement that aggregates the financial position and performance of a group of companies.
+    - **HalfYearConsolidatedFinancialStatement** — A consolidated financial statement prepared for a half-year period.
+  - **ConsolidatedFinancialStatements** — Financial statements prepared on a consolidated basis for the group, including notes on accounting standards, consolidation, and financial statement items.
+    - **BalanceSheet** — A consolidated statement presenting assets and liabilities at a reporting date.
+      - **ConsolidatedBalanceSheet** — Balance sheet presented within consolidated financial statements.
+      - **CurrentAssets** — Assets expected to be realized within the operating cycle (current assets).
+        - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+        - **OtherReceivables** — Receivables other than cash and cash equivalents.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+          - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+          - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+      - **FinancialAssets** — Assets classified as financial assets, including equity investments, portfolio securities, and loans.
+        - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+        - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+          - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+          - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+          - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+            - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+          - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+            - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+              - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+            - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+            - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+            - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+            - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+            - **GrowthFund** — A fund category focused on growth-stage investments.
+              - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+              - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+            - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+            - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+            - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+            - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+              - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+              - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+            - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+            - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+            - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+            - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+            - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+            - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+            - **PSIMFund** — PSIM Fund referenced in equity investments.
+            - **RegionalFunds** — Regional funds referenced in the organizational chart.
+            - **SeedFund** — A fund category focused on seed-stage investments.
+              - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+              - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+              - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+            - **VentureCapitalFund** — A venture capital fund.
+            - **VentureFund** — A venture-oriented fund category referenced in the document.
+        - **Loans** — A financing product category used to finance businesses.
+        - **LongTermInvestmentsInPortfolioSecurities** — Long-term holdings of portfolio securities intended for portfolio activity.
+        - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+          - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+          - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+          - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+            - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+              - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+              - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+        - **Receivables** — Amounts receivable, including other receivables and related receivables.
+      - **Liabilities** — The liabilities section of financial statements, including total liabilities and their breakdown.
+        - **DeferredIncome** — Income recognized over time (e.g., deferred income such as guarantee commissions to be spread).
+          - **GuaranteeCommissionToBeSpread** — Bpifrance guarantee commissions to be spread included in deferred income.
+        - **FinancialDebts** — Debts issued by the group, including financial debts to credit institutions and miscellaneous financial debts.
+          - **FinancialLoansAndFinancialDebts** — Subcategory covering financial loans and related financial debts.
+          - **MiscellaneousFinancialDebts** — Financial debts other than those specifically classified as loans to credit institutions.
+        - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+          - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+        - **OperatingDebts** — Debt obligations arising from operations, including trade, tax/social security, and other debts.
+          - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+            - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+          - **OtherDebts** — Other operational debt obligations not classified as trade payables or tax/social security debts.
+            - **BpifranceAccruedExpenses** — Bpifrance accrued expenses referenced in other debts.
+            - **BpifranceParticipationsAllocation** — Allocation payable to Bpifrance Participations referenced in other debts.
+            - **InnovationAndIndustryFundAllocation** — Allocation payable to the Innovation and Industry Fund referenced in other debts.
+            - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+            - **StateAccruedExpenses** — State accrued expenses referenced in other debts.
+          - **SecuritiesRemainingToBeReleased** — Securities remaining to be released to funds referenced in debts on fixed assets and related accounts.
+          - **SharesToBeReleased** — Shares remaining to be released referenced in debts on fixed assets and related accounts.
+          - **TaxAndSocialSecurityDebts** — Debts related to taxes and social security contributions.
+            - **SocialSecurityDebts** — Social security debts referenced in tax and social security debts note.
+            - **TaxDebts** — Tax debts referenced in tax and social security debts note.
+          - **TradePayables** — Payables to suppliers and related accounts.
+            - **TradeDebts** — Trade debts referenced in trade debts and related accounts note.
+          - **TradePayablesAndRelatedAccounts** — Trade payables and related accounts.
+        - **ShareholdersEquity** — Equity items presented within the liabilities/equity section, including capital, retained earnings, and current-year profit or loss.
+          - **Capital** — Subscribed capital component of shareholders’ equity.
+          - **MinorityInterest** — Portion of equity attributable to interests other than the group’s share.
+          - **NonRecyclableEquityItem** — Equity items that cannot be reclassified (non-recyclable) to profit or loss.
+          - **ProfitOrLoss** — The result of the financial year included in shareholders’ equity and income statement.
+          - **ProfitOrLossForFinancialYear** — Result for the financial year included in shareholders’ equity.
+          - **RecyclableEquityItem** — Equity items that can be reclassified (recyclable) to profit or loss.
+          - **RetainedEarnings** — Accumulated earnings component of shareholders’ equity.
+      - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **CashFlowStatement** — A financial statement detailing cash flows and their components such as operating, investing, financing, and exchange-rate impacts.
+      - **FinancingActivities** — Cash flows resulting from changes in the financial structure, including equity and long-term borrowings.
+        - **NetCashFlowFromFinancingOperations** — Net cash flow from financing operations.
+      - **InvestingActivities** — Cash flows related to acquisition and disposal of investments and other investment operations.
+        - **NetCashFlowFromInvestingActivities** — Net cash flow from investing activities.
+      - **NetCash** — The net cash concept corresponding to cash and cash equivalents.
+      - **OperatingActivities** — Cash flows generated by the business’s revenue-generating activities.
+        - **NetCashFlowFromOperatingActivities** — Net cash flow from operating activities computed using the indirect method.
+        - **WorkingCapitalRequirements** — The net working capital requirement changes used to compute cash flow from operating activities.
+    - **ConsolidatedBalanceSheet** — Balance sheet presented within consolidated financial statements.
+    - **ConsolidatedIncomeStatement** — Income statement presented within consolidated financial statements.
+    - **ConsolidatedProfitAndLossStatement** — Consolidated profit and loss statement including net banking income and net income.
+    - **ConsolidationMethod** — The accounting approach used to consolidate entities depending on the nature of control (full consolidation vs equity method).
+      - **EquityConsolidation** — A consolidation approach using the equity method for joint ventures and equity-accounted companies.
+      - **EquityMethod** — A method that replaces the investment’s carrying amount with the investor’s share of investee equity and recognizes the investor’s share of profit or loss.
+        - **EquityAccountedInvestment** — An investment whose carrying value is adjusted for the investor’s share of equity and net profit or loss.
+        - **EquityConsolidationAdjustments** — Adjustments made when applying the equity method, including restatements and eliminations.
+        - **InvestmentInCompanyAccountedForUsingEquityMethod** — An equity investment accounted for using the equity method, including goodwill and impairment testing.
+      - **EquityMethodConsolidation** — Consolidation method used for joint ventures and significant influence holdings.
+      - **FullConsolidation** — A consolidation method used for entities over which complete control is exercised.
+      - **FullConsolidationMethod** — A consolidation method used when complete control is exercised over an entity.
+    - **ConsolidationPrinciple** — A rule describing how entities are included in consolidation based on control, joint control, or significant influence.
+      - **Control** — The condition under which the group is exposed to variable returns and can direct relevant activities to influence those returns.
+      - **JointControl** — Contractual sharing of control over a partnership requiring unanimous consent for relevant activities.
+      - **SignificantInfluence** — The power to participate in decisions regarding financial and operating policies of an investee without controlling or jointly controlling it.
+    - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+      - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+      - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+        - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+          - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+    - **EquityMethodInvestments** — Investments accounted for using the equity method within consolidation.
+      - **InvestmentsAccountedForUsingEquityMethod** — Specific investments treated under the equity method.
+    - **HalfYearConsolidatedFinancialStatements** — Condensed half-year consolidated financial statements prepared for the group.
+    - **NotesToFinancialStatements** — Supplementary disclosures accompanying financial statements, including accounting principles, events, and fair value information.
+      - **AccountingPrinciplesAndMethods** — Disclosures describing the accounting principles, valuation methods, and regulatory framework used to prepare the statements.
+        - **IFRSICDecision** — An IFRS Interpretations Committee decision applied to post-employment benefits.
+        - **IFRSStandards** — International Financial Reporting Standards applied in preparing the consolidated financial statements.
+        - **InterimFinancialReporting** — Interim financial reporting framework used for half-year condensed statements.
+        - **RegulatoryFramework** — The regulatory and recommendation context governing the presentation and preparation of consolidated financial statements.
+      - **ActivitiesOnBehalfOfThirdParties** — Operations managed on behalf of third parties (e.g., the State) not appearing on the balance sheet of the public company.
+        - **FrenchTechSovereignty** — Activity on behalf of third parties involving equity interests in companies developing future technologies.
+        - **FrenchTechSovereigntyActivity** — French Tech Sovereignty activity representing equity interests in companies developing future technologies on behalf of the French State.
+        - **SATTActivity** — SATT activity representing equity interests in Technology Transfer Accelerator Companies on behalf of the French State.
+      - **ActivitiesOnBehalfOfThirdPartiesNote** — Note section describing activities on behalf of third parties.
+      - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+      - **CashAndCashEquivalentsNote** — Note section detailing cash and cash equivalents.
+      - **CompensationPaidToAdministrativeBodiesNote** — Note section detailing compensation paid to members of administrative bodies.
+      - **CompensationPaidToMembersOfAdministrativeBodies** — Note category for compensation paid to members of administrative bodies.
+      - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+        - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+        - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+          - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+            - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+            - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+              - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+              - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+              - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+            - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+      - **CorporateIncomeTaxNote** — Note section dealing with corporate income tax.
+      - **DebtsOnFixedAssetsAndRelatedAccountsNote** — Note section detailing debts on fixed assets and related accounts.
+      - **DeferredIncomeNote** — Note section dealing with deferred income.
+      - **DividendsNote** — Note section dealing with dividends.
+      - **DividendsPaid** — Disclosures about dividends distributed during the period.
+      - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+        - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+        - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+        - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+          - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+        - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+          - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+            - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+          - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+          - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+          - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+          - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+          - **GrowthFund** — A fund category focused on growth-stage investments.
+            - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+            - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+          - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+          - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+          - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+          - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+          - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+          - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+          - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+          - **PSIMFund** — PSIM Fund referenced in equity investments.
+          - **RegionalFunds** — Regional funds referenced in the organizational chart.
+          - **SeedFund** — A fund category focused on seed-stage investments.
+            - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+            - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+            - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+          - **VentureCapitalFund** — A venture capital fund.
+          - **VentureFund** — A venture-oriented fund category referenced in the document.
+      - **EquityInvestmentsNote** — Note section detailing equity investments.
+      - **EventsDuringThePeriod** — Disclosures about significant events occurring during the reporting period.
+      - **ExtraordinaryExpensesNote** — Note section dealing with extraordinary expenses.
+      - **ExtraordinaryIncomeNote** — Note section dealing with extraordinary income.
+      - **FairValueInformation** — Disclosures about fair value measurement, including valuation levels and sensitivity for financial instruments.
+      - **FinancialLoansAndFinancialDebtsNote** — Note category detailing financial loans and financial debts.
+      - **InterestAndSimilarExpensesNote** — Note section dealing with interest and similar expenses.
+      - **InterestAndSimilarIncomeNote** — Note section dealing with interest and similar income.
+      - **Loans** — A financing product category used to finance businesses.
+      - **LoansNote** — Note section detailing loans.
+      - **LongTermInvestmentsInPortfolioSecuritiesNote** — Note section detailing long-term investments in portfolio securities.
+      - **OffBalanceSheetCommitments** — Commitments given and received disclosed outside the balance sheet.
+        - **Commitment** — A generic commitment disclosed off-balance sheet.
+        - **CommitmentsGiven** — Off-balance-sheet commitments given by the entity.
+          - **FinancingCommitments** — Financing commitments given or received.
+          - **GuaranteeCommitments** — Guarantee commitments given or received.
+          - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+        - **CommitmentsReceived** — Off-balance-sheet commitments received by the entity.
+        - **FinancingCommitment** — Financing commitments given or received (e.g., commitments to credit institutions/customers).
+        - **FinancingCommitments** — Financing commitments given or received.
+        - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+          - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+            - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+            - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+              - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+            - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+            - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+          - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+        - **GuaranteeCommitments** — Guarantee commitments given or received.
+        - **OffBalanceSheetCommitmentProgram** — General category for off-balance-sheet commitment programs such as financing, guarantees, and securities commitments.
+        - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+          - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+          - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+        - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+      - **OffBalanceSheetCommitmentsNote** — Note section detailing off-balance sheet commitments.
+      - **OperatingExpensesNote** — Note section dealing with operating expenses.
+      - **OtherDebtsNote** — Note section detailing other debts.
+      - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+        - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+          - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+        - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+        - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+      - **OtherFinancialAssetsNote** — Note section detailing other financial assets.
+      - **OtherReceivables** — Receivables other than cash and cash equivalents.
+        - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+          - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+          - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+        - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+        - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+        - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+        - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+      - **OtherReceivablesNote** — Note section detailing other receivables.
+      - **PresentationAndAssessmentRules** — Note describing presentation and assessment rules for the financial statements.
+      - **RelatedPartiesInformation** — Note category for information on related parties and related transactions.
+      - **RelatedPartiesInformationNote** — Note section providing information on related parties.
+      - **Resources** — Disclosures about the group’s resources such as loans, financing commitments, guarantees, and related business activity breakdowns.
+      - **ShareholdersEquityNote** — Note category detailing shareholders’ equity movements and components.
+      - **SignificantEvents** — Note section describing significant events and post-balance-sheet events.
+      - **SignificantEventsAndPostBalanceSheetEvents** — Note covering significant events during the year and post-balance-sheet events.
+      - **TableOfSubsidiariesAndInvestments** — Note category providing a table of subsidiaries and investments.
+      - **TableOfSubsidiariesAndInvestmentsNote** — Note section providing a table of subsidiaries and investments.
+      - **TaxAndSocialSecurityDebtsNote** — Note section detailing tax and social security debts.
+      - **TradeDebtsAndRelatedAccounts** — Note category for trade debts and related accounts.
+      - **TradeDebtsAndRelatedAccountsNote** — Note section detailing trade debts and related accounts.
+    - **ProfitAndLossStatement** — A consolidated statement presenting income and expenses and resulting net income.
+    - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **PublishableIncomeStatement** — A publishable income statement (income statement) section of financial reporting.
+      - **CorporateIncomeTaxes** — Corporate income tax line item.
+      - **CurrentIncomeBeforeTaxes** — Income before taxes line item.
+      - **ExceptionalProfitOrLoss** — Exceptional profit or loss derived from extraordinary income and expenses.
+      - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+        - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+      - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+        - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+        - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+        - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+      - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+        - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+      - **FinancialIncome** — Income from financial activities such as dividends and interest.
+        - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+        - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+        - **InterestAndSimilarIncome** — Interest and similar income line item.
+          - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+          - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+          - **LoanInterest** — Interest income arising from loans.
+          - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+      - **FinancialResult** — Net financial result after financial income and financial expenses.
+      - **FinancialYearEarnings** — Earnings for the financial year after tax.
+      - **NetOperatingIncome** — Net operating income derived from operating earnings and operating expenses.
+      - **OperatingEarnings** — Operating earnings line item in the income statement.
+      - **OperatingExpenses** — Operating expenses line item in the income statement.
+        - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+        - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+        - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+    - **ScopeOfConsolidation** — Section/note describing the scope of consolidation.
+    - **StatementOfCashFlows** — Statement of cash flows describing flows related to transactions and taxes paid.
+  - **GoingConcern** — Going concern concept referenced in responsibilities for preparing financial statements.
+  - **IncomeStatement** — A publishable income statement showing operating, financial, and extraordinary results.
+    - **ConsolidatedIncomeStatement** — Income statement presented within consolidated financial statements.
+    - **CorporateIncomeTax** — Corporate income tax accounting and related taxable profit classification.
+    - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+      - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+    - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+      - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+      - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+      - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+    - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+      - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+    - **FinancialIncome** — Income from financial activities such as dividends and interest.
+      - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+      - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+      - **InterestAndSimilarIncome** — Interest and similar income line item.
+        - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+        - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+        - **LoanInterest** — Interest income arising from loans.
+        - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+    - **FinancialYearEarnings** — Earnings for the financial year after tax.
+    - **OperatingExpenses** — Operating expenses line item in the income statement.
+      - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+      - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+      - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+    - **PublishableIncomeStatement** — A publishable income statement (income statement) section of financial reporting.
+      - **CorporateIncomeTaxes** — Corporate income tax line item.
+      - **CurrentIncomeBeforeTaxes** — Income before taxes line item.
+      - **ExceptionalProfitOrLoss** — Exceptional profit or loss derived from extraordinary income and expenses.
+      - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+        - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+      - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+        - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+        - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+        - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+      - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+        - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+      - **FinancialIncome** — Income from financial activities such as dividends and interest.
+        - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+        - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+        - **InterestAndSimilarIncome** — Interest and similar income line item.
+          - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+          - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+          - **LoanInterest** — Interest income arising from loans.
+          - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+      - **FinancialResult** — Net financial result after financial income and financial expenses.
+      - **FinancialYearEarnings** — Earnings for the financial year after tax.
+      - **NetOperatingIncome** — Net operating income derived from operating earnings and operating expenses.
+      - **OperatingEarnings** — Operating earnings line item in the income statement.
+      - **OperatingExpenses** — Operating expenses line item in the income statement.
+        - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+        - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+        - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+  - **InterimFinancialStatement** — A financial statement for an interim period (e.g., condensed half-year consolidated financial statements).
+  - **NotesToFinancialStatements** — Supplementary disclosures accompanying financial statements, including accounting principles, events, and fair value information.
+    - **AccountingPrinciplesAndMethods** — Disclosures describing the accounting principles, valuation methods, and regulatory framework used to prepare the statements.
+      - **IFRSICDecision** — An IFRS Interpretations Committee decision applied to post-employment benefits.
+      - **IFRSStandards** — International Financial Reporting Standards applied in preparing the consolidated financial statements.
+      - **InterimFinancialReporting** — Interim financial reporting framework used for half-year condensed statements.
+      - **RegulatoryFramework** — The regulatory and recommendation context governing the presentation and preparation of consolidated financial statements.
+    - **ActivitiesOnBehalfOfThirdParties** — Operations managed on behalf of third parties (e.g., the State) not appearing on the balance sheet of the public company.
+      - **FrenchTechSovereignty** — Activity on behalf of third parties involving equity interests in companies developing future technologies.
+      - **FrenchTechSovereigntyActivity** — French Tech Sovereignty activity representing equity interests in companies developing future technologies on behalf of the French State.
+      - **SATTActivity** — SATT activity representing equity interests in Technology Transfer Accelerator Companies on behalf of the French State.
+    - **ActivitiesOnBehalfOfThirdPartiesNote** — Note section describing activities on behalf of third parties.
+    - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+    - **CashAndCashEquivalentsNote** — Note section detailing cash and cash equivalents.
+    - **CompensationPaidToAdministrativeBodiesNote** — Note section detailing compensation paid to members of administrative bodies.
+    - **CompensationPaidToMembersOfAdministrativeBodies** — Note category for compensation paid to members of administrative bodies.
+    - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+      - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+      - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+        - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+          - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+    - **CorporateIncomeTaxNote** — Note section dealing with corporate income tax.
+    - **DebtsOnFixedAssetsAndRelatedAccountsNote** — Note section detailing debts on fixed assets and related accounts.
+    - **DeferredIncomeNote** — Note section dealing with deferred income.
+    - **DividendsNote** — Note section dealing with dividends.
+    - **DividendsPaid** — Disclosures about dividends distributed during the period.
+    - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+      - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+      - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+      - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+        - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+      - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+        - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+          - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+        - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+        - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+        - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+        - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+        - **GrowthFund** — A fund category focused on growth-stage investments.
+          - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+          - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+        - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+        - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+        - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+        - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+          - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+          - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+        - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+        - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+        - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+        - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+        - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+        - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+        - **PSIMFund** — PSIM Fund referenced in equity investments.
+        - **RegionalFunds** — Regional funds referenced in the organizational chart.
+        - **SeedFund** — A fund category focused on seed-stage investments.
+          - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+          - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+          - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+        - **VentureCapitalFund** — A venture capital fund.
+        - **VentureFund** — A venture-oriented fund category referenced in the document.
+    - **EquityInvestmentsNote** — Note section detailing equity investments.
+    - **EventsDuringThePeriod** — Disclosures about significant events occurring during the reporting period.
+    - **ExtraordinaryExpensesNote** — Note section dealing with extraordinary expenses.
+    - **ExtraordinaryIncomeNote** — Note section dealing with extraordinary income.
+    - **FairValueInformation** — Disclosures about fair value measurement, including valuation levels and sensitivity for financial instruments.
+    - **FinancialLoansAndFinancialDebtsNote** — Note category detailing financial loans and financial debts.
+    - **InterestAndSimilarExpensesNote** — Note section dealing with interest and similar expenses.
+    - **InterestAndSimilarIncomeNote** — Note section dealing with interest and similar income.
+    - **Loans** — A financing product category used to finance businesses.
+    - **LoansNote** — Note section detailing loans.
+    - **LongTermInvestmentsInPortfolioSecuritiesNote** — Note section detailing long-term investments in portfolio securities.
+    - **OffBalanceSheetCommitments** — Commitments given and received disclosed outside the balance sheet.
+      - **Commitment** — A generic commitment disclosed off-balance sheet.
+      - **CommitmentsGiven** — Off-balance-sheet commitments given by the entity.
+        - **FinancingCommitments** — Financing commitments given or received.
+        - **GuaranteeCommitments** — Guarantee commitments given or received.
+        - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+      - **CommitmentsReceived** — Off-balance-sheet commitments received by the entity.
+      - **FinancingCommitment** — Financing commitments given or received (e.g., commitments to credit institutions/customers).
+      - **FinancingCommitments** — Financing commitments given or received.
+      - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+        - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+          - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+          - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+            - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+          - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+          - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+        - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+      - **GuaranteeCommitments** — Guarantee commitments given or received.
+      - **OffBalanceSheetCommitmentProgram** — General category for off-balance-sheet commitment programs such as financing, guarantees, and securities commitments.
+      - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+        - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+        - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+      - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+    - **OffBalanceSheetCommitmentsNote** — Note section detailing off-balance sheet commitments.
+    - **OperatingExpensesNote** — Note section dealing with operating expenses.
+    - **OtherDebtsNote** — Note section detailing other debts.
+    - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+      - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+      - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+        - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+        - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+        - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+      - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+      - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+      - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+    - **OtherFinancialAssetsNote** — Note section detailing other financial assets.
+    - **OtherReceivables** — Receivables other than cash and cash equivalents.
+      - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+        - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+        - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+      - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+      - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+      - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+      - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+    - **OtherReceivablesNote** — Note section detailing other receivables.
+    - **PresentationAndAssessmentRules** — Note describing presentation and assessment rules for the financial statements.
+    - **RelatedPartiesInformation** — Note category for information on related parties and related transactions.
+    - **RelatedPartiesInformationNote** — Note section providing information on related parties.
+    - **Resources** — Disclosures about the group’s resources such as loans, financing commitments, guarantees, and related business activity breakdowns.
+    - **ShareholdersEquityNote** — Note category detailing shareholders’ equity movements and components.
+    - **SignificantEvents** — Note section describing significant events and post-balance-sheet events.
+    - **SignificantEventsAndPostBalanceSheetEvents** — Note covering significant events during the year and post-balance-sheet events.
+    - **TableOfSubsidiariesAndInvestments** — Note category providing a table of subsidiaries and investments.
+    - **TableOfSubsidiariesAndInvestmentsNote** — Note section providing a table of subsidiaries and investments.
+    - **TaxAndSocialSecurityDebtsNote** — Note section detailing tax and social security debts.
+    - **TradeDebtsAndRelatedAccounts** — Note category for trade debts and related accounts.
+    - **TradeDebtsAndRelatedAccountsNote** — Note section detailing trade debts and related accounts.
+  - **OffBalanceSheetCommitments** — Commitments given and received disclosed outside the balance sheet.
+    - **Commitment** — A generic commitment disclosed off-balance sheet.
+    - **CommitmentsGiven** — Off-balance-sheet commitments given by the entity.
+      - **FinancingCommitments** — Financing commitments given or received.
+      - **GuaranteeCommitments** — Guarantee commitments given or received.
+      - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+    - **CommitmentsReceived** — Off-balance-sheet commitments received by the entity.
+    - **FinancingCommitment** — Financing commitments given or received (e.g., commitments to credit institutions/customers).
+    - **FinancingCommitments** — Financing commitments given or received.
+    - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+      - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+        - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+        - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+          - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+        - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+        - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+      - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+    - **GuaranteeCommitments** — Guarantee commitments given or received.
+    - **OffBalanceSheetCommitmentProgram** — General category for off-balance-sheet commitment programs such as financing, guarantees, and securities commitments.
+    - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+      - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+      - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+    - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+  - **ParentEntityFinancialStatements** — Financial statements prepared for the parent entity only (publishable balance sheet, income statement, and notes).
+    - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **PublishableIncomeStatement** — A publishable income statement (income statement) section of financial reporting.
+      - **CorporateIncomeTaxes** — Corporate income tax line item.
+      - **CurrentIncomeBeforeTaxes** — Income before taxes line item.
+      - **ExceptionalProfitOrLoss** — Exceptional profit or loss derived from extraordinary income and expenses.
+      - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+        - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+      - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+        - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+        - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+        - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+      - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+        - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+      - **FinancialIncome** — Income from financial activities such as dividends and interest.
+        - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+        - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+        - **InterestAndSimilarIncome** — Interest and similar income line item.
+          - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+          - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+          - **LoanInterest** — Interest income arising from loans.
+          - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+      - **FinancialResult** — Net financial result after financial income and financial expenses.
+      - **FinancialYearEarnings** — Earnings for the financial year after tax.
+      - **NetOperatingIncome** — Net operating income derived from operating earnings and operating expenses.
+      - **OperatingEarnings** — Operating earnings line item in the income statement.
+      - **OperatingExpenses** — Operating expenses line item in the income statement.
+        - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+        - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+        - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+  - **ShareholdersEquityStatement** — A statement/table describing changes in shareholders’ equity over a period.
+  - **StatutoryAuditorReport** — A report issued by statutory auditors on financial statements.
+    - **AuditEngagement** — The engagement entrusted to statutory auditors to audit financial statements.
+    - **ConsolidatedFinancialStatementsAuditReport** — Statutory auditor report on the consolidated financial statements.
+    - **ConsolidatedStatutoryAuditorReport** — Statutory auditor report on consolidated financial statements.
+    - **ParentEntityFinancialStatementsAuditReport** — Statutory auditor report on the parent entity financial statements.
+    - **ParentEntityStatutoryAuditorReport** — Statutory auditor report on parent entity financial statements.
+  - **StatutoryAuditorsReport** — A report issued by statutory auditors on the limited review of the interim consolidated financial statements.
+    - **LimitedReview** — An assurance engagement performing a limited review of interim financial information under applicable professional standards.
+- **FinancialStatements** — The annual financial statements (balance sheet, income statement, and appendix) approved by shareholders.
+  - **AnnualFinancialStatements** — Financial statements prepared for the parent entity on an annual basis.
+  - **CashFlowTable** — Cash flow table included in the notes/appendix of financial reporting.
+  - **ConsolidatedFinancialStatements** — Financial statements prepared on a consolidated basis for the group, including notes on accounting standards, consolidation, and financial statement items.
+    - **BalanceSheet** — A consolidated statement presenting assets and liabilities at a reporting date.
+      - **ConsolidatedBalanceSheet** — Balance sheet presented within consolidated financial statements.
+      - **CurrentAssets** — Assets expected to be realized within the operating cycle (current assets).
+        - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+        - **OtherReceivables** — Receivables other than cash and cash equivalents.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+          - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+          - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+      - **FinancialAssets** — Assets classified as financial assets, including equity investments, portfolio securities, and loans.
+        - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+        - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+          - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+          - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+          - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+            - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+          - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+            - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+              - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+            - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+            - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+            - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+            - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+            - **GrowthFund** — A fund category focused on growth-stage investments.
+              - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+              - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+            - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+            - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+            - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+            - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+              - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+              - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+            - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+            - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+            - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+            - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+            - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+            - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+            - **PSIMFund** — PSIM Fund referenced in equity investments.
+            - **RegionalFunds** — Regional funds referenced in the organizational chart.
+            - **SeedFund** — A fund category focused on seed-stage investments.
+              - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+              - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+              - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+            - **VentureCapitalFund** — A venture capital fund.
+            - **VentureFund** — A venture-oriented fund category referenced in the document.
+        - **Loans** — A financing product category used to finance businesses.
+        - **LongTermInvestmentsInPortfolioSecurities** — Long-term holdings of portfolio securities intended for portfolio activity.
+        - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+          - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+          - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+          - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+            - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+              - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+              - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+        - **Receivables** — Amounts receivable, including other receivables and related receivables.
+      - **Liabilities** — The liabilities section of financial statements, including total liabilities and their breakdown.
+        - **DeferredIncome** — Income recognized over time (e.g., deferred income such as guarantee commissions to be spread).
+          - **GuaranteeCommissionToBeSpread** — Bpifrance guarantee commissions to be spread included in deferred income.
+        - **FinancialDebts** — Debts issued by the group, including financial debts to credit institutions and miscellaneous financial debts.
+          - **FinancialLoansAndFinancialDebts** — Subcategory covering financial loans and related financial debts.
+          - **MiscellaneousFinancialDebts** — Financial debts other than those specifically classified as loans to credit institutions.
+        - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+          - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+        - **OperatingDebts** — Debt obligations arising from operations, including trade, tax/social security, and other debts.
+          - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+            - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+          - **OtherDebts** — Other operational debt obligations not classified as trade payables or tax/social security debts.
+            - **BpifranceAccruedExpenses** — Bpifrance accrued expenses referenced in other debts.
+            - **BpifranceParticipationsAllocation** — Allocation payable to Bpifrance Participations referenced in other debts.
+            - **InnovationAndIndustryFundAllocation** — Allocation payable to the Innovation and Industry Fund referenced in other debts.
+            - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+            - **StateAccruedExpenses** — State accrued expenses referenced in other debts.
+          - **SecuritiesRemainingToBeReleased** — Securities remaining to be released to funds referenced in debts on fixed assets and related accounts.
+          - **SharesToBeReleased** — Shares remaining to be released referenced in debts on fixed assets and related accounts.
+          - **TaxAndSocialSecurityDebts** — Debts related to taxes and social security contributions.
+            - **SocialSecurityDebts** — Social security debts referenced in tax and social security debts note.
+            - **TaxDebts** — Tax debts referenced in tax and social security debts note.
+          - **TradePayables** — Payables to suppliers and related accounts.
+            - **TradeDebts** — Trade debts referenced in trade debts and related accounts note.
+          - **TradePayablesAndRelatedAccounts** — Trade payables and related accounts.
+        - **ShareholdersEquity** — Equity items presented within the liabilities/equity section, including capital, retained earnings, and current-year profit or loss.
+          - **Capital** — Subscribed capital component of shareholders’ equity.
+          - **MinorityInterest** — Portion of equity attributable to interests other than the group’s share.
+          - **NonRecyclableEquityItem** — Equity items that cannot be reclassified (non-recyclable) to profit or loss.
+          - **ProfitOrLoss** — The result of the financial year included in shareholders’ equity and income statement.
+          - **ProfitOrLossForFinancialYear** — Result for the financial year included in shareholders’ equity.
+          - **RecyclableEquityItem** — Equity items that can be reclassified (recyclable) to profit or loss.
+          - **RetainedEarnings** — Accumulated earnings component of shareholders’ equity.
+      - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **CashFlowStatement** — A financial statement detailing cash flows and their components such as operating, investing, financing, and exchange-rate impacts.
+      - **FinancingActivities** — Cash flows resulting from changes in the financial structure, including equity and long-term borrowings.
+        - **NetCashFlowFromFinancingOperations** — Net cash flow from financing operations.
+      - **InvestingActivities** — Cash flows related to acquisition and disposal of investments and other investment operations.
+        - **NetCashFlowFromInvestingActivities** — Net cash flow from investing activities.
+      - **NetCash** — The net cash concept corresponding to cash and cash equivalents.
+      - **OperatingActivities** — Cash flows generated by the business’s revenue-generating activities.
+        - **NetCashFlowFromOperatingActivities** — Net cash flow from operating activities computed using the indirect method.
+        - **WorkingCapitalRequirements** — The net working capital requirement changes used to compute cash flow from operating activities.
+    - **ConsolidatedBalanceSheet** — Balance sheet presented within consolidated financial statements.
+    - **ConsolidatedIncomeStatement** — Income statement presented within consolidated financial statements.
+    - **ConsolidatedProfitAndLossStatement** — Consolidated profit and loss statement including net banking income and net income.
+    - **ConsolidationMethod** — The accounting approach used to consolidate entities depending on the nature of control (full consolidation vs equity method).
+      - **EquityConsolidation** — A consolidation approach using the equity method for joint ventures and equity-accounted companies.
+      - **EquityMethod** — A method that replaces the investment’s carrying amount with the investor’s share of investee equity and recognizes the investor’s share of profit or loss.
+        - **EquityAccountedInvestment** — An investment whose carrying value is adjusted for the investor’s share of equity and net profit or loss.
+        - **EquityConsolidationAdjustments** — Adjustments made when applying the equity method, including restatements and eliminations.
+        - **InvestmentInCompanyAccountedForUsingEquityMethod** — An equity investment accounted for using the equity method, including goodwill and impairment testing.
+      - **EquityMethodConsolidation** — Consolidation method used for joint ventures and significant influence holdings.
+      - **FullConsolidation** — A consolidation method used for entities over which complete control is exercised.
+      - **FullConsolidationMethod** — A consolidation method used when complete control is exercised over an entity.
+    - **ConsolidationPrinciple** — A rule describing how entities are included in consolidation based on control, joint control, or significant influence.
+      - **Control** — The condition under which the group is exposed to variable returns and can direct relevant activities to influence those returns.
+      - **JointControl** — Contractual sharing of control over a partnership requiring unanimous consent for relevant activities.
+      - **SignificantInfluence** — The power to participate in decisions regarding financial and operating policies of an investee without controlling or jointly controlling it.
+    - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+      - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+      - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+        - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+          - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+    - **EquityMethodInvestments** — Investments accounted for using the equity method within consolidation.
+      - **InvestmentsAccountedForUsingEquityMethod** — Specific investments treated under the equity method.
+    - **HalfYearConsolidatedFinancialStatements** — Condensed half-year consolidated financial statements prepared for the group.
+    - **NotesToFinancialStatements** — Supplementary disclosures accompanying financial statements, including accounting principles, events, and fair value information.
+      - **AccountingPrinciplesAndMethods** — Disclosures describing the accounting principles, valuation methods, and regulatory framework used to prepare the statements.
+        - **IFRSICDecision** — An IFRS Interpretations Committee decision applied to post-employment benefits.
+        - **IFRSStandards** — International Financial Reporting Standards applied in preparing the consolidated financial statements.
+        - **InterimFinancialReporting** — Interim financial reporting framework used for half-year condensed statements.
+        - **RegulatoryFramework** — The regulatory and recommendation context governing the presentation and preparation of consolidated financial statements.
+      - **ActivitiesOnBehalfOfThirdParties** — Operations managed on behalf of third parties (e.g., the State) not appearing on the balance sheet of the public company.
+        - **FrenchTechSovereignty** — Activity on behalf of third parties involving equity interests in companies developing future technologies.
+        - **FrenchTechSovereigntyActivity** — French Tech Sovereignty activity representing equity interests in companies developing future technologies on behalf of the French State.
+        - **SATTActivity** — SATT activity representing equity interests in Technology Transfer Accelerator Companies on behalf of the French State.
+      - **ActivitiesOnBehalfOfThirdPartiesNote** — Note section describing activities on behalf of third parties.
+      - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+      - **CashAndCashEquivalentsNote** — Note section detailing cash and cash equivalents.
+      - **CompensationPaidToAdministrativeBodiesNote** — Note section detailing compensation paid to members of administrative bodies.
+      - **CompensationPaidToMembersOfAdministrativeBodies** — Note category for compensation paid to members of administrative bodies.
+      - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+        - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+        - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+          - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+            - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+            - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+              - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+              - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+              - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+            - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+      - **CorporateIncomeTaxNote** — Note section dealing with corporate income tax.
+      - **DebtsOnFixedAssetsAndRelatedAccountsNote** — Note section detailing debts on fixed assets and related accounts.
+      - **DeferredIncomeNote** — Note section dealing with deferred income.
+      - **DividendsNote** — Note section dealing with dividends.
+      - **DividendsPaid** — Disclosures about dividends distributed during the period.
+      - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+        - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+        - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+        - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+          - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+        - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+          - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+            - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+          - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+          - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+          - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+          - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+          - **GrowthFund** — A fund category focused on growth-stage investments.
+            - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+            - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+          - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+          - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+          - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+          - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+          - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+          - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+          - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+          - **PSIMFund** — PSIM Fund referenced in equity investments.
+          - **RegionalFunds** — Regional funds referenced in the organizational chart.
+          - **SeedFund** — A fund category focused on seed-stage investments.
+            - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+            - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+            - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+          - **VentureCapitalFund** — A venture capital fund.
+          - **VentureFund** — A venture-oriented fund category referenced in the document.
+      - **EquityInvestmentsNote** — Note section detailing equity investments.
+      - **EventsDuringThePeriod** — Disclosures about significant events occurring during the reporting period.
+      - **ExtraordinaryExpensesNote** — Note section dealing with extraordinary expenses.
+      - **ExtraordinaryIncomeNote** — Note section dealing with extraordinary income.
+      - **FairValueInformation** — Disclosures about fair value measurement, including valuation levels and sensitivity for financial instruments.
+      - **FinancialLoansAndFinancialDebtsNote** — Note category detailing financial loans and financial debts.
+      - **InterestAndSimilarExpensesNote** — Note section dealing with interest and similar expenses.
+      - **InterestAndSimilarIncomeNote** — Note section dealing with interest and similar income.
+      - **Loans** — A financing product category used to finance businesses.
+      - **LoansNote** — Note section detailing loans.
+      - **LongTermInvestmentsInPortfolioSecuritiesNote** — Note section detailing long-term investments in portfolio securities.
+      - **OffBalanceSheetCommitments** — Commitments given and received disclosed outside the balance sheet.
+        - **Commitment** — A generic commitment disclosed off-balance sheet.
+        - **CommitmentsGiven** — Off-balance-sheet commitments given by the entity.
+          - **FinancingCommitments** — Financing commitments given or received.
+          - **GuaranteeCommitments** — Guarantee commitments given or received.
+          - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+        - **CommitmentsReceived** — Off-balance-sheet commitments received by the entity.
+        - **FinancingCommitment** — Financing commitments given or received (e.g., commitments to credit institutions/customers).
+        - **FinancingCommitments** — Financing commitments given or received.
+        - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+          - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+            - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+            - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+              - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+            - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+            - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+          - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+        - **GuaranteeCommitments** — Guarantee commitments given or received.
+        - **OffBalanceSheetCommitmentProgram** — General category for off-balance-sheet commitment programs such as financing, guarantees, and securities commitments.
+        - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+          - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+          - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+        - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+      - **OffBalanceSheetCommitmentsNote** — Note section detailing off-balance sheet commitments.
+      - **OperatingExpensesNote** — Note section dealing with operating expenses.
+      - **OtherDebtsNote** — Note section detailing other debts.
+      - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+        - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+          - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+        - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+        - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+      - **OtherFinancialAssetsNote** — Note section detailing other financial assets.
+      - **OtherReceivables** — Receivables other than cash and cash equivalents.
+        - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+          - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+          - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+        - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+        - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+        - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+        - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+      - **OtherReceivablesNote** — Note section detailing other receivables.
+      - **PresentationAndAssessmentRules** — Note describing presentation and assessment rules for the financial statements.
+      - **RelatedPartiesInformation** — Note category for information on related parties and related transactions.
+      - **RelatedPartiesInformationNote** — Note section providing information on related parties.
+      - **Resources** — Disclosures about the group’s resources such as loans, financing commitments, guarantees, and related business activity breakdowns.
+      - **ShareholdersEquityNote** — Note category detailing shareholders’ equity movements and components.
+      - **SignificantEvents** — Note section describing significant events and post-balance-sheet events.
+      - **SignificantEventsAndPostBalanceSheetEvents** — Note covering significant events during the year and post-balance-sheet events.
+      - **TableOfSubsidiariesAndInvestments** — Note category providing a table of subsidiaries and investments.
+      - **TableOfSubsidiariesAndInvestmentsNote** — Note section providing a table of subsidiaries and investments.
+      - **TaxAndSocialSecurityDebtsNote** — Note section detailing tax and social security debts.
+      - **TradeDebtsAndRelatedAccounts** — Note category for trade debts and related accounts.
+      - **TradeDebtsAndRelatedAccountsNote** — Note section detailing trade debts and related accounts.
+    - **ProfitAndLossStatement** — A consolidated statement presenting income and expenses and resulting net income.
+    - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **PublishableIncomeStatement** — A publishable income statement (income statement) section of financial reporting.
+      - **CorporateIncomeTaxes** — Corporate income tax line item.
+      - **CurrentIncomeBeforeTaxes** — Income before taxes line item.
+      - **ExceptionalProfitOrLoss** — Exceptional profit or loss derived from extraordinary income and expenses.
+      - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+        - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+      - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+        - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+        - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+        - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+      - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+        - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+      - **FinancialIncome** — Income from financial activities such as dividends and interest.
+        - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+        - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+        - **InterestAndSimilarIncome** — Interest and similar income line item.
+          - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+          - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+          - **LoanInterest** — Interest income arising from loans.
+          - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+      - **FinancialResult** — Net financial result after financial income and financial expenses.
+      - **FinancialYearEarnings** — Earnings for the financial year after tax.
+      - **NetOperatingIncome** — Net operating income derived from operating earnings and operating expenses.
+      - **OperatingEarnings** — Operating earnings line item in the income statement.
+      - **OperatingExpenses** — Operating expenses line item in the income statement.
+        - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+        - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+        - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+    - **ScopeOfConsolidation** — Section/note describing the scope of consolidation.
+    - **StatementOfCashFlows** — Statement of cash flows describing flows related to transactions and taxes paid.
+  - **FrenchAccountingPrinciples** — Financial reporting under French accounting rules and principles.
+  - **IFRSFinancialReporting** — Financial reporting under IFRS standards adopted by the European Union.
+  - **Liabilities** — The liabilities section of financial statements, including total liabilities and their breakdown.
+    - **DeferredIncome** — Income recognized over time (e.g., deferred income such as guarantee commissions to be spread).
+      - **GuaranteeCommissionToBeSpread** — Bpifrance guarantee commissions to be spread included in deferred income.
+    - **FinancialDebts** — Debts issued by the group, including financial debts to credit institutions and miscellaneous financial debts.
+      - **FinancialLoansAndFinancialDebts** — Subcategory covering financial loans and related financial debts.
+      - **MiscellaneousFinancialDebts** — Financial debts other than those specifically classified as loans to credit institutions.
+    - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+      - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+    - **OperatingDebts** — Debt obligations arising from operations, including trade, tax/social security, and other debts.
+      - **MiscellaneousDebts** — Miscellaneous debts category, including debts on fixed assets and related accounts.
+        - **DebtsOnFixedAssetsAndRelatedAccounts** — Debts specifically related to fixed assets and related accounts.
+      - **OtherDebts** — Other operational debt obligations not classified as trade payables or tax/social security debts.
+        - **BpifranceAccruedExpenses** — Bpifrance accrued expenses referenced in other debts.
+        - **BpifranceParticipationsAllocation** — Allocation payable to Bpifrance Participations referenced in other debts.
+        - **InnovationAndIndustryFundAllocation** — Allocation payable to the Innovation and Industry Fund referenced in other debts.
+        - **OtherPublicInterventionResources** — Other public intervention resources included in other debts.
+        - **StateAccruedExpenses** — State accrued expenses referenced in other debts.
+      - **SecuritiesRemainingToBeReleased** — Securities remaining to be released to funds referenced in debts on fixed assets and related accounts.
+      - **SharesToBeReleased** — Shares remaining to be released referenced in debts on fixed assets and related accounts.
+      - **TaxAndSocialSecurityDebts** — Debts related to taxes and social security contributions.
+        - **SocialSecurityDebts** — Social security debts referenced in tax and social security debts note.
+        - **TaxDebts** — Tax debts referenced in tax and social security debts note.
+      - **TradePayables** — Payables to suppliers and related accounts.
+        - **TradeDebts** — Trade debts referenced in trade debts and related accounts note.
+      - **TradePayablesAndRelatedAccounts** — Trade payables and related accounts.
+    - **ShareholdersEquity** — Equity items presented within the liabilities/equity section, including capital, retained earnings, and current-year profit or loss.
+      - **Capital** — Subscribed capital component of shareholders’ equity.
+      - **MinorityInterest** — Portion of equity attributable to interests other than the group’s share.
+      - **NonRecyclableEquityItem** — Equity items that cannot be reclassified (non-recyclable) to profit or loss.
+      - **ProfitOrLoss** — The result of the financial year included in shareholders’ equity and income statement.
+      - **ProfitOrLossForFinancialYear** — Result for the financial year included in shareholders’ equity.
+      - **RecyclableEquityItem** — Equity items that can be reclassified (recyclable) to profit or loss.
+      - **RetainedEarnings** — Accumulated earnings component of shareholders’ equity.
+  - **NotesToFinancialStatements** — Supplementary disclosures accompanying financial statements, including accounting principles, events, and fair value information.
+    - **AccountingPrinciplesAndMethods** — Disclosures describing the accounting principles, valuation methods, and regulatory framework used to prepare the statements.
+      - **IFRSICDecision** — An IFRS Interpretations Committee decision applied to post-employment benefits.
+      - **IFRSStandards** — International Financial Reporting Standards applied in preparing the consolidated financial statements.
+      - **InterimFinancialReporting** — Interim financial reporting framework used for half-year condensed statements.
+      - **RegulatoryFramework** — The regulatory and recommendation context governing the presentation and preparation of consolidated financial statements.
+    - **ActivitiesOnBehalfOfThirdParties** — Operations managed on behalf of third parties (e.g., the State) not appearing on the balance sheet of the public company.
+      - **FrenchTechSovereignty** — Activity on behalf of third parties involving equity interests in companies developing future technologies.
+      - **FrenchTechSovereigntyActivity** — French Tech Sovereignty activity representing equity interests in companies developing future technologies on behalf of the French State.
+      - **SATTActivity** — SATT activity representing equity interests in Technology Transfer Accelerator Companies on behalf of the French State.
+    - **ActivitiesOnBehalfOfThirdPartiesNote** — Note section describing activities on behalf of third parties.
+    - **CashAndCashEquivalents** — Cash in hand, on-demand deposits, and short-term highly liquid investments with insignificant risk of value change.
+    - **CashAndCashEquivalentsNote** — Note section detailing cash and cash equivalents.
+    - **CompensationPaidToAdministrativeBodiesNote** — Note section detailing compensation paid to members of administrative bodies.
+    - **CompensationPaidToMembersOfAdministrativeBodies** — Note category for compensation paid to members of administrative bodies.
+    - **ConsolidationScope** — Disclosures describing which entities are included in the consolidated financial statements and the consolidation methods used.
+      - **AccountingMethodEquity** — Equity-accounting method used to incorporate equity-consolidated companies in consolidated financial statements.
+      - **ConsolidatedFund** — A fund included in or removed from the consolidation scope based on consolidation rules.
+        - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+          - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+          - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+            - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+            - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+            - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+          - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+    - **CorporateIncomeTaxNote** — Note section dealing with corporate income tax.
+    - **DebtsOnFixedAssetsAndRelatedAccountsNote** — Note section detailing debts on fixed assets and related accounts.
+    - **DeferredIncomeNote** — Note section dealing with deferred income.
+    - **DividendsNote** — Note section dealing with dividends.
+    - **DividendsPaid** — Disclosures about dividends distributed during the period.
+    - **EquityInvestments** — Equity investments held as long-term ownership useful for the company’s business.
+      - **EquityInterestInFutureTechnologyCompany** — Equity interests in companies developing future technologies.
+      - **EquityInterestInTechnologyTransferAccelerationCompany** — Equity interests in Technology Transfer Acceleration Companies (SATT).
+      - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+        - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+      - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+        - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+          - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+        - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+        - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+        - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+        - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+        - **GrowthFund** — A fund category focused on growth-stage investments.
+          - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+          - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+        - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+        - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+        - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+        - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+          - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+          - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+        - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+        - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+        - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+        - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+        - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+        - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+        - **PSIMFund** — PSIM Fund referenced in equity investments.
+        - **RegionalFunds** — Regional funds referenced in the organizational chart.
+        - **SeedFund** — A fund category focused on seed-stage investments.
+          - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+          - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+          - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+        - **VentureCapitalFund** — A venture capital fund.
+        - **VentureFund** — A venture-oriented fund category referenced in the document.
+    - **EquityInvestmentsNote** — Note section detailing equity investments.
+    - **EventsDuringThePeriod** — Disclosures about significant events occurring during the reporting period.
+    - **ExtraordinaryExpensesNote** — Note section dealing with extraordinary expenses.
+    - **ExtraordinaryIncomeNote** — Note section dealing with extraordinary income.
+    - **FairValueInformation** — Disclosures about fair value measurement, including valuation levels and sensitivity for financial instruments.
+    - **FinancialLoansAndFinancialDebtsNote** — Note category detailing financial loans and financial debts.
+    - **InterestAndSimilarExpensesNote** — Note section dealing with interest and similar expenses.
+    - **InterestAndSimilarIncomeNote** — Note section dealing with interest and similar income.
+    - **Loans** — A financing product category used to finance businesses.
+    - **LoansNote** — Note section detailing loans.
+    - **LongTermInvestmentsInPortfolioSecuritiesNote** — Note section detailing long-term investments in portfolio securities.
+    - **OffBalanceSheetCommitments** — Commitments given and received disclosed outside the balance sheet.
+      - **Commitment** — A generic commitment disclosed off-balance sheet.
+      - **CommitmentsGiven** — Off-balance-sheet commitments given by the entity.
+        - **FinancingCommitments** — Financing commitments given or received.
+        - **GuaranteeCommitments** — Guarantee commitments given or received.
+        - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+      - **CommitmentsReceived** — Off-balance-sheet commitments received by the entity.
+      - **FinancingCommitment** — Financing commitments given or received (e.g., commitments to credit institutions/customers).
+      - **FinancingCommitments** — Financing commitments given or received.
+      - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+        - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+          - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+          - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+            - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+          - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+          - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+        - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+      - **GuaranteeCommitments** — Guarantee commitments given or received.
+      - **OffBalanceSheetCommitmentProgram** — General category for off-balance-sheet commitment programs such as financing, guarantees, and securities commitments.
+      - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+        - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+        - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+      - **SecuritiesCommitments** — Securities-related commitments such as buyback/takeback options.
+    - **OffBalanceSheetCommitmentsNote** — Note section detailing off-balance sheet commitments.
+    - **OperatingExpensesNote** — Note section dealing with operating expenses.
+    - **OtherDebtsNote** — Note section detailing other debts.
+    - **OtherFinancialAssets** — Category of financial assets other than cash and cash equivalents, including loans and reserve funds.
+      - **FranceGreenNationGrantsReceivables** — Receivables related to France Green Nation grants.
+      - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+        - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+        - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+        - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+      - **InnovationAndIndustryFundReceivables** — Receivables related to the Innovation and Industry Fund included in other financial assets.
+      - **PPMTRAllowance** — An allowance item (PPMTR allowance) included in other financial assets.
+      - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+        - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+          - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+          - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+    - **OtherFinancialAssetsNote** — Note section detailing other financial assets.
+    - **OtherReceivables** — Receivables other than cash and cash equivalents.
+      - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+        - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+        - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+      - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+      - **InvestingInTheFutureProgram** — Investing in the Future (PIA) program receivables and related allocations.
+      - **PublicResourcesProgram** — Receivables related to public resources programs such as France 2030 and PIA4.
+      - **StateCurrentAccount** — State current account balances with Agence France Trésor referenced in receivables and cash notes.
+    - **OtherReceivablesNote** — Note section detailing other receivables.
+    - **PresentationAndAssessmentRules** — Note describing presentation and assessment rules for the financial statements.
+    - **RelatedPartiesInformation** — Note category for information on related parties and related transactions.
+    - **RelatedPartiesInformationNote** — Note section providing information on related parties.
+    - **Resources** — Disclosures about the group’s resources such as loans, financing commitments, guarantees, and related business activity breakdowns.
+    - **ShareholdersEquityNote** — Note category detailing shareholders’ equity movements and components.
+    - **SignificantEvents** — Note section describing significant events and post-balance-sheet events.
+    - **SignificantEventsAndPostBalanceSheetEvents** — Note covering significant events during the year and post-balance-sheet events.
+    - **TableOfSubsidiariesAndInvestments** — Note category providing a table of subsidiaries and investments.
+    - **TableOfSubsidiariesAndInvestmentsNote** — Note section providing a table of subsidiaries and investments.
+    - **TaxAndSocialSecurityDebtsNote** — Note section detailing tax and social security debts.
+    - **TradeDebtsAndRelatedAccounts** — Note category for trade debts and related accounts.
+    - **TradeDebtsAndRelatedAccountsNote** — Note section detailing trade debts and related accounts.
+  - **ParentEntityFinancialStatements** — Financial statements prepared for the parent entity only (publishable balance sheet, income statement, and notes).
+    - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+    - **PublishableIncomeStatement** — A publishable income statement (income statement) section of financial reporting.
+      - **CorporateIncomeTaxes** — Corporate income tax line item.
+      - **CurrentIncomeBeforeTaxes** — Income before taxes line item.
+      - **ExceptionalProfitOrLoss** — Exceptional profit or loss derived from extraordinary income and expenses.
+      - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+        - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+      - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+        - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+        - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+        - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+      - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+        - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+      - **FinancialIncome** — Income from financial activities such as dividends and interest.
+        - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+        - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+        - **InterestAndSimilarIncome** — Interest and similar income line item.
+          - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+          - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+          - **LoanInterest** — Interest income arising from loans.
+          - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+      - **FinancialResult** — Net financial result after financial income and financial expenses.
+      - **FinancialYearEarnings** — Earnings for the financial year after tax.
+      - **NetOperatingIncome** — Net operating income derived from operating earnings and operating expenses.
+      - **OperatingEarnings** — Operating earnings line item in the income statement.
+      - **OperatingExpenses** — Operating expenses line item in the income statement.
+        - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+        - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+        - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+  - **PublishableBalanceSheet** — Balance sheet of the parent entity prepared for publication.
+  - **PublishableIncomeStatement** — A publishable income statement (income statement) section of financial reporting.
+    - **CorporateIncomeTaxes** — Corporate income tax line item.
+    - **CurrentIncomeBeforeTaxes** — Income before taxes line item.
+    - **ExceptionalProfitOrLoss** — Exceptional profit or loss derived from extraordinary income and expenses.
+    - **ExtraordinaryExpenses** — Expense items classified as extraordinary, such as book values of assets sold.
+      - **BookValuesOfAssetsSold** — Extraordinary expenses representing book values of assets sold.
+    - **ExtraordinaryIncome** — Income items classified as extraordinary, such as gains from disposal of assets.
+      - **FinancialAssetDisposal** — Disposal of financial assets generating extraordinary income.
+      - **IncomeFromDisposalOfAssets** — Extraordinary income arising from disposal of assets.
+      - **IncomeFromDisposalOfFinancialAssets** — Income from disposal of financial assets (e.g., EDF financial assets).
+    - **FinancialExpenses** — Expenses from financial activities such as interest and similar charges.
+      - **InterestAndSimilarExpenses** — Interest and similar expenses paid or accrued.
+    - **FinancialIncome** — Income from financial activities such as dividends and interest.
+      - **Dividends** — Dividend income or dividend payments disclosed as part of financial results.
+      - **GuaranteeCommissions** — Guarantee commissions referenced as financial income and deferred income.
+      - **InterestAndSimilarIncome** — Interest and similar income line item.
+        - **FinancialIncomeFromInnovationAndIndustryFund** — Financial income from the Innovation and Industry Fund.
+        - **GuaranteeCommissionIncome** — Guarantee commissions included as interest and similar income.
+        - **LoanInterest** — Interest income arising from loans.
+        - **StateCurrentAccountInterest** — Interest income from State current accounts via Agence France Trésor.
+    - **FinancialResult** — Net financial result after financial income and financial expenses.
+    - **FinancialYearEarnings** — Earnings for the financial year after tax.
+    - **NetOperatingIncome** — Net operating income derived from operating earnings and operating expenses.
+    - **OperatingEarnings** — Operating earnings line item in the income statement.
+    - **OperatingExpenses** — Operating expenses line item in the income statement.
+      - **OtherExpenses** — Subcategory of operating expenses for other expenses.
+      - **OtherPurchasesAndExternalExpenses** — Subcategory of operating expenses covering other purchases and external expenses.
+      - **TaxesAndDutiesAndSimilarPayments** — Subcategory of operating expenses for taxes, duties, and similar payments.
+- **FinancialYear** — A defined accounting period used for reporting profits, dividends, and governance updates.
+- **Financier** — A party providing financing in transactions, including co-investors and other financiers.
+- **FinancingActivity** — A category of financing operations in which personal data is processed (e.g., innovation funding, treasury financing, asset/intangible financing, energy/environment projects).
+  - **AssetAndIntangiblesFinancing** — Short-term financing of assets and intangibles.
+  - **EnergyEnvironmentProjectFinancing** — Financing activity for energy/environment projects.
+  - **ExportFinancingActivity** — Financing activity related to exports, subject to a dedicated data protection notice.
+  - **InnovationFunding** — Financing activity focused on innovation funding.
+  - **TreasuryFinancing** — Financing activity related to treasury financing.
+- **FinancingAgreement** — An agreement framework concluded with the State and other public actors for implementing programmes and financing mechanisms.
+- **FinancingAndNetworkManagementDepartment** — A department performing initial analysis of credit-risk involving commitments and monitoring client relations.
+- **FinancingApplication** — An application submitted to request financing/support, triggering data collection and processing.
+- **FinancingMechanism** — A structured program or mechanism through which financing/support is provided and administered.
+  - **AidContract** — A contract type under which aid is granted as part of financing/support schemes.
+  - **FinancingOperation** — An operation involving financing/support, including investigation and follow-up.
+  - **LoanContract** — A contract type under which a loan is granted as part of financing/support schemes.
+- **FinancingPartner** — Banks and other partners that provide financing alongside the group.
+- **FinancingPlan** — Financing plan for which EPIC provides guarantees and which is referenced for 2024.
+- **FixedAsset** — A non-current asset referenced for revaluation of fixed assets.
+- **ForeignExchangeTransaction** — Forward foreign exchange transactions referenced for outstanding receivables and deliverables.
+- **FossilFuel** — A sector/energy category referenced for exclusion and for measuring exposure in companies working towards fossil fuels.
+- **FraudPrevention** — Processing activities carried out to comply with legal obligations related to fighting fraud.
+- **FraudProtectionPurpose** — A purpose for processing personal data to protect against fraud and provide evidence in litigation.
+  - **AntiFraudPreventionPurpose** — A purpose for processing personal data to prevent fraud (overlaps with fraud protection).
+- **FrenchDataProtectionAct** — The national French legal framework relating to data protection referenced alongside GDPR.
+- **FrenchOrEuropeanAuthority** — A generic class for French or European authorities that may receive personal data in proceedings.
+- **FutureTechnologyCompany** — A type of company referenced as developing future technologies (equity interests).
+- **GDPR** — The European General Data Protection Regulation governing processing of personal data.
+- **GeneralManagement** — Executive management of EPIC Bpifrance, including the CEO and general management functions.
+  - **ChiefExecutiveOfficer** — Chief executive officer role within the institution’s management.
+  - **DirectorGeneral** — The director general responsible for general management.
+- **GeneralMeeting** — A shareholder meeting (ordinary or extraordinary) that approves reports, financial statements, and resolutions.
+  - **ExtraordinaryGeneralMeeting** — A shareholder meeting type governed by extraordinary quorum and majority requirements.
+  - **OrdinaryGeneralMeeting** — A shareholder meeting type governed by ordinary quorum and majority requirements.
+- **GeneralTermsAndConditions** — Contractual terms and conditions referenced for platforms and procurement-related use.
+- **Goodwill** — Intangible asset arising from acquisition accounting when acquisition cost exceeds the acquired share of net assets revalued.
+- **GovernanceBody** — A governance entity (e.g., general meeting, board, supervisory board, or committee) where mandates may be exercised.
+  - **AdvisoryCommittee** — Advisory governance committee set up for specific themes such as financing/guarantees, innovation, and climate.
+    - **ClimateAdvisoryCommittee** — Advisory committee for climate matters.
+    - **FinancingGuaranteesAdvisoryCommittee** — Advisory committee for financing and guarantees.
+    - **InnovationAdvisoryCommittee** — Advisory committee for innovation.
+  - **AppointmentAndCompensationCommittee** — A committee responsible for appointment and compensation matters within governance.
+  - **AppointmentsCommittee** — Governance body determined by law for oversight of appointments.
+  - **AuditCommittee** — Audit committee referenced as part of governance structures for certain entities.
+  - **BoardOfDirectors** — The board that determines corporate matters and updates drafts/resolutions for general meetings.
+    - **Director** — Member roles serving on the board of directors, including directors representing the State.
+  - **ClimateAndEnvironmentalRiskManagementCommittee** — Dedicated committee incorporated to manage climate and environmental risk governance.
+  - **ClimateCommittee** — Committee incorporated to oversee the climate plan within governance bodies.
+  - **ClimateRiskCommittee** — A committee created to monitor the group’s exposure to climate risks and endorse methodological changes.
+  - **CompensationCommittee** — Governance body determined by law for oversight of compensation.
+  - **ESGCommittee** — A committee referenced as reviewing and improving ESG questionnaires.
+  - **ExecutiveCommittee** — A group providing governance at the level of the investment group, composed of business lines.
+  - **InvestmentCommittee** — A committee bringing together subscribers or stakeholders for governance and related administrative activities.
+  - **OperationalCommittee** — An operational committee (COMOP) including investment managers and support activities directed by the investment branch.
+  - **RiskCommittee** — Risk committee referenced as part of governance structures for certain entities.
+  - **SteeringCommittee** — Local steering committee responsible for formulating opinions on mission execution and strategic consistency at regional level.
+  - **StrategicCommittee** — A committee focused on strategic oversight for partner funds and investments.
+  - **SustainabilityCommission** — A commission within a larger organization referenced as hosting sustainability-related working groups.
+  - **WorkingGroup** — A group referenced as reviewing and improving questionnaires and methodologies.
+- **GovernmentCommissioner** — A governance role referenced as part of the management company’s governance structure.
+  - **GovernmentCommissionerMission** — Mission/role of government commissioner for financial activities control and related oversight.
+- **GreenBankStrategy** — A strategic objective focused on integrating climate considerations into banking activities.
+- **GreenBuildingProject** — Projects related to construction, renovation, and ownership of qualifying green buildings.
+- **GreenFinancingCommittee** — Governance committee responsible for verifying eligibility criteria, monitoring allocation of proceeds, and ensuring EU taxonomy alignment.
+- **GreenFinancingFramework** — Framework document defining eligible green categories, eligibility criteria, evaluation process, and reporting for green financing instruments.
+- **GreenFinancingInstrumentsUseOfProceedsProcess** — Process governing management of proceeds, earmarking, portfolio approach, and allocation to eligible green loans.
+- **GreenhouseGas** — A referenced emissions concept used in carbon intensity and climate-risk assessments.
+- **GreenIndustryProject** — Industrial projects aimed at ecological and energy transition, including circular economy and cleaner solutions.
+- **GreenTech** — Companies and solutions focused on green technologies and decarbonization.
+- **GreenTechObservatory** — Observatory created to identify and scale promising green technologies.
+- **GroupRiskManagementCommittee** — A committee reviewing group risk management matters after presentations.
+- **GuaranteeActivity** — Guarantee business activity including local and regional guarantee funds.
+- **GuaranteeCommission** — Guarantee commissions, including commissions to be spread and guarantee commissions for issues.
+- **Guarantees** — A risk-mitigation product category used to support businesses.
+- **GuaranteeScheme** — Guarantee mechanisms and commitments described as part of EPIC Bpifrance’s missions.
+  - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+    - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+      - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+      - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+        - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+      - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+      - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+    - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+- **HealthInsuranceOrganization** — An organization providing health insurance that may receive information to finalize recruitment.
+- **HeatMap** — A risk visualization tool used to segment portfolios and identify homogeneous pockets of risk.
+- **HumanResourcesDepartment** — The department responsible for transmitting information to organizations involved in finalizing recruitment.
+- **ICMAGreenBondPrinciples** — ICMA Green Bond Principles referenced as alignment basis for the framework and eligible categories.
+- **Impairment** — An impairment concept applied to assets (including goodwill and equity-accounted investments) when objective evidence exists.
+- **ImpairmentLoss** — Loss recognized when recoverable amount is less than book value, including impairment of goodwill and equity-method investments.
+  - **ImpairmentOfAssets** — The impairment framework referenced for testing equity investments and goodwill when objective evidence exists.
+- **ImpairmentTest** — A process for testing investments (including goodwill) for impairment when objective evidence exists.
+- **IndividualRights** — The set of rights granted to individuals regarding their personal data (access, rectification, deletion, portability, etc.).
+  - **PostMortemDataFateRight** — Right to organize the fate of personal data after death.
+  - **RightOfAccess** — Right to obtain access to personal data.
+  - **RightOfDeletion** — Right to request deletion of personal data.
+  - **RightOfPortability** — Right to receive personal data in a portable format.
+  - **RightOfRectification** — Right to request correction of personal data.
+  - **RightToLimitationOfProcessing** — Right to request limitation of processing.
+  - **RightToObjectToProcessing** — Right to object to processing, including for commercial prospecting/profiling.
+  - **RightToWithdrawConsent** — Right to withdraw consent for processing based on consent.
+- **InformationSystem** — An entity of stored data and reporting systems whose failure or inadequate defense can cause operational impacts.
+- **InfrastructureConstructionCompany** — A category of companies dedicated to financing infrastructure construction projects, generally excluded from investment.
+- **InnovationDevelopmentNetwork** — Networks supporting innovation development and co-financing with private banks.
+- **InnovationFinancing** — Financing mission providing solutions for innovative projects from idea to market.
+- **InnovationFinancingAid** — Aid provided for innovation financing activities, accounted for as part of financing operations.
+  - **Grant** — Non-repayable funding used for innovation and other support activities.
+  - **RepayableAdvance** — An innovation financing aid form that is repayable.
+- **InnovationProjects** — Projects supported to foster innovation.
+- **InnovationSchemeOperator** — An operator of innovation schemes financed by the Innovation and Industry Fund.
+- **InnovationSupport** — Support for innovation and technological innovation referenced as a core mission.
+- **InnovativeProject** — An individual or collaborative project with innovation potential supported by innovation financing.
+- **InsuranceCompany** — An insurance company referenced as generally excluded from investment capital participation.
+- **InsuranceProducts** — A category of products used to insure export activities.
+- **IntangibleAsset** — Intangible assets presented as part of fixed assets in the consolidated balance sheet.
+- **InterestAndSimilarExpense** — Interest and similar expenses.
+  - **BankAccountInterestExpense** — Interest expense on bank accounts.
+  - **EuropeanInvestmentBankLoanInterestExpense** — Interest expense on European Investment Bank loans.
+  - **OtherFinancialCharge** — Other financial charges, including losses and impairments on receivables.
+  - **StateLoanInterestExpense** — Interest expense on State loans.
+- **InterestExpense** — Interest and similar expenses, including state loan interest, EIB loan interest, and other financial charges.
+- **InterestIncome** — Interest and similar income, including loan interest and guarantee commissions.
+- **Intermediary** — A party involved in supplier referral chains (e.g., intermediaries) whose data may be processed.
+- **Intern** — A person participating in an internship arrangement within the recruitment context.
+- **InternalAudit** — Internal review by the permanent control department ensuring compliance, audit trail existence, data quality, and first-level controls.
+- **InternalControlCharter** — A reference framework defining internal control within the group.
+- **InternalControlProcedures** — Internal control procedures implemented for preparing financial statements.
+- **InternalLiquidityAdequacyAssessmentProcess** — A process (ILAAP) used to assess and ensure internal liquidity adequacy for short-term and medium/long-term obligations.
+- **InternationalAndEuropeanAffairsDepartment** — A transversal department within the international function responsible for influence, networks, partnerships, lobbying and regulatory monitoring.
+- **InternationalBusiness** — Business activity related to international operations and export guarantees.
+  - **DigitalInnovationInvest** — A business line referenced as part of the group’s activities under the “Other” item.
+  - **EntrepreneurshipAndRegionsBusinessLine** — A business line supporting entrepreneurship and regional activities.
+  - **ExportCredit** — Export credit activity referenced as part of international and other business lines.
+- **InternationalBusinessLine** — A business line supporting internationalisation and export-related financing and insurance activities.
+  - **ExportDepartment** — A department structured around export insurance, export financing and international development.
+    - **ExportDevelopmentDepartment** — Department aiming to increase international market share of French companies through missions and prospecting.
+    - **ExportFinanceDepartment** — Department offering medium-long-term export financing solutions to exporting companies.
+    - **ExportFinancing** — A function providing medium-long-term financing solutions for foreign buyers of exporting companies.
+      - **ExportCredit** — Export credit activity referenced as part of international and other business lines.
+    - **ExportInsurance** — A function providing and managing public export guarantees for exporters.
+      - **CreditInsurance** — Credit insurance activity level referenced through guarantee applications accepted.
+      - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+        - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+      - **ExportInsuranceActivity** — Activity level of export insurance including accepted guarantee applications.
+    - **InternationalDevelopment** — A function aiming to increase international market share through missions and bespoke prospecting initiatives.
+  - **ExportFinancingBusinessLine** — A business line offering medium- and long-term export financing solutions to exporting companies for foreign buyers.
+  - **ExportInsuranceBusinessLine** — A business line managing public export guarantees on behalf of the state and providing export insurance solutions.
+  - **InternationalSupportUnit** — A unit providing services and missions to accelerate and support companies’ international development.
+- **InternationalProjects** — Projects supported for international development.
+- **InternationalSanctionsAndEmbargoDueDiligencePurpose** — A purpose for processing personal data to perform due diligence regarding international sanctions and embargoes.
+- **InternationalSanctionsCompliance** — Compliance processing related to international economic sanctions.
+- **InvestingActivity** — Cash flow activity category representing cash flows for acquisition and disposal of investments and fixed assets.
+- **Investment** — An allocation of capital into equity or other instruments, including equity investments accounted for using the equity method or fair value.
+  - **DebtInvestment** — A debt investment instrument used to support companies’ development and growth.
+  - **EquityConsolidatedCompany** — Company whose net profit/loss is included in the group’s income statement via the equity method (equity-consolidated).
+    - **Affiliate** — An entity over which the group has significant influence, typically accounted for using the equity method.
+    - **EquityAffiliate** — An affiliate accounted for using the equity method, with the investor’s share of net profit presented accordingly.
+    - **EquityMethodInvestee** — A company accounted for using the equity method within consolidated financial statements.
+    - **Partnership** — A contractual arrangement subject to joint control, accounted for using the equity method under IFRS 11.
+      - **JointVenture** — A partnership arrangement where control is contractually shared and decisions require unanimous consent.
+    - **Subsidiary** — An entity controlled by the group, consolidated using full consolidation when complete control is exercised.
+      - **BpifranceAssuranceExport** — A subsidiary managing public export guarantees on behalf of and under control of the French State.
+      - **BpifranceInvestissement** — An entity within the group associated with equity activity and investment management.
+      - **BpifranceParticipations** — An entity within the group referenced as participating in accelerator deployments and support activities.
+      - **BpifranceRegions** — A subsidiary operating financing activities within the group.
+      - **ForeignSubsidiary** — A subsidiary located outside France (not included in the detailed paragraph for major holdings).
+      - **FrenchSubsidiary** — A subsidiary located in France (not included in the detailed paragraph for major holdings).
+  - **EquityIntervention** — Equity-based interventions used to finance development and growth.
+  - **EquityInvestment** — An investment in equity instruments, including those measured at fair value through equity or through profit or loss.
+    - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+      - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+  - **FundInvestment** — An investment in a fund vehicle, including seed, growth, and industrial project funds referenced in off-balance sheet activities.
+  - **InformedInvestor** — Investment approach operating under market conditions and guided by collective interest.
+  - **MezzanineFund** — Mezzanine fund offer developed as a complement or substitute for equity investments.
+  - **PatientInvestor** — Investment approach characterized by longer horizons and support over time.
+  - **QuasiEquity** — A financing instrument category treated similarly to equity for investment and ESG purposes.
+  - **SocialAndSolidarityEconomyFund** — Funds geared towards profitable companies in the social and solidarity economy.
+  - **TurnaroundCapital** — Segment aiming to turn around companies in difficulty, typically via minority shares alongside private investors.
+- **InvestmentBranch** — A business unit responsible for managing investments under a responsible investor approach.
+- **InvestmentBusiness** — A business line evaluated using an expense ratio.
+- **InvestmentMemo** — A document including ESG analysis results presented to the investment committee as part of company evaluation.
+- **InvestmentOpportunityIdentification** — A process for identifying investment opportunities based on legitimate interest.
+- **InvestmentPlan** — A multi-year investment program steering funding and commitments (e.g., France 2030 plan).
+- **InvestmentProcess** — The end-to-end workflow for integrating ESG criteria, including due diligence and monitoring phases.
+  - **ESGIntegration** — The incorporation of ESG criteria into investment processes, including due diligence and monitoring.
+  - **InvestmentMonitoring** — Ongoing monitoring of investments and participation in advisory committees or governance mandates.
+- **InvestmentProgrammeOperator** — An operator implementing public investment programmes such as Investing in the Future and France 2030.
+- **Invoice** — A document issued by suppliers and processed for receipt, analysis, and payment.
+- **IPBES** — An intergovernmental platform referenced for biodiversity and ecosystem services assessment.
+- **Issuer** — An entity that files universal registration documents and related amendments and provides information about its activities and financial position.
+- **IUCN** — An organization referenced in biodiversity-related international meetings.
+- **JointPlan** — A plan jointly conducted with another organization to accelerate ecological transition and recovery.
+- **JudicialData** — Category of personal data relating to offences, convictions, or security measures within legal limits.
+- **JudicialProcedure** — A judicial process where personal data may be disclosed to authorities.
+- **KeyBiodiversityArea** — A biodiversity mapping concept used to identify sites and activities linked to biodiversity importance.
+- **KRI** — Key risk indicators used within the climate risk management framework.
+- **KYC** — Know Your Customer processing used for identity verification and compliance.
+- **KycCompliancePurpose** — A purpose for processing personal data related to Know Your Customer requirements.
+- **LargeCompany** — A large company referenced as a potential stabilisation target for shareholding.
+- **LargeCorporate** — A company category targeted for direct investment and assessed using ESG criteria and governance/social/environmental analysis.
+- **Law** — A legal text referenced as the basis for responsible investment reporting requirements.
+- **LDDDeposit** — A deposit scheme referenced as a source of resources for contractual loans.
+- **LDDDeposits** — LDD deposits referenced as a resource origin for contractual loans.
+- **Leasing** — Leasing operations used for tangible and intangible investment financing.
+  - **FinancialLeasing** — Financial leasing arrangements referenced as part of investment financing.
+- **LeasingOperation** — A financing arrangement involving leasing operations referenced in financing activities.
+- **LegalBasisForProcessing** — The legal grounds under which personal data processing is performed (e.g., legal obligation or legitimate interest).
+  - **LegalObligation** — A legal basis for processing where processing is required to meet the company’s legal obligations.
+  - **LegitimateInterest** — A legal basis where processing is justified by the controller’s legitimate interests.
+- **LegalObligationLegalBasis** — A legal basis for processing personal data based on compliance with a legal obligation.
+- **LegitimateInterestLegalBasis** — A legal basis for processing personal data based on the controller’s legitimate interests.
+- **LimitedLiabilityCompany** — A corporate legal form referenced for the company described in the document.
+- **LiquidityManagementProcedure** — Internal procedures for managing liquidity and temporary investments of unallocated proceeds.
+- **LiquidityPosition** — Liquidity strength assessed against prudential requirements.
+  - **LiquidityCoverageRatio** — Liquidity Coverage Ratio comparing high-quality liquid assets to net total cash outflow.
+  - **LiquidityReserve** — A liquidity reserve composed of current liquidity, current liquidity buffer, and contingency plan reserve.
+    - **CurrentLiquidity** — Assets that can be mobilised in one day, including cash, money market funds, and sovereign bonds.
+    - **CurrentLiquidityBuffer** — Highly liquid assets mobilisable in less than a week.
+- **LoanCommitment** — Commitments related to loan financing (including commitments given/received).
+- **LoanFinancingCommitment** — A commitment to provide loan financing to credit institutions or customers.
+- **LocalSteeringCommittee** — A local steering committee responsible for formulating opinions on mission execution at regional level.
+- **LongTermInvestmentInPortfolioSecurities** — Long-term investments in portfolio securities, described as non-expendable securities endowment paid by the State for the Innovation and Industry Fund.
+  - **PortfolioFixedSecurity** — Fixed securities held within the EDF portfolio as part of long-term investments in portfolio securities.
+  - **PortfolioSecurity** — Portfolio securities held within the TSA portfolio as part of long-term investments in portfolio securities.
+- **MacroeconomicScenario** — A scenario set used to model macroeconomic conditions for ECL calculations.
+  - **ForwardLookingScenarios** — A set of scenarios updated over time and used to compute ECLs.
+- **ManagementCompany** — An organization that manages investment vehicles and performs related personal data processing.
+- **ManagementOfProceeds** — Pillar describing how proceeds are managed after issuance.
+- **MaritimePort** — A maritime port referenced as the context for a director representing the State.
+- **MarketingCommunications** — Communications sent for marketing purposes to prospects, based on legitimate interest.
+- **MarketplacePlayer** — Role of bringing together financing partners for the benefit of companies.
+- **MediaAndPollingOrganisation** — An opinion media and polling organisation referenced as generally excluded to maintain neutrality and avoid conflicts of interest.
+- **MediumTermPlan** — A medium-term plan referenced as a mechanism to support ecological and energy transition solutions.
+- **MidCapCompany** — A company category targeted for growth investments within mid-cap divisions.
+- **MidCaps** — Mid-sized companies targeted by support programs.
+- **MinimumSocialSafeguards** — Minimum safeguards requirement referenced for eligible renewable energy loans.
+- **MissionOfGeneralInterest** — General interest mission carried out by EPIC Bpifrance in support of public policies.
+  - **PublicInstitutionMission** — Mission category for public institution activities such as financing innovation and supporting SMEs.
+- **MonetaryPolicyProgramme** — Monetary policy refinancing programmes (e.g., TLTRO) referenced as funding sources.
+  - **TLTRO** — Targeted longer-term refinancing operations referenced as part of ECB refinancing.
+- **MutualInsuranceOrganization** — A mutual insurance organization that may receive information to finalize recruitment.
+- **NationalResearchAgency** — The national research agency referenced as a partner in implementing initiatives.
+- **NetCashFlow** — A cash flow concept corresponding to cash and cash equivalents and used to present cash flow after certain costs.
+- **NetCostOfFinancialDebt** — A metric combining income from cash and cash equivalents and the cost of gross financial debt.
+- **Network** — Network of entities/partners referenced in the organisational chart of the Bpifrance network.
+- **NetworkingPrograms** — Programs facilitating networking for entrepreneurs.
+- **NonFinancialPerformanceStatement** — A statement reporting non-financial performance metrics such as training figures.
+- **NonFinancialReportingDirective** — A directive referenced as requiring non-financial reporting and taxonomy-aligned disclosures.
+- **OECD** — OECD referenced for compliance of export guarantees.
+- **OffBalanceSheetCommitment** — Commitments disclosed outside the balance sheet, including guarantees, loan financing, and securities commitments.
+  - **FinancingCommitment** — Financing commitments given or received (e.g., commitments to credit institutions/customers).
+  - **GuaranteeCommitment** — Guarantee commitments given or received, including commitments on behalf of credit institutions/customers.
+    - **Guarantee** — A contractual mechanism to cover counterparty risk or repayment risk for financing or long-term supplies.
+      - **ExportCreditGuarantee** — A guarantee related to public export credit activities.
+      - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+        - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+      - **GuaranteeCoverage** — Coverage provided to banks and equity funding institutions against default risks of funding recipients.
+      - **StudentLoanGuarantee** — Guarantee scheme for loans made by banks for students on behalf of the state.
+    - **GuaranteeOfSecurities** — Guarantee of securities issued by Bpifrance referenced as part of EPIC Bpifrance’s missions.
+  - **OffBalanceSheetCommitmentsGiven** — A grouping of commitments given (financing, guarantee, and securities commitments).
+  - **OffBalanceSheetCommitmentsReceived** — A grouping of commitments received (financing, guarantee, and securities commitments).
+  - **OtherCommitmentGiven** — Other commitments given.
+  - **OtherCommitmentReceived** — Other commitments received.
+  - **SecuritiesCommitment** — Securities-related commitments given or received, including buyback/takeback options and other commitments.
+    - **SecuritiesAcquiredWithBuybackOrTakebackOption** — Securities acquired with an option of buyback or takeback.
+    - **SecuritiesSoldWithBuybackOrTakebackOption** — Securities sold with an option of buyback or takeback.
+- **OffBalanceSheetItem** — An item recognized as off-balance sheet in acquisition and consolidation contexts.
+- **OperatingActivity** — Cash flow activity category representing cash flows from the group’s revenue generating activities.
+- **OperatingExpense** — Operating expenses, including external charges, reserve fund reallocations, and taxes and duties.
+  - **ExternalCharge** — External charges included in operating expenses.
+  - **OtherExpense** — Other expenses included in operating expenses.
+  - **ServicesProvidedByGroupCompanies** — Services provided by group companies (e.g., personnel re-invoicing) included in operating expenses.
+  - **TaxAndDuties** — Taxes and duties and similar payments included in operating expenses.
+- **OperatingRatio** — Ratio comparing operating expenditure to net banking income for the banking business line.
+- **OperationalRiskManagementPolicy** — A policy applied to ensure governance and management of operational and non-compliance risks.
+- **OrganisationalChart** — Organisational chart artefact describing capital structure and organisational relationships.
+- **Organization** — A general organizational entity referenced in the document (e.g., entities included in consolidation or network units).
+  - **BoardOfDirectors** — The board that determines corporate matters and updates drafts/resolutions for general meetings.
+    - **Director** — Member roles serving on the board of directors, including directors representing the State.
+  - **BoardOfGovernance** — A governance concept referenced as those charged with governance.
+  - **Client** — A counterparty receiving financing or subject to credit risk measurement.
+  - **Company** — A general business entity that may be invested in, assessed for ESG risks, and engaged with through governance and questionnaires.
+    - **ControlledCompany** — A company exclusively controlled and therefore fully consolidated in the group accounts.
+    - **Counterparty** — An entity that may be unable to meet its financial obligations, referenced in credit risk discussions.
+    - **EquityAffiliate** — An affiliate accounted for using the equity method, with the investor’s share of net profit presented accordingly.
+    - **EquityConsolidatedCompany** — Company whose net profit/loss is included in the group’s income statement via the equity method (equity-consolidated).
+      - **Affiliate** — An entity over which the group has significant influence, typically accounted for using the equity method.
+      - **EquityAffiliate** — An affiliate accounted for using the equity method, with the investor’s share of net profit presented accordingly.
+      - **EquityMethodInvestee** — A company accounted for using the equity method within consolidated financial statements.
+      - **Partnership** — A contractual arrangement subject to joint control, accounted for using the equity method under IFRS 11.
+        - **JointVenture** — A partnership arrangement where control is contractually shared and decisions require unanimous consent.
+      - **Subsidiary** — An entity controlled by the group, consolidated using full consolidation when complete control is exercised.
+        - **BpifranceAssuranceExport** — A subsidiary managing public export guarantees on behalf of and under control of the French State.
+        - **BpifranceInvestissement** — An entity within the group associated with equity activity and investment management.
+        - **BpifranceParticipations** — An entity within the group referenced as participating in accelerator deployments and support activities.
+        - **BpifranceRegions** — A subsidiary operating financing activities within the group.
+        - **ForeignSubsidiary** — A subsidiary located outside France (not included in the detailed paragraph for major holdings).
+        - **FrenchSubsidiary** — A subsidiary located in France (not included in the detailed paragraph for major holdings).
+    - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+      - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+    - **Fintech** — A company meeting conditions of being a start-up/fast-growing SME with innovative technology/business model and offering financial products/services.
+      - **FintechWithBankingOrInsuranceAuthorisations** — A fintech that holds or is developing banking or insurance authorisations, enabling exceptional investment eligibility.
+    - **FrenchCompany** — A company located in France referenced as the group’s client base for scenarios and exposures.
+    - **IntermediateSizedEnterprise** — Intermediate-sized enterprises supported in creation, innovation, and development phases.
+    - **JointVenture** — A partnership arrangement where control is contractually shared and decisions require unanimous consent.
+    - **MidSizedBusiness** — A company category referenced alongside SMEs as a concentration area for customer loans and receivables.
+    - **PublicInterestCompany** — A company category defined by governance and market admission criteria for non-financial reporting.
+    - **RealEstateStructure** — A real estate structure referenced as part of the 'Other' business activities.
+    - **SmallAndMediumSizedEnterprise** — A company category referenced as a concentration area for customer loans and as recipients of equity investments.
+    - **StartUp** — Start-ups supported as part of the Investing in the Future Programme financing of innovation.
+    - **VerySmallEnterprise** — Very small enterprises supported through public interest missions and financing/guarantee tools.
+  - **ControlledCompany** — A company exclusively controlled and therefore fully consolidated in the group accounts.
+  - **CreditInstitution** — A banking institution providing financing activities and subject to banking regulations and prudential supervision.
+    - **Bank** — A credit institution referenced as providing personal data and as a potential support customer for solutions.
+    - **EquityFundingInstitution** — An institution providing equity funding referenced in guarantee coverage.
+  - **DatabaseProvider** — An authority or official third party that makes databases available for indirect data collection.
+    - **RegulatoryDatabase** — A database managed by authorities or supervisory bodies used for indirect collection.
+      - **BankingSupervisoryAuthorityDatabase** — Databases managed by banking supervisory authorities referenced as sources.
+      - **OfficialJournal** — A specific type of official publication referenced as a source of databases.
+      - **TradeAndCompaniesRegister** — A register referenced as a source of databases for indirect collection.
+  - **EquityConsolidatedCompany** — Company whose net profit/loss is included in the group’s income statement via the equity method (equity-consolidated).
+    - **Affiliate** — An entity over which the group has significant influence, typically accounted for using the equity method.
+    - **EquityAffiliate** — An affiliate accounted for using the equity method, with the investor’s share of net profit presented accordingly.
+    - **EquityMethodInvestee** — A company accounted for using the equity method within consolidated financial statements.
+    - **Partnership** — A contractual arrangement subject to joint control, accounted for using the equity method under IFRS 11.
+      - **JointVenture** — A partnership arrangement where control is contractually shared and decisions require unanimous consent.
+    - **Subsidiary** — An entity controlled by the group, consolidated using full consolidation when complete control is exercised.
+      - **BpifranceAssuranceExport** — A subsidiary managing public export guarantees on behalf of and under control of the French State.
+      - **BpifranceInvestissement** — An entity within the group associated with equity activity and investment management.
+      - **BpifranceParticipations** — An entity within the group referenced as participating in accelerator deployments and support activities.
+      - **BpifranceRegions** — A subsidiary operating financing activities within the group.
+      - **ForeignSubsidiary** — A subsidiary located outside France (not included in the detailed paragraph for major holdings).
+      - **FrenchSubsidiary** — A subsidiary located in France (not included in the detailed paragraph for major holdings).
+  - **FinancedCompany** — A company whose data is collected for investigation of an operation and its follow-up after financing/support is granted.
+  - **Group** — A set of legal entities whose financial statements are consolidated.
+  - **InvestmentFund** — A fund vehicle referenced as being subscribed to and managed within the Bpifrance group (e.g., FNA 3).
+    - **BpifranceCapital2Fund** — A fund referenced as included in the consolidation scope.
+    - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+      - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+      - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+      - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+    - **PartComFund** — A fund referenced as removed from the consolidation scope following liquidation.
+  - **Investor** — A market participant referenced as experiencing a crisis of confidence during systemic deterioration.
+  - **ITServiceProvider** — A service provider providing IT solutions, including those integrating databases used for indirect collection.
+  - **JointVenture** — A partnership arrangement where control is contractually shared and decisions require unanimous consent.
+  - **LegalEntity** — A legal entity that can be included in consolidation or hold financial statement items.
+  - **NonGovernmentalOrganization** — An NGO referenced as a source of pressure affecting borrowers and credit conditions.
+  - **PartnerBank** — A bank partner involved in financing operations when the organization acts as lead bank.
+  - **ProfessionalAdvisor** — An external professional (e.g., advisors, experts, law firms, investment banks) supporting processing activities.
+    - **Auditor** — An independent reviewer (including statutory auditors) certifying accounts or supporting compliance.
+    - **ExternalExpert** — An external expertise provider involved in evaluating financing mechanisms.
+  - **PublicIndustrialAndCommercialEstablishment** — A public industrial and commercial establishment (EPIC) referenced as the consolidated financial reporting entity.
+  - **PublicLimitedCompany** — A company organized as a public limited company (e.g., with registered capital and corporate registration).
+    - **Bpifrance** — The main public entity acting as a credit institution and holding company for the group’s missions.
+    - **BpifranceFinancement** — An entity referenced as the subsidiary absorbing the holding company and involved in the group structure.
+    - **BpifranceInvestissement** — An entity within the group associated with equity activity and investment management.
+    - **BpifranceParticipations** — An entity within the group referenced as participating in accelerator deployments and support activities.
+    - **PublicLimitedCompanyFinancingEntity** — Financing-related public limited company referenced as Bpifrance Financement.
+    - **PublicLimitedCompanyInvestmentEntity** — Investment-related public limited company referenced as Bpifrance Investissement.
+    - **PublicLimitedCompanyParticipationEntity** — Participation-related public limited company referenced as Bpifrance Participations.
+  - **RatingAgency** — An agency providing extra-financial ratings that can influence borrower constraints.
+  - **ServiceProvider** — A third party service provider or subcontractor that processes personal data on behalf of the group for recruitment-related services.
+    - **AccountingDelegate** — An entity to whom accounting management of funds is delegated.
+    - **CreditInstitution** — A banking institution providing financing activities and subject to banking regulations and prudential supervision.
+      - **Bank** — A credit institution referenced as providing personal data and as a potential support customer for solutions.
+      - **EquityFundingInstitution** — An institution providing equity funding referenced in guarantee coverage.
+    - **Depositary** — An entity responsible for missions under applicable laws and regulations for the vehicle in which a person subscribed.
+    - **HostingService** — A service responsible for hosting and maintaining a platform.
+    - **ITServiceProvider** — A service provider providing IT solutions, including those integrating databases used for indirect collection.
+    - **MaintenanceService** — A service providing maintenance for a platform.
+    - **RecruitmentOfferPublishingServiceProvider** — A service provider that publishes recruitment offers and may process CVs and related personal data.
+    - **TechnicalSupportService** — A service providing technical support for a platform.
+  - **StatutoryAuditor** — Statutory auditor responsible for the auditor’s report on the summary consolidated half-year financial statements.
+    - **SpecialStatutoryAuditorsReport** — A special report on agreements referred to under the French Commercial Code.
+- **OrganizationalChart** — An organizational chart describing organizational structure.
+  - **ExecutiveManagement** — Executive management roles referenced in the organizational charts.
+  - **OrganizationalChartOfBusinessLines** — Organizational chart describing business lines and related directorates.
+    - **BusinessLine** — A segment of activities within the group, such as financing, investment, or other lines.
+      - **ExportFinancing** — A function providing medium-long-term financing solutions for foreign buyers of exporting companies.
+        - **ExportCredit** — Export credit activity referenced as part of international and other business lines.
+      - **ExportInsurance** — A function providing and managing public export guarantees for exporters.
+        - **CreditInsurance** — Credit insurance activity level referenced through guarantee applications accepted.
+        - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+          - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+        - **ExportInsuranceActivity** — Activity level of export insurance including accepted guarantee applications.
+      - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+    - **BusinessLines** — Business lines organized within the entity’s organizational chart.
+    - **Department** — A department within the business lines chart.
+    - **Directorate** — A directorate or department grouping within the organizational chart.
+  - **OrganizationalChartOfNetwork** — Organizational chart describing the network structure (regional offices and delegations).
+    - **DirectorateOfNetwork** — A directorate responsible for the network organization.
+    - **NetworkDirectorate** — A network directorate grouping regional directorates.
+    - **NetworkDirectorates** — Directorates within the network structure.
+    - **NetworkOffice** — A regional office within the network.
+    - **RegionalDirectorate** — A regional directorate within a network directorate.
+    - **RegionalDirectorates** — Regional directorates within the network.
+    - **RegionalOffice** — A regional office within the organizational network.
+    - **RegionalOffices** — Local offices providing a single interlocutor to entrepreneurs.
+    - **TerritorialDelegation** — A territorial delegation within the network structure.
+    - **TerritorialDelegations** — Territorial delegations within the network.
+- **OtherFinancialIncomeAndExpenses** — Financial income and expenses not included in net cost of financial debt and not of an operational kind.
+- **OtherReceivable** — Receivables other than those explicitly classified as loans or cash equivalents.
+  - **GrantReceivable** — Receivables for grants to be received from the State.
+  - **GuaranteeCommissionReceivable** — Commissions for guarantees to be received.
+  - **InterestReceivable** — Receivables for interests to be received.
+  - **TaxReceivable** — Receivables for taxes.
+- **ParentCompany** — Parent company whose financial statements are included in the EPIC consolidated financial statements.
+- **ParentEntity** — An entity that prepares parent entity financial statements and may be the only exposed risk holder in the group.
+- **Participation** — An invested interest in a company, including participations in which the organization has invested and monitors.
+- **PartnershipAgreement** — An agreement concluded with partners for implementing initiatives and support programmes.
+- **Person** — An individual whose personal data may be processed, including representatives, beneficial owners, subscribers, and other stakeholders.
+  - **AuthorizedPerson** — A person authorized to act or provide information in relation to covered transactions.
+  - **BeneficialOwner** — A person who ultimately owns or controls a company seeking or receiving financing/support.
+  - **CoInvestor** — A stakeholder participating in investment transactions alongside the organization.
+  - **Guarantor** — A person providing guarantees whose data may be collected for due diligence and follow-up.
+  - **LegalRepresentative** — A natural person acting as a legal representative of a supplier whose personal data is processed.
+  - **OperationalContact** — A person acting as a point of contact for operational matters related to a financing application or file.
+  - **PointOfContact** — A person designated as a contact for communications and coordination regarding financing/support.
+  - **ProjectManager** — A person managing a project associated with a financing/support application.
+  - **Prospect** — A potential customer referenced in the context of commercial relationship management and prospecting.
+  - **ShareholderPartner** — A person who is a shareholder or partner in a company seeking or receiving financing/support.
+  - **Subscriber** — A person subscribing to an investment fund managed by the organization.
+- **PersonalData** — Information that allows a person to be directly or indirectly identified, including data contained in application documents.
+  - **BankingAndFinancialData** — Category of personal data related to banking details and financial information.
+  - **ComplaintsAndDisputesData** — Personal data processed for management of complaints and possible disputes arising from recruitment.
+  - **CourtData** — Court-related data such as bulletin B3.
+  - **EducationTrainingQualificationsData** — Personal data about education, training, qualifications, and related details.
+  - **EntitlementsAndBenefitsData** — Personal data used to manage entitlements and benefits.
+  - **ForeignCandidateChecksData** — Personal data used for checks related to foreign candidates.
+  - **HealthInsuranceRightsCertificate** — A certificate evidencing health insurance rights used for internal organization or compliance.
+  - **HouseholdCompositionData** — Personal data about household composition such as marital status and family status.
+  - **IdentificationData** — Category of personal data used to identify individuals (e.g., names, addresses, signatures, birth details).
+  - **IdentityCertificate** — A certificate used to evidence identity for legal obligations.
+  - **ImageRegistrationData** — Personal data consisting of an image of the person when provided.
+  - **NationalPassport** — A passport-related personal data item used to evidence identity for legal obligations.
+  - **NonProfessionalInterestsData** — Personal data relating to hobbies and non-professional activities/interests.
+  - **PersonalCharacteristicsData** — Personal data describing characteristics such as age, date/place of birth, and gender.
+  - **ProfessionalLifeData** — Personal data related to professional life (e.g., professional contact details, position, curriculum vitae).
+  - **ResidencePermit** — A document-related personal data item used to evidence residence permit status.
+  - **SpouseHealthInsuranceExemptionCertificate** — A certificate from a spouse’s employer or a copy of a valid health insurance card used when an exemption applies.
+- **PersonalDataCategory** — A category of personal data collected and processed (e.g., identification, administrative, professional, business login, economic and financial).
+  - **AdministrativeData** — Personal data used for administrative verification (e.g., proof of address).
+  - **BusinessLoginData** — Personal data used for portal access and authentication (e.g., IP address, tokens, signature certificate).
+  - **EconomicAndFinancialData** — Personal data related to economic and financial status (e.g., bank details, tax situation, identifiers).
+  - **IdentificationData** — Category of personal data used to identify individuals (e.g., names, addresses, signatures, birth details).
+  - **ProfessionalLifeData** — Personal data related to professional life (e.g., professional contact details, position, curriculum vitae).
+- **PersonalDataMinimisation** — The principle that only necessary personal data is collected for the stated purposes.
+- **PersonalDataMinimizationPrinciple** — The principle that only necessary personal data is collected for the stated purposes.
+- **PersonalDataProcessing** — The processing activities performed on personal data in the context described by the policy.
+- **PersonalDataRetention** — Concept of storing personal data for defined periods to meet legal and processing purposes.
+- **PersonalDataRights** — Rights available to data subjects regarding access, rectification, deletion, portability, limitation, objection, and instructions after death.
+- **PersonApplyingForPosition** — A person applying for a position within a group of entities.
+- **Platform** — An online platform used for procurement and/or user account and access management.
+  - **ProcurementPlatform** — A platform used for calls for tenders, downloading results, and associated studies.
+- **Policy** — A document describing rules for processing personal data in the context of an organization’s activities.
+- **PolicyDocument** — A document setting rules for processing personal data under applicable regulations (e.g., GDPR policy).
+  - **PersonalDataProtectionPolicy** — A policy document describing how personal data is processed, for what purposes, and the rights of individuals.
+- **Policyholder** — A person holding an insurance policy referenced in the context of managing contractual/commercial relationships.
+- **PoliticallyExposedPerson** — A status category referenced for enhanced due diligence in compliance contexts.
+- **Portfolio** — A collection of investments managed and monitored, including ESG and climate-risk assessment at consolidated level.
+  - **PortfolioHolding** — An individual company or entity in which the investment branch holds stakes and monitors via governance representation.
+- **PressRelease** — A document publishing results and activities for a given period, including financial information and notices.
+- **PrivacyPolicy** — A document setting out rules for processing personal data collected as part of a recruitment process.
+- **ProbabilityOfDefault** — A credit risk metric referenced for bucket allocation and significant increase in credit risk.
+- **Profiling** — Automated or structured processing used for profiling related to commercial prospecting.
+- **ProjectEvaluationAndSelectionProcess** — Process pillar describing how projects/loans are evaluated and selected for eligibility.
+- **Provision** — A liability recognized when an outflow of resources is probable for an obligation arising from a past event and can be reliably estimated.
+- **ProvisioningModel** — A model used to calculate provisions/expected credit losses.
+- **Provisions** — Liabilities of uncertain timing or amount recognized when an outflow is probable from a past event.
+- **PrudentialRegulation** — Banking regulations and prudential obligations referenced as governing the credit institution.
+- **PrudentialSupervisoryAndResolutionAuthority** — A supervisory authority overseeing banking institutions and prudential requirements.
+- **PrudentValueAdjustment** — A prudential valuation adjustment referenced in the context of liquidity risk impacts on unlisted financial assets.
+- **PublicAffairsActivity** — Activities in the field of public affairs, including stakeholder mapping and engagement planning.
+- **PublicAuthority** — A governmental body or public authority that entrusts missions and steers public policies.
+  - **LocalAuthority** — A sub-national public authority, including regions, involved in financing allocations and guarantee funds.
+    - **Region** — A regional authority participating in public financing allocations and guarantee funds.
+  - **State** — The public authority allocating resources and granting or controlling public guarantees and export insurance on behalf of the state.
+- **PublicCompany** — A public company performing a commercial activity and eligible for support regardless of legal status.
+- **PublicEntity** — A public institution referenced as the state and public resources involved in funding and commitments.
+  - **CaisseDesDepots** — Public institution referenced as owning/controlling and represented in governance.
+  - **DevelopmentBank** — Type of public financial institution described as part of the organization’s roles, focused on financing and development.
+  - **EPIC** — French public institution type (établissement public à caractère industriel et commercial) referenced as owning and controlling the organization.
+  - **ExportCreditAgency** — Public body role providing export credit/guarantee support for international trade.
+  - **FrenchState** — French State referenced as supervising and representing public authorities.
+  - **InnovationAgency** — Public body role focused on innovation support and financing.
+  - **Parliament** — French Parliament referenced as providing supervision and guarantee context.
+  - **PublicGroup** — Public group promoting business financing and development in support of public policies led by the State and regions (Bpifrance group).
+    - **BanquePubliqueDInvestissement** — The public investment bank/group that brings together business financing and development activities.
+    - **BpifranceGroup** — The group of entities collectively described as providing financing, guarantees, innovation support, investment, international development, and business support.
+      - **Bpifrance** — The main public entity acting as a credit institution and holding company for the group’s missions.
+      - **BpifranceInvestissement** — An entity within the group associated with equity activity and investment management.
+      - **BpifranceParticipations** — An entity within the group referenced as participating in accelerator deployments and support activities.
+      - **BusinessCreation** — A mission supporting and strengthening national and local action in favour of business creation through entrepreneurship networks.
+        - **BusinessCreationSupportActors** — Actors involved in supporting business creation, including awareness, preparation, direction, and financing of projects.
+        - **CreationActivity** — Creation activity including disbursement of unsecured loans for business creation.
+      - **BusinessSupportBusinessLine** — A business line providing advice, training, networking and support services for business growth.
+        - **BusinessSupportActivity** — Operational activities such as accelerated companies and consultancy assignments.
+        - **ExecutiveSupportDepartment** — Executive department managing the support business line and structured into multiple divisions.
+        - **SupportActivity** — Operational support activity including accelerated companies and consultancy assignments.
+        - **SupportDivision** — Division within the support organization (e.g., development, marketing, accelerators, consultancy, university, steering, expertise).
+          - **Accelerators** — A support division responsible for marketing, training influencers and organizing accelerator programmes.
+          - **ConsultancyAndOperationalManagement** — A support division participating in design and implementation of consultancy and operational management projects.
+          - **DevelopmentSupportDivision** — A support division designing support products and negotiating agreements with partners.
+          - **ExpertiseCentre** — A support division working transversally on strategic areas such as climate and industry of the future.
+          - **ProgrammesUniversityOfLeadersCourses** — A support division defining training course content and formats and signing contracts with providers.
+          - **SteeringAndManagement** — A support division managing administrative follow-up and collecting activity indicators.
+          - **SupportSchool** — A support division ensuring and certifying coaching staff quality.
+        - **SupportExecutiveDepartment** — An executive department managing the support business line and providing services such as advice, training and networking.
+          - **SupportDivision** — Division within the support organization (e.g., development, marketing, accelerators, consultancy, university, steering, expertise).
+            - **Accelerators** — A support division responsible for marketing, training influencers and organizing accelerator programmes.
+            - **ConsultancyAndOperationalManagement** — A support division participating in design and implementation of consultancy and operational management projects.
+            - **DevelopmentSupportDivision** — A support division designing support products and negotiating agreements with partners.
+            - **ExpertiseCentre** — A support division working transversally on strategic areas such as climate and industry of the future.
+            - **ProgrammesUniversityOfLeadersCourses** — A support division defining training course content and formats and signing contracts with providers.
+            - **SteeringAndManagement** — A support division managing administrative follow-up and collecting activity indicators.
+            - **SupportSchool** — A support division ensuring and certifying coaching staff quality.
+      - **ExportDepartment** — A department structured around export insurance, export financing and international development.
+        - **ExportDevelopmentDepartment** — Department aiming to increase international market share of French companies through missions and prospecting.
+        - **ExportFinanceDepartment** — Department offering medium-long-term export financing solutions to exporting companies.
+        - **ExportFinancing** — A function providing medium-long-term financing solutions for foreign buyers of exporting companies.
+          - **ExportCredit** — Export credit activity referenced as part of international and other business lines.
+        - **ExportInsurance** — A function providing and managing public export guarantees for exporters.
+          - **CreditInsurance** — Credit insurance activity level referenced through guarantee applications accepted.
+          - **ExportGuarantee** — A public export guarantee granted to support and secure exports and investments abroad.
+            - **PublicSupportForExports** — Public support for exports involving negotiation, implementation, and monitoring of export guarantees.
+          - **ExportInsuranceActivity** — Activity level of export insurance including accepted guarantee applications.
+        - **InternationalDevelopment** — A function aiming to increase international market share through missions and bespoke prospecting initiatives.
+      - **FinancingBusinessLine** — A business line providing financing to companies, including loans, leasing, and working capital support.
+        - **CreditActivity** — Credit-related activity including innovation loans, digital loans and export credit.
+      - **GuaranteeBusinessLine** — A business line providing guarantees to encourage lending to SMEs and other supported entities.
+      - **InnovationBusinessLine** — A business line providing financing and support for innovative projects and companies from idea to market.
+        - **AidForInnovation** — Innovation financing through grants and related instruments.
+      - **InvestmentBusinessLine** — Business line grouping investment activities structured into capital development, fund of funds, and innovation capital.
+        - **CapitalDevelopmentBusinessLine** — An investment business line investing directly in equity, quasi-equity and debt for SMEs, intermediate-sized enterprises and large companies.
+        - **DebtInvestment** — A debt investment instrument used to support companies’ development and growth.
+        - **EquityInvestment** — An investment in equity instruments, including those measured at fair value through equity or through profit or loss.
+          - **EquityMethodInvestment** — An investment accounted for using the equity method, replacing the investment value with the investor’s share of investee equity and profit/loss.
+            - **EquityConsolidatedCompanyInterest** — An interest in an equity-consolidated company presented after equity method adjustments.
+        - **FintechInvestment** — Investment activity in fintechs with banking or insurance authorisations under specific conditions.
+        - **Fund** — An investment vehicle subscribed to directly or managed on behalf of third parties, subject to ESG integration and monitoring.
+          - **AccelerationFund** — A fund category focused on acceleration-stage investments.
+            - **FrenchTechAccelerationFund** — French Tech Acceleration Fund referenced in equity investments.
+          - **Article8Fund** — A classification of financial products/funds under EU sustainable finance disclosure rules.
+          - **CateringTradeModernisationFund** — Catering-trade Modernisation Fund referenced in other debts and fixed-asset-related debts.
+          - **EcotechnologiesFund2** — Ecotechnologies Fund 2 referenced in equity investments.
+          - **FundOfFunds** — A fund investing indirectly through other funds; includes ESG questionnaires and monitoring of partner management companies.
+          - **GrowthFund** — A fund category focused on growth-stage investments.
+            - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+            - **MulticapGrowthFund4** — Multicap Growth Fund 4 referenced in equity investments.
+          - **IndustrialProjectsCompaniesFund** — Industrial Projects Companies Fund referenced in equity investments and fixed-asset-related debts.
+          - **IndustrialProjectsCompaniesFund2** — Industrial Projects Companies Fund 2 referenced in equity investments.
+          - **IndustrialVentureNationalFund** — Industrial Venture National Fund referenced in equity investments.
+          - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+            - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+            - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+          - **InnovationCapital** — Innovation Capital current account interest referenced in financial income/tax note.
+          - **InvestmentVehicle** — A general concept for investment structures such as funds and direct investment portfolios subject to ESG processes.
+          - **LargeCapRegionalFunds** — Large cap regional funds referenced in the organizational chart.
+          - **ManagedFund** — A fund structure managed and/or advised by the organization, to which entities may be linked.
+          - **PartnerFund** — A fund in which the organization invests and performs additional operations and regulatory due diligence.
+          - **PrivateEquity** — An investment category involving direct equity/quasi-equity investments and ESG due diligence and monitoring.
+          - **PSIMFund** — PSIM Fund referenced in equity investments.
+          - **RegionalFunds** — Regional funds referenced in the organizational chart.
+          - **SeedFund** — A fund category focused on seed-stage investments.
+            - **AngelsSeedAmbitionFund** — Ambition Seed Angels Fund referenced in equity investments.
+            - **FrenchTechSeedFund** — French Tech Seed Fund referenced in equity investments.
+            - **NationalSeedFund** — National Seed Fund referenced in equity investments.
+          - **VentureCapitalFund** — A venture capital fund.
+          - **VentureFund** — A venture-oriented fund category referenced in the document.
+        - **FundOfFundsBusinessLine** — An investment business line managing subscriptions in partner funds, including SME innovation and other thematic programs.
+        - **IndustrialProjectsEquityBusinessLine** — An investment business line investing minority stakes in industrial project companies to support industrial sectors.
+        - **InnovationCapitalBusinessLine** — An investment business line investing in start-ups and scale-ups in future-oriented sectors via sector/stage investment units.
+        - **InvestmentActivity** — Overall investment activity carried out by the group’s investment business lines.
+        - **InvestmentUnit** — A structured unit distinguished by sector or stage of intervention within investment activities.
+          - **AutonomousPatientUnit** — An investment unit operating in digital health through a dedicated fund.
+          - **CulturalAndCreativeIndustriesUnit** — An investment unit investing in cultural and creative industries via dedicated funds.
+          - **DigitalVentureUnit** — An investment unit investing in digital start-ups at seeding and series stages via dedicated funds.
+          - **EcotechnologiesUnit** — An investment unit intervening via ecotechnologies and impact-related funds.
+          - **FrenchTechAccelerationUnit** — An investment unit supporting accelerators and accelerator investment funds.
+          - **IndustrialProjectInvestmentsUnit** — An investment unit managing equity investments for deeptech start-ups until industrialisation.
+          - **InnovationTransverseVentureCapitalUnit** — An investment unit operating through transverse venture capital funds including defense and seed funds.
+          - **LargeVentureUnit** — An investment unit investing via participation and dedicated venture funds in innovation areas.
+          - **LifeSciencesUnit** — An investment unit operating in biotech and medtech sectors via dedicated funds.
+        - **QuasiEquity** — A financing instrument category treated similarly to equity for investment and ESG purposes.
+    - **CreditInstitution** — A banking institution providing financing activities and subject to banking regulations and prudential supervision.
+      - **Bank** — A credit institution referenced as providing personal data and as a potential support customer for solutions.
+      - **EquityFundingInstitution** — An institution providing equity funding referenced in guarantee coverage.
+    - **HoldingCompany** — A company that holds interests and acts through subsidiaries to conduct financing and investment activities.
+    - **ProgrammeOperator** — Operator role for programmes financed under the Investing in the Future Programme (e.g., core operator of financing).
+    - **PublicLimitedCompanyGroup** — Group structure composed of public limited companies and related entities within the Bpifrance group.
+      - **PublicLimitedCompanyHolding** — Holding company concept within the Bpifrance group referenced as the corporate name of the holding company.
+      - **PublicLimitedCompanySubsidiary** — Subsidiaries of the public limited company referenced in the historical development and organisational chart.
+        - **AssuranceExport** — Export insurance subsidiary referenced in the capital structure chart.
+        - **Courtier** — Courtier entity referenced in the capital structure chart.
+        - **InternationalCapitalCompany** — Company developing long-term partnerships with foreign sovereign wealth funds, referenced in history.
+        - **InvestmentSubsidiary** — Investment-related subsidiary referenced in the capital structure chart (e.g., investment holding/vehicle).
+        - **ParticipationsCompany** — Participation holding company referenced in the capital structure and agreements.
+        - **SMEPortfolioCompany** — SME portfolio entity referenced in the capital structure chart.
+  - **PublicIndustrialAndCommercialInstitution** — A public industrial and commercial institution (EPIC) as a legal form referenced for the reporting entity.
+    - **EPICBpifrance** — The EPIC Bpifrance public industrial and commercial institution responsible for missions including innovation support, SME financing support, and guarantees.
+    - **GuaranteeProvider** — An organization that provides guarantees for bond issues and other financing instruments on behalf of public authorities.
+  - **SovereignWealthFund** — Public investment role described for the organization as a sovereign wealth fund.
+  - **State** — The public authority allocating resources and granting or controlling public guarantees and export insurance on behalf of the state.
+- **PublicFundingInstrument** — An instrument/programme through which public authorities provide funding and support.
+  - **AcceleratorProgramme** — A programme/initiative that deploys support for specific sectors or regions (e.g., SME accelerators, energy transition accelerators).
+    - **GrowthAccelerator** — Growth accelerator programmes referenced as classes deployed under regional initiatives.
+    - **SMEAccelerator** — Accelerator programmes specifically for SMEs (e.g., SME accelerators referenced in board approvals).
+  - **GuaranteeFund** — A fund related to guarantee activities referenced in the context of guarantee funds and ECL adjustments.
+    - **ContingencyPlanReserve** — A reserve of financial assets mobilisable under proven stress situations for liquidity.
+    - **PublicGuaranteeFund** — A guarantee fund category presented as public guarantee funds in the balance sheet.
+    - **ReserveFund** — Reserve fund referenced as part of accounting for interest capitalised in reserves.
+  - **InnovationAndIndustryFund** — Innovation and Industry Fund (FII) whose assets are carried on EPIC Bpifrance’s balance sheet and whose programmes are managed.
+    - **FundForInnovationAndIndustry** — The fund structure associated with the Innovation and Industry Fund, referenced as being run-off.
+    - **InnovationAndIndustryFundProgramme** — Targeted innovation programmes deployed using resources of the Innovation and Industry Fund.
+  - **InvestmentProgramme** — A structured public investment programme (e.g., Investing in the Future, France 2030) with commitments and implementation.
+    - **AcceleratorProgramme** — A programme/initiative that deploys support for specific sectors or regions (e.g., SME accelerators, energy transition accelerators).
+      - **GrowthAccelerator** — Growth accelerator programmes referenced as classes deployed under regional initiatives.
+      - **SMEAccelerator** — Accelerator programmes specifically for SMEs (e.g., SME accelerators referenced in board approvals).
+    - **EMTNProgramme** — A bond issuance programme (Euro Medium Term Notes) referenced for medium and long-term refinancing.
+      - **NEUCPProgramme** — NEU CP/EUR CP programme referenced as a bond resources category.
+      - **NEUMTNProgramme** — A NEU MTN bond programme referenced as part of refinancing and bond resources.
+    - **France2030Programme** — The France 2030 investment plan/programme referenced as a framework for initiatives and funding.
+    - **InnovationScheme** — Innovation schemes financed by the Innovation and Industry Fund.
+    - **InvestingInTheFutureProgramme** — The Investing in the Future Programme (PIA) referenced as a major source of endowments and initiatives.
+      - **InnovationAidScheme** — Aid scheme agreements under the Investing in the Future Programme for bottom-up innovation and related initiatives.
+      - **PIA4** — The fourth phase of the Investing in the Future Programme referenced as PIA4.
+      - **RegionalisedProgramme** — Regionalised implementation of PIA initiatives through regional agreements and steering committees.
+    - **TLTROProgramme** — A refinancing framework referenced as medium-term refinancing from the European Central Bank.
+  - **MulticapGrowthFund** — A fund established under an agreement referenced as the Multicap Growth fund.
+- **PublicInstitution** — A public institution whose activities and financial statements are prepared under French accounting rules.
+- **PublicInvestmentBank** — Public investment bank concept referenced as the Banque publique d'investissement (Bpifrance’s role and mission).
+- **PublicOffer** — An offering of financial securities to the public, requiring supplementation of documentation such as a securities note and summary.
+- **PublicProcurementCode** — The legal framework referenced for public procurement rules applicable to certain processing purposes.
+  - **PublicProcurementRules** — The set of public procurement rules under which certain processing activities are carried out.
+- **PublicResources** — Public resources and intervention resources presented as other financial liabilities.
+- **PublicSectorInvestmentBank** — A company object describing a public sector investment bank facilitating access to financing and guarantees.
+- **PurchaseOrder** — A purchasing document issued as part of procurement and supplier management.
+- **PurchasingDepartment** — An internal organizational unit responsible for managing calls for tenders and related purchasing processes.
+- **Questionnaire** — A structured set of questions used to collect ESG/CSR information from management companies and portfolio entities.
+  - **ESGQuestionnaire** — A questionnaire assessing ESG integration, CSR policies, and measurable practices for companies and fund managers.
+    - **DiligencePackQuestionnaire** — The ESG questionnaire included in the diligence pack to assess management company CSR and ESG application.
+- **RealEstateDevelopmentCompany** — A category of companies whose main activity is real estate development or property management, generally excluded from investment.
+- **RecoverableAdvance** — Advance funding that is recoverable, used in innovation financing.
+- **RecruitmentProcess** — The recruitment activities and procedures in which personal data is processed.
+- **RegionalAssociationOfStatutoryAuditors** — A regional association referenced as the membership context for statutory auditors.
+- **RegionalAuthority** — Regional authorities and their public limited companies that may entrust missions and conclude agreements.
+  - **PublicLimitedCompanyOfRegionalAuthority** — Public limited companies of regional authorities that may act by agreement in entrusting missions.
+- **RegionalEconomicDevelopmentStrategy** — A regional economic development strategy referenced as a basis for consistency of strategic orientations.
+- **RegionalGuidanceCouncil** — Regional bodies adapting actions to local area specificities to strengthen transparent governance.
+- **RegulatedMarket** — A market where securities may be admitted to trading under applicable securities regulations.
+- **RegulatoryAuthority** — A general category for authorities such as financial market regulators referenced for complaint management.
+  - **AMFAuthority** — The Autorité des Marchés Financiers (AMF) referenced for complaint management under its regulations.
+- **RegulatoryProvision** — A legislative or regulatory provision applicable to banking and financial activities, whose non-compliance can trigger sanctions.
+- **ReinsuranceAgreementParticipant** — An entity intervening within reinsurance or joint insurance agreements.
+  - **JointInsuranceAgreementParticipant** — An entity intervening within joint insurance agreements.
+- **RelatedParty** — An entity related to the group for which transactions and balances are disclosed (e.g., entities included in the consolidation scope).
+- **RelatedPartyTransaction** — Transactions with related parties disclosed in notes to the financial statements.
+- **RelatedReceivable** — Receivables related to loans.
+- **RenewableEnergy** — Energy sourced from renewable sources referenced in the company’s guarantee mission.
+- **RenewableEnergyProject** — Projects for generation of renewable energy (solar and wind) referenced as eligible activities.
+- **Report** — A document prepared to present an investment and responsible-investor approach for a given financial year.
+- **Reporting** — Pillar describing disclosure and reporting obligations for green financing instruments.
+- **RepurchaseAgreement** — Repurchase agreements referenced as part of refinancing and securities given.
+- **Resolution** — A formal decision submitted to and adopted by a general meeting.
+  - **ExtraordinaryResolution** — A resolution submitted to an extraordinary general meeting.
+  - **OrdinaryResolution** — A resolution submitted to an ordinary general meeting.
+- **ResponsibleInvestmentPolicy** — A policy defining responsible investment approach, exclusions, ESG criteria, and compliance/commitment requirements.
+  - **ExclusionPolicy** — A set of exclusion criteria defining sectors and company behaviors not eligible for investment.
+  - **SustainabilityRiskPolicy** — A policy adopted to comply with sustainability-risk disclosure requirements and integrate sustainability risks.
+- **RetentionPeriod** — The time period during which personal data is retained to implement the stated purposes.
+- **RetirementOrganization** — An organization providing retirement-related coverage that may receive information to finalize recruitment.
+- **Risk** — A general concept for financial, operational, compliance, liquidity, market and other risks managed by the group.
+  - **ClimateRelatedRisk** — Risks stemming from climate change, including physical risks and transition risks related to adaptation to a low-carbon economy.
+  - **CreditRisk** — Risk resulting from default of a counterparty or counterparties considered as a single beneficiary group.
+    - **ExpectedCreditLoss** — Expected credit losses (ECL) calculated using macroeconomic scenarios and model adjustments.
+  - **EcosystemRelatedRisk** — Risk arising from the broader ecosystem, including regulatory, political and climate-related risks.
+    - **ClimateRisk** — Risk arising from climate-related factors and constraints affecting borrowers and credit quality.
+      - **PhysicalClimateRisk** — Physical risk from financial consequences of extreme and/or chronic climate hazards.
+      - **TransitionClimateRisk** — Transition risk from losses due to inadequate adaptation to a low-carbon economy.
+      - **TransitionRisk** — Risks of losses from inadequate adaptation to a low-carbon economy and transition-related constraints.
+  - **FinancialRisk** — Risk categories related to financial market and balance-sheet exposures, including interest rate, market, liquidity, exchange, and equity-interest risks.
+    - **ClimateRisk** — Risk arising from climate-related factors and constraints affecting borrowers and credit quality.
+      - **PhysicalClimateRisk** — Physical risk from financial consequences of extreme and/or chronic climate hazards.
+      - **TransitionClimateRisk** — Transition risk from losses due to inadequate adaptation to a low-carbon economy.
+      - **TransitionRisk** — Risks of losses from inadequate adaptation to a low-carbon economy and transition-related constraints.
+    - **CreditRisk** — Risk resulting from default of a counterparty or counterparties considered as a single beneficiary group.
+      - **ExpectedCreditLoss** — Expected credit losses (ECL) calculated using macroeconomic scenarios and model adjustments.
+    - **EquityInterestRisk** — Risk of losses related to indirect equity interests in the capital of small and medium-sized companies.
+    - **ExchangeRateRisk** — Risk of adverse effects from currency exchange rate changes on instruments and financing.
+    - **ExchangeRisk** — Risk that changes in foreign exchange rates negatively impact the value of instruments and generate losses on non-euro borrowings or loans.
+    - **ImpairmentRisk** — Risk of impairment of listed and unlisted investments leading to capital losses.
+    - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+      - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **MarketPriceRisk** — Risk of loss due to changes in market prices and rates.
+      - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+      - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+    - **MarketRisk** — Risk of losses due to changing prices for market products, volatility, and correlations.
+      - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+        - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+      - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+      - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+    - **OperationalRisk** — Risk categories related to operational activities, including cyberattacks, fraud, non-compliance, pandemic impacts, and damage to physical assets or information systems.
+      - **Covid19PandemicRisk** — Risk arising from the spread of the Covid-19 pandemic, including impacts on economic conditions, financial markets, credit risk, refinancing conditions, and valuation of securities.
+      - **CyberattackRisk** — Risk of malicious or fraudulent acts using digital means to access stored data, including impacts from information system failures.
+      - **FraudRisk** — Risk of internal or external fraud, including unauthorized actions, embezzlement, and circumvention of rules or policies.
+      - **NonComplianceRisk** — Risk of legal, administrative, or disciplinary sanctions, financial loss, or reputational damage resulting from non-compliance with applicable provisions.
+      - **PhysicalAssetAndInformationSystemRisk** — Risk of breakdown, interruption, or failure of information systems and related operational disruptions, including impacts from unforeseen events or non-compliant behaviors.
+  - **ForeignExchangeRisk** — Risk of losses from adverse changes in currency exchange rates affecting the value of financial instruments.
+  - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+    - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+  - **InvestmentActivityRisk** — Risk of impairment and fair value variability arising from holding securities and investment fund units.
+  - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+  - **NonComplianceRisk** — Risk of legal, administrative, or disciplinary sanctions, financial loss, or reputational damage resulting from non-compliance with applicable provisions.
+  - **OperationalAndNonComplianceRisk** — Risk of loss from inadequate internal processes or external events, including non-compliance and model risk.
+    - **CybersecurityRisk** — Risk caused by cyber sabotage or cyberattacks affecting the integrity of information systems.
+    - **FraudRisk** — Risk of internal or external fraud, including unauthorized actions, embezzlement, and circumvention of rules or policies.
+    - **NonComplianceRisk** — Risk of legal, administrative, or disciplinary sanctions, financial loss, or reputational damage resulting from non-compliance with applicable provisions.
+  - **OperationalRisk** — Risk categories related to operational activities, including cyberattacks, fraud, non-compliance, pandemic impacts, and damage to physical assets or information systems.
+    - **Covid19PandemicRisk** — Risk arising from the spread of the Covid-19 pandemic, including impacts on economic conditions, financial markets, credit risk, refinancing conditions, and valuation of securities.
+    - **CyberattackRisk** — Risk of malicious or fraudulent acts using digital means to access stored data, including impacts from information system failures.
+    - **FraudRisk** — Risk of internal or external fraud, including unauthorized actions, embezzlement, and circumvention of rules or policies.
+    - **NonComplianceRisk** — Risk of legal, administrative, or disciplinary sanctions, financial loss, or reputational damage resulting from non-compliance with applicable provisions.
+    - **PhysicalAssetAndInformationSystemRisk** — Risk of breakdown, interruption, or failure of information systems and related operational disruptions, including impacts from unforeseen events or non-compliant behaviors.
+  - **StrategicRisk** — Risk related to changes in operating profits due to commercial/economic environment or technological disruption.
+- **RiskDivision** — Organizational unit responsible for credit risk policy and risk assessments/monitoring within the financing process.
+- **RiskExposure** — A concept describing exposure to risks inherent in business activities and financial positions.
+  - **CreditRisk** — Risk resulting from default of a counterparty or counterparties considered as a single beneficiary group.
+    - **ExpectedCreditLoss** — Expected credit losses (ECL) calculated using macroeconomic scenarios and model adjustments.
+  - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+  - **MarketRisk** — Risk of losses due to changing prices for market products, volatility, and correlations.
+    - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+      - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+    - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+- **RiskFactor** — A category of risks disclosed in the risk factors section of the universal registration document.
+  - **FinancialRisk** — Risk categories related to financial market and balance-sheet exposures, including interest rate, market, liquidity, exchange, and equity-interest risks.
+    - **ClimateRisk** — Risk arising from climate-related factors and constraints affecting borrowers and credit quality.
+      - **PhysicalClimateRisk** — Physical risk from financial consequences of extreme and/or chronic climate hazards.
+      - **TransitionClimateRisk** — Transition risk from losses due to inadequate adaptation to a low-carbon economy.
+      - **TransitionRisk** — Risks of losses from inadequate adaptation to a low-carbon economy and transition-related constraints.
+    - **CreditRisk** — Risk resulting from default of a counterparty or counterparties considered as a single beneficiary group.
+      - **ExpectedCreditLoss** — Expected credit losses (ECL) calculated using macroeconomic scenarios and model adjustments.
+    - **EquityInterestRisk** — Risk of losses related to indirect equity interests in the capital of small and medium-sized companies.
+    - **ExchangeRateRisk** — Risk of adverse effects from currency exchange rate changes on instruments and financing.
+    - **ExchangeRisk** — Risk that changes in foreign exchange rates negatively impact the value of instruments and generate losses on non-euro borrowings or loans.
+    - **ImpairmentRisk** — Risk of impairment of listed and unlisted investments leading to capital losses.
+    - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+      - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **MarketPriceRisk** — Risk of loss due to changes in market prices and rates.
+      - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+      - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+    - **MarketRisk** — Risk of losses due to changing prices for market products, volatility, and correlations.
+      - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+        - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+      - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+      - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+    - **OperationalRisk** — Risk categories related to operational activities, including cyberattacks, fraud, non-compliance, pandemic impacts, and damage to physical assets or information systems.
+      - **Covid19PandemicRisk** — Risk arising from the spread of the Covid-19 pandemic, including impacts on economic conditions, financial markets, credit risk, refinancing conditions, and valuation of securities.
+      - **CyberattackRisk** — Risk of malicious or fraudulent acts using digital means to access stored data, including impacts from information system failures.
+      - **FraudRisk** — Risk of internal or external fraud, including unauthorized actions, embezzlement, and circumvention of rules or policies.
+      - **NonComplianceRisk** — Risk of legal, administrative, or disciplinary sanctions, financial loss, or reputational damage resulting from non-compliance with applicable provisions.
+      - **PhysicalAssetAndInformationSystemRisk** — Risk of breakdown, interruption, or failure of information systems and related operational disruptions, including impacts from unforeseen events or non-compliant behaviors.
+  - **NonPerformanceRisk** — Risk associated with non-performance of assets, including credit risk, concentration risk, systemic risk, and counterparty risk on financial assets.
+    - **ConcentrationRisk** — Risk arising from excessive dependency on certain counterparties, business segments, or geographical regions.
+    - **CounterpartyRiskOnFinancialAssets** — Risk relating to interbank and securities transactions on financial markets (excluding derivatives).
+    - **CreditRisk** — Risk resulting from default of a counterparty or counterparties considered as a single beneficiary group.
+      - **ExpectedCreditLoss** — Expected credit losses (ECL) calculated using macroeconomic scenarios and model adjustments.
+    - **SystemicRisk** — Risk associated with deterioration of the financial system and potential failure of interdependent institutions.
+  - **OperationalRisk** — Risk categories related to operational activities, including cyberattacks, fraud, non-compliance, pandemic impacts, and damage to physical assets or information systems.
+    - **Covid19PandemicRisk** — Risk arising from the spread of the Covid-19 pandemic, including impacts on economic conditions, financial markets, credit risk, refinancing conditions, and valuation of securities.
+    - **CyberattackRisk** — Risk of malicious or fraudulent acts using digital means to access stored data, including impacts from information system failures.
+    - **FraudRisk** — Risk of internal or external fraud, including unauthorized actions, embezzlement, and circumvention of rules or policies.
+    - **NonComplianceRisk** — Risk of legal, administrative, or disciplinary sanctions, financial loss, or reputational damage resulting from non-compliance with applicable provisions.
+    - **PhysicalAssetAndInformationSystemRisk** — Risk of breakdown, interruption, or failure of information systems and related operational disruptions, including impacts from unforeseen events or non-compliant behaviors.
+- **RiskFactors** — A section describing risk factors relevant to the issuer.
+- **RiskManagement** — The organization and measurement of risk management processes and indicators.
+  - **CreditRisk** — Risk resulting from default of a counterparty or counterparties considered as a single beneficiary group.
+    - **ExpectedCreditLoss** — Expected credit losses (ECL) calculated using macroeconomic scenarios and model adjustments.
+  - **FinancialRisk** — Risk categories related to financial market and balance-sheet exposures, including interest rate, market, liquidity, exchange, and equity-interest risks.
+    - **ClimateRisk** — Risk arising from climate-related factors and constraints affecting borrowers and credit quality.
+      - **PhysicalClimateRisk** — Physical risk from financial consequences of extreme and/or chronic climate hazards.
+      - **TransitionClimateRisk** — Transition risk from losses due to inadequate adaptation to a low-carbon economy.
+      - **TransitionRisk** — Risks of losses from inadequate adaptation to a low-carbon economy and transition-related constraints.
+    - **CreditRisk** — Risk resulting from default of a counterparty or counterparties considered as a single beneficiary group.
+      - **ExpectedCreditLoss** — Expected credit losses (ECL) calculated using macroeconomic scenarios and model adjustments.
+    - **EquityInterestRisk** — Risk of losses related to indirect equity interests in the capital of small and medium-sized companies.
+    - **ExchangeRateRisk** — Risk of adverse effects from currency exchange rate changes on instruments and financing.
+    - **ExchangeRisk** — Risk that changes in foreign exchange rates negatively impact the value of instruments and generate losses on non-euro borrowings or loans.
+    - **ImpairmentRisk** — Risk of impairment of listed and unlisted investments leading to capital losses.
+    - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+      - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **MarketPriceRisk** — Risk of loss due to changes in market prices and rates.
+      - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+      - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+    - **MarketRisk** — Risk of losses due to changing prices for market products, volatility, and correlations.
+      - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+        - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+      - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+      - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+    - **OperationalRisk** — Risk categories related to operational activities, including cyberattacks, fraud, non-compliance, pandemic impacts, and damage to physical assets or information systems.
+      - **Covid19PandemicRisk** — Risk arising from the spread of the Covid-19 pandemic, including impacts on economic conditions, financial markets, credit risk, refinancing conditions, and valuation of securities.
+      - **CyberattackRisk** — Risk of malicious or fraudulent acts using digital means to access stored data, including impacts from information system failures.
+      - **FraudRisk** — Risk of internal or external fraud, including unauthorized actions, embezzlement, and circumvention of rules or policies.
+      - **NonComplianceRisk** — Risk of legal, administrative, or disciplinary sanctions, financial loss, or reputational damage resulting from non-compliance with applicable provisions.
+      - **PhysicalAssetAndInformationSystemRisk** — Risk of breakdown, interruption, or failure of information systems and related operational disruptions, including impacts from unforeseen events or non-compliant behaviors.
+  - **MarketRisk** — Risk of losses due to changing prices for market products, volatility, and correlations.
+    - **InterestRateRisk** — Risk of losses from unfavorable changes in interest rates, including mismatches between asset and liability rates.
+      - **LiquidityRisk** — Risk that an entity cannot meet obligations when due, including reduced funding sources and reduced liquidity of assets.
+    - **SharePriceRisk** — Risk arising from equity investments and sensitivity of net asset value to benchmark index changes.
+    - **StructuralInterestRateRisk** — Interest rate risk related to structural balance sheet exposures and monitoring indicators such as net interest margin and economic value of equity.
+- **RiskManagementOrganization** — The organizational setup for managing risks, including the scope of risks to which the group is exposed.
+- **RiskManagementPolicy** — A policy defining how risks such as liquidity risk are managed and monitored at group level.
+- **RiskManagementSystem** — A system for integrating climate and ESG risks into risk management and reporting.
+  - **ECLModel** — A model used to calculate expected credit losses, including calibration and methodological adjustments.
+- **RiskManagementTool** — A tool used to map and summarise risks by potential impact and probability, incorporating control measures.
+- **ROE** — Return on equity metric evaluated using net income and shareholder’s equity.
+- **ScaleUp** — A company category targeted for direct capital-innovation investment.
+- **ScoringSystem** — A scoring approach used to rank geographical areas or assess vulnerability to transition risks.
+- **SectorBasedAdjustment** — An adjustment to ECL based on sector characteristics and risk context.
+- **SectorReporting** — Disclosure of contributions by sector within the group.
+- **SecuritiesNote** — A document supplementing a universal registration document for the purposes of offering financial securities to the public or admitting them to trading.
+- **SecuritiesSummary** — A summary document that may accompany a securities note and universal registration document.
+- **SecurityMeasures** — Security-related activities such as platform security, identity verification, and access control.
+- **SemiPublicCompany** — A semi-public company (SEM) referenced as generally excluded from investment, potentially subject to investment by another public entity.
+- **SFDRClassification** — The classification scheme of financial products into broad categories under sustainable finance disclosure rules.
+- **Shareholder** — A person or entity holding shares in the company and participating in general meetings.
+- **ShareholderDialogue** — Ongoing engagement with invested companies and governance bodies to encourage ESG progress.
+- **ShareholderEquity** — Equity used as the denominator for ROE calculations.
+- **ShortTermFinancing** — Financing activities for short-term needs, including public liabilities financing.
+- **SignatureCommitment** — Commitments issued by the group under financed contracts, including sureties and first-demand guarantees.
+  - **FirstDemandGuarantee** — First-demand guarantee commitments issued to support financing contracts.
+  - **Surety** — Surety commitments issued to support financing contracts.
+- **SignificantEvent** — An event during the period considered significant for the financial statements.
+  - **WarInUkraine** — The war in Ukraine described as a significant event affecting markets and the economy.
+- **SmallCapCompany** — A company category targeted for growth investments within small-cap divisions.
+- **SMEs** — Small and medium-sized enterprises targeted by support programs.
+- **SMESupport** — Support and financing for small and medium-sized enterprises referenced as a core mission.
+  - **StartUpSupport** — Support for start-ups referenced as part of the institution’s missions.
+- **SMESupportEntity** — An organization missioned to promote, support, and finance small and medium-sized enterprises.
+- **SocialEconomyCompany** — A company in the social economy that may attract fewer traditional investors and can be targeted by investment funds.
+- **Solvency** — Overall financial strength measured against regulatory solvency requirements.
+  - **CET1Ratio** — Core Equity Tier 1 ratio comparing core equity capital to risk-weighted assets.
+- **SolvencyAndLiquidityStatus** — A status assessment covering solvency and liquidity ratios.
+  - **CET1Ratio** — Core Equity Tier 1 ratio comparing core equity capital to risk-weighted assets.
+  - **LCRLiquidityRatio** — A liquidity coverage ratio referenced in solvency and liquidity status.
+  - **LeverageRatio** — A leverage ratio referenced in solvency and liquidity status.
+- **SpaceAgency** — A space-related agency referenced as a partner in France 2030 space initiatives.
+  - **CNES** — The National Centre for Space Studies referenced as a partner in implementing space initiatives.
+- **Startups** — Early-stage companies targeted by accelerator and support programs.
+- **StateEntity** — Entity representing the French State, acting unilaterally or by agreement and holding capital or entrusting missions.
+- **StateGuaranteedLoan** — A loan benefiting from state guarantees, referenced in ECL determination and sensitivity.
+- **StateShareholdingEntity** — An entity representing the French State’s shareholding and governance role in companies (e.g., shareholding agency context).
+- **StatisticsAndReportingToDonors** — Compilation of statistics and reporting to donors where appropriate.
+- **StatutoryAuditors** — Auditors responsible for auditing consolidated and annual financial statements.
+  - **AuditEngagement** — The engagement entrusted to statutory auditors to audit financial statements.
+  - **AuditEvidence** — Evidence obtained by auditors as a basis for their opinion.
+  - **AuditOpinion** — The audit opinion expressed on the financial statements.
+  - **ProfessionalStandards** — Professional standards applicable to audits in France.
+- **StrategicInvestmentFund** — The Strategic Investment Fund referenced as part of the Banque Publique d’Investissement activities.
+- **StrategicProjectGuarantee** — A guarantee context referenced for sharing personal data with reinsurance/joint insurance participants.
+- **StructuredEntity** — An entity structured such that voting or similar rights are not the dominant factor in deciding control; referenced as not held by the group.
+- **StudiesAndSatisfactionSurveys** — Processing for carrying out studies or satisfaction surveys.
+- **StudyOrSurveyParticipation** — Participation in studies or surveys related to target companies, participations, partner funds, or managed funds.
+- **Subcontractor** — An entity subcontracted by a supplier, whose personnel data may be processed in the context of supplier activities.
+- **SubscriptionForm** — Institutional subscription forms used to develop and conclude subscriptions to funds.
+- **SubstantialContributionCriteria** — Criteria requiring substantial contribution to climate change mitigation as referenced for eligible renewable energy loans.
+- **SummaryDocument** — A summary that may be required alongside a universal registration document and securities note for public offers or admissions to trading.
+- **SupervisoryAuthority** — A supervisory authority that may receive personal data and/or complaints (e.g., data protection regulators).
+  - **AdministrativeAuthority** — A public administrative authority that may receive data in the context of procedures requiring communication.
+  - **CNIL** — A French data protection supervisory authority referenced as a place to lodge complaints.
+  - **JudicialAuthority** — A public judicial authority that may receive data in the context of procedures requiring communication.
+  - **TaxAuthority** — A competent tax administration receiving data to comply with legal obligations.
+- **Supplier** — An entity providing goods or services to Bpifrance and whose representatives or agents may have their data processed.
+  - **TierOneSupplier** — A supplier at the first tier whose referrals and intermediaries may be managed.
+- **SustainableDevelopmentAndCSR** — A combined internal function referenced as responsible for ESG questionnaire analysis and reporting.
+- **SustainableDevelopmentAndCSRDepartment** — An internal department responsible for ESG, social responsibility reporting, and integration of responsible investment policy.
+- **SustainableDevelopmentCharter** — A charter defining priorities and themes used to structure ESG analysis questions.
+- **SustainableDevelopmentGoal** — UN sustainable development goals referenced as additional alignment targets for evaluation and selection.
+- **SustainableExposure** — Exposure share aligned with taxonomy-eligible sustainable activities.
+- **SustainableFinanceDisclosureRegulation** — A regulation referenced for harmonised transparency and classification of financial products.
+- **SustainableFinanceMarket** — Market for sustainable finance that the framework aims to develop, especially for SMEs.
+- **SystemEvaluationAndImprovement** — Processing for evaluation and improvement of the financing system.
+- **TangibleFixedAsset** — Tangible fixed assets referenced in investing cash flows and depreciation.
+- **TargetCompany** — A company in which the organization intends to invest or has invested, including for due diligence and transaction processing.
+- **Tax** — Current and deferred tax concepts used in income statement and equity recognition.
+  - **CurrentTax** — Tax expense or receivable determined based on current tax rules and rates in force.
+    - **CorporateIncomeTax** — Corporate income tax accounting and related taxable profit classification.
+  - **DeferredTax** — Tax effects recognized for temporary differences between book values and tax values of assets and liabilities.
+    - **TaxUncertainty** — Uncertainty about whether a tax position will be accepted by tax authorities and its reflection in financial statements.
+- **TaxonomyAlignedActivity** — An activity aligned with the EU green taxonomy, targeting sustainable activities such as mitigation and adaptation.
+- **TechnologyTransfer** — Mission component focused on technology transfer and support for innovation and research outcomes.
+- **TechnologyTransferAccelerationCompany** — A type of company referenced in the context of SATT activities (equity interests in technology transfer acceleration companies).
+- **TechnologyTransferAcceleratorCompany** — A company type referenced as Technology Transfer Accelerator Companies (SATT) in which equity interests may be held on behalf of the State.
+- **TechnologyTransferProgramme** — A programme area supporting technology transfer and related initiatives (e.g., technology transfer and transfer of businesses).
+- **TerroristFinancingCompliance** — A compliance domain referenced as part of legal texts governing responsible investment policy.
+- **ThermalCoalSector** — A sector category referenced in exclusion criteria based on mining and electricity production thresholds.
+- **ThirdPartyActivity** — Activities managed on behalf of third parties (e.g., on behalf of the State) that do not appear on the balance sheet of the public company.
+  - **FrenchTechSovereigntyActivity** — French Tech Sovereignty activity representing equity interests in companies developing future technologies on behalf of the French State.
+  - **SATTActivity** — SATT activity representing equity interests in Technology Transfer Accelerator Companies on behalf of the French State.
+- **TrainingPlatform** — An online platform providing short targeted courses and training modules for ESG/climate awareness.
+- **Transaction** — A general category of investment-related activities such as contractualization, divestment, and due diligence.
+  - **PreContractualDocumentation** — Pre-contractual legal documentation negotiated and signed in the context of investments.
+- **TransitionRiskQuantification** — Annual assessment and monitoring of portfolio exposure and vulnerability to climate transition risk.
+- **TreasuryTeam** — Organizational unit responsible for management of net proceeds and liquidity/earmarking processes.
+- **TrustedServiceProvider** — A provider trusted to implement electronic signature services used in the advanced electronic signature process.
+  - **TrustedServiceProviderNetheos** — A trusted service provider used for implementing the advanced electronic signature process (named in text).
+  - **TrustedServiceProviderYousign** — A trusted service provider used for implementing the advanced electronic signature process (named in text).
+- **TurnaroundCapitalSegment** — A segment aiming to turn around companies in difficulty, referenced as exceptional and subject to specific precautions.
+- **UnallocatedProceeds** — Proceeds temporarily not allocated to eligible green loans, managed under liquidity management procedures.
+- **UnconventionalResources** — A sector category (e.g., oil and gas from oil sands, shale, Arctic) referenced in exclusion criteria.
+- **UnemploymentInsuranceOrganization** — An organization providing unemployment insurance that may receive information to finalize recruitment.
+- **UniversalRegistrationDocument** — A universal registration document filed with a financial markets authority and used for offering financial securities to the public or admitting them to trading on a regulated market.
+  - **AmendmentToUniversalRegistrationDocument** — An amendment document updating a universal registration document and filed with the competent authority.
+- **UniversityPrograms** — Educational or training programs offered to entrepreneurs.
+- **UnrealisedForeignExchangeGain** — Unrealised foreign exchange gains reported for the period.
+- **UNSustainableDevelopmentGoals** — A set of UN sustainable development goals referenced as part of commitments and reporting context.
+- **UseOfProceeds** — Pillar describing how net proceeds of green financing instruments are used for eligible green loans.
+- **UserAccount** — A user account created and administered for access to a platform.
+- **VentureCapitalSupportTeam** — A team grouping venture capital support activities, working mainly with start-ups in the portfolio.
+- **WasteManagementActivity** — Waste management activities financed under eligible waste management related loans.
+- **WasteManagementProject** — Projects for waste collection, sorting, recovery, and related waste management activities.
+- **WatchList** — A list used to flag counterparties for credit risk assessment criteria.
+- **WomenEntrepreneurshipSupport** — Mission component encouraging and supporting women’s entrepreneurship.
+- **WorkingCapital** — Working capital requirements whose changes are used in operating cash flow calculations.
+- **WorldEconomicForum** — An organization referenced as producing a report estimating dependence of GDP on nature services.
+- **WorldTradeOrganisation** — World Trade Organisation referenced for compliance of export guarantees.

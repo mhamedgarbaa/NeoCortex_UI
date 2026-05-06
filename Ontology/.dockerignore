@@ -1,0 +1,33 @@
+# Secrets — never bake into the image
+.env
+.env.*
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Version control
+.git/
+.gitignore
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Frontend (separate deployment)
+NeoCortex_UI/
+
+# Runtime data — mounted as a volume at runtime
+data/output_markdowns/
+data/ontology_output/
+data/data_bpi/
+
+# Dev tooling
+.pre-commit-config.yaml
+tests/
+logs/
+*.log

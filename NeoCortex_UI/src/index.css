@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+
+  body {
+    background-color: #041224; /* Less stark-dark */
+    color: #C0D8F0;
+    @apply font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse at 20% 0%,   rgba(0,100,220,0.22)  0px, transparent 55%),
+      radial-gradient(ellipse at 80% 10%,  rgba(0,180,255,0.15)  0px, transparent 50%),
+      radial-gradient(ellipse at 50% 100%, rgba(0,60,160,0.20)   0px, transparent 55%),
+      radial-gradient(ellipse at 0%  50%,  rgba(0,40,120,0.15)   0px, transparent 40%);
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+
+  ::selection { background: rgba(14,165,233,0.3); color: #E8F4FF; }
+  * { -webkit-font-smoothing: antialiased; }
+}
+
+@layer components {
+  /* ── Card surfaces ──────────────────────────────────────── */
+  .card {
+    background: rgba(7, 20, 48, 0.75);
+    backdrop-filter: blur(12px);
+    @apply rounded-2xl border shadow-card;
+    border-color: rgba(14, 165, 233, 0.14);
+  }
+  .card-md {
+    background: rgba(7, 20, 48, 0.80);
+    backdrop-filter: blur(16px);
+    @apply rounded-2xl border shadow-card-md;
+    border-color: rgba(14, 165, 233, 0.18);
+  }
+  .card-inset {
+    background: rgba(2, 12, 24, 0.6);
+    @apply rounded-xl border;
+    border-color: rgba(14, 165, 233, 0.10);
+  }
+
+  /* ── Typography helpers ─────────────────────────────────── */
+  .section-title {
+    @apply text-xs font-mono uppercase tracking-[0.18em];
+    color: rgba(14, 165, 233, 0.6);
+  }
+  .page-title  { @apply text-lg font-display font-semibold; color: #E8F4FF; }
+  .page-sub    { @apply text-sm; color: rgba(192, 216, 240, 0.55); }
+
+  /* ── Badges ─────────────────────────────────────────────── */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-blue   { @apply badge; background: rgba(14,165,233,0.15);  color: #38BDF8;  border: 1px solid rgba(14,165,233,0.25);  }
+  .badge-purple { @apply badge; background: rgba(129,140,248,0.15); color: #A5B4FC;  border: 1px solid rgba(129,140,248,0.25); }
+  .badge-green  { @apply badge; background: rgba(16,185,129,0.15);  color: #34D399;  border: 1px solid rgba(16,185,129,0.25);  }
+  .badge-amber  { @apply badge; background: rgba(245,158,11,0.15);  color: #FCD34D;  border: 1px solid rgba(245,158,11,0.25);  }
+  .badge-rose   { @apply badge; background: rgba(251,113,133,0.15); color: #FCA5A5;  border: 1px solid rgba(251,113,133,0.25); }
+  .badge-gray   { @apply badge; background: rgba(14,165,233,0.08);  color: #7AAED4;  border: 1px solid rgba(14,165,233,0.15);  }
+
+  /* ── Form ───────────────────────────────────────────────── */
+  .input {
+    @apply w-full px-3 py-2 rounded-lg text-sm outline-none transition;
+    background: rgba(2, 12, 24, 0.7);
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    color: #E8F4FF;
+  }
+  .input::placeholder { color: rgba(14, 165, 233, 0.3); }
+  .input:focus {
+    border-color: rgba(14, 165, 233, 0.5);
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.15);
+  }
+
+  /* ── Divider ────────────────────────────────────────────── */
+  .divider { @apply h-px w-full; background: rgba(14,165,233,0.12); }
+
+  /* ── Scrollbar ──────────────────────────────────────────── */
+  .scrollbar-thin::-webkit-scrollbar         { width: 4px; height: 4px; }
+  .scrollbar-thin::-webkit-scrollbar-track   { background: transparent; }
+  .scrollbar-thin::-webkit-scrollbar-thumb   { background: rgba(14,165,233,0.25); border-radius: 999px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: rgba(14,165,233,0.45); }
+
+  /* ── Status dots ────────────────────────────────────────── */
+  .dot-online  { @apply inline-block w-2 h-2 rounded-full; background: #10B981; box-shadow: 0 0 6px #10B981; }
+  .dot-offline { @apply inline-block w-2 h-2 rounded-full; background: rgba(14,165,233,0.25); }
+  .dot-syncing { @apply inline-block w-2 h-2 rounded-full animate-pulse; background: #F59E0B; box-shadow: 0 0 6px #F59E0B; }
+  .dot-error   { @apply inline-block w-2 h-2 rounded-full; background: #FB7185; box-shadow: 0 0 6px #FB7185; }
+
+  /* ── Terminal (agent log) ───────────────────────────────── */
+  .terminal {
+    @apply font-mono text-[11.5px] leading-relaxed rounded-xl overflow-auto;
+    background: rgba(1, 6, 15, 0.9);
+    border: 1px solid rgba(14,165,233,0.15);
+    color: #7AAED4;
+    padding: 1rem;
+    box-shadow: inset 0 0 20px rgba(0,100,200,0.05);
+  }
+  .terminal .t-info    { color: rgba(14,165,233,0.6); }
+  .terminal .t-success { color: #34D399; text-shadow: 0 0 8px rgba(52,211,153,0.4); }
+  .terminal .t-warn    { color: #FCD34D; }
+  .terminal .t-done    { color: #38BDF8; font-weight: 600; text-shadow: 0 0 8px rgba(56,189,248,0.5); }
+}
+
+/* ── React Flow dark overrides ───────────────────────────── */
+.react-flow__background { opacity: 0.3; }
+.react-flow__edge-path  { stroke: rgba(14,165,233,0.4); stroke-width: 1.5; }
+.react-flow__attribution { display: none !important; }
+.react-flow__controls {
+  background: rgba(7,20,48,0.9) !important;
+  border: 1px solid rgba(14,165,233,0.2) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 20px rgba(0,100,200,0.15) !important;
+  overflow: hidden;
+}
+.react-flow__controls-button {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(14,165,233,0.12) !important;
+  color: #7AAED4 !important;
+}
+.react-flow__controls-button:hover {
+  background: rgba(14,165,233,0.1) !important;
+  color: #38BDF8 !important;
+}
+.react-flow__handle {
+  background: rgba(14,165,233,0.5) !important;
+  border: 2px solid rgba(7,20,48,0.9) !important;
+  width: 7px !important;
+  height: 7px !important;
+}
