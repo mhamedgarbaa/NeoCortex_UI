@@ -20,25 +20,15 @@ services:
 
   web:
     build: .
-    container_name: workspace_api
+    container_name: ontology_api
     depends_on:
       db:
         condition: service_healthy
-    environment:
-      POSTGRES_URI: "postgresql+asyncpg://workspace_user:workspace_pass@db:5432/workspace_db"
-      APP_ENV: "development"
-      LOG_LEVEL: "INFO"
+    env_file: .env
     ports:
-      - "8000:8000"
+      - "7777:7777"
     volumes:
-      - ./:/app
-    command: [
-      "uvicorn",
-      "app:app",
-      "--host", "0.0.0.0",
-      "--port", "8000",
-      "--reload"
-    ]
+      - ./data/ontology_output:/app/data/ontology_output
 
 volumes:
   pgdata:

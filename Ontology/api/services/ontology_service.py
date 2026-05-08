@@ -29,8 +29,8 @@ async def generate_ontology(files: List[UploadFile]) -> Path:
         _save_uploads(files, Path(tmp_pdf_dir))
         await asyncio.to_thread(_preprocess_pdfs, Path(tmp_pdf_dir), tmp_md_dir)
 
-    logger.info("Preprocessing complete. Running ontology pipeline…")
-    await run_pipeline_async(preprocessed_dir=tmp_md_dir)
+        logger.info("Preprocessing complete. Running ontology pipeline…")
+        await run_pipeline_async(preprocessed_dir=tmp_md_dir)
 
     if not ttl_path.exists():
         raise RuntimeError(f"Pipeline finished but output file was not produced: {ttl_path}")

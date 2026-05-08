@@ -54,7 +54,9 @@ def _list_markdown_files(directory: str) -> List[Path]:
         raise FileNotFoundError(f"Preprocessed directory not found: {base}")
     files = sorted(base.glob("*.md"))
     if not files:
-        raise FileNotFoundError(f"No .md files found in {base}")
+        raise RuntimeError(
+            f"No .md files found in {base} — PDF preprocessing likely failed for all inputs."
+        )
     return files
 
 
