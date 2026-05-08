@@ -548,7 +548,6 @@ export default function OntologyPage() {
                     { label: 'Classes',     value: ontologyStats?.classes    ?? '—', color: 'text-cortex-blue'   },
                     { label: 'Obj Props',   value: ontologyStats?.objProps   ?? '—', color: 'text-cortex-purple' },
                     { label: 'Data Props',  value: ontologyStats?.dataProps  ?? '—', color: 'text-cortex-cyan'   },
-                    { label: 'Individuals', value: ontologyStats?.individuals ?? '—', color: 'text-cortex-green'  },
                     { label: 'Properties',  value: ontologyStats ? ontologyStats.objProps + ontologyStats.dataProps : '—', color: 'text-cortex-amber' },
                     { label: 'Conflicts',   value: 0,                                color: 'text-cortex-green'  },
                   ].map((s) => (

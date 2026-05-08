@@ -97,7 +97,6 @@ export const generatedOntologyFile = {
     "totalNodes":  10,
     "totalEdges":  11,
     "classes":     4,
-    "individuals": 6,
     "conflicts":   3,
     "resolved":    3
   }

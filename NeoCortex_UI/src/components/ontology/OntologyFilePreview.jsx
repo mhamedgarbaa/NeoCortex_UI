@@ -92,7 +92,6 @@ export default function OntologyFilePreview() {
         <StatChip label="Nodes"      value={meta.totalNodes}  tone="blue"   />
         <StatChip label="Edges"      value={meta.totalEdges}  tone="purple" />
         <StatChip label="Classes"    value={meta.classes}     tone="cyan"   />
-        <StatChip label="Individuals"value={meta.individuals} tone="green"  />
         <StatChip label="Conflicts"  value={`${meta.resolved}/${meta.conflicts}`} tone="amber" />
       </div>
 

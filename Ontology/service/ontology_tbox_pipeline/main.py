@@ -18,20 +18,22 @@ from service.ontology_tbox_pipeline.orchestration import (
 )
 
 
-async def run_pipeline_async() -> None:
+async def run_pipeline_async(preprocessed_dir: str) -> None:
     """Load chunks, build the LangGraph pipeline, and execute it end-to-end."""
     config = get_config()
     configure_logging(config.PIPELINE_LOG_LEVEL)
     logger = get_logger("main")
 
+    
     logger.info("Starting ontology TBox pipeline.")
     chunks = load_and_chunk_markdown_files(
-        preprocessed_dir=config.PREPROCESSED_DIR,
+        
+        preprocessed_dir=preprocessed_dir,
         chunk_size=config.CHUNK_SIZE,
         chunk_overlap=config.CHUNK_OVERLAP,
     )
     if not chunks:
-        logger.error("No chunks produced from %s; aborting.", config.PREPROCESSED_DIR)
+        logger.error("No chunks produced from %s; aborting.", preprocessed_dir)
         return
 
     pipeline = build_pipeline()
@@ -47,7 +49,7 @@ def _run_config(chunk_count: int) -> dict:
 
 def main() -> None:
     """Synchronous CLI wrapper around ``run_pipeline_async``."""
-    asyncio.run(run_pipeline_async())
+    asyncio.run(run_pipeline_async(get_config().PREPROCESSED_DIR))
 
 
 if __name__ == "__main__":

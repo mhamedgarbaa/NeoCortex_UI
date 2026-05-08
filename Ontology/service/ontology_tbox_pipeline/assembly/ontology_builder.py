@@ -54,8 +54,9 @@ def build_ontology_graph(
 
     _add_ontology_declaration(graph, base_iri)
     class_iri_index = _add_classes(graph, namespace, canonical_classes)
-    _add_data_properties(graph, namespace, canonical_data_properties, class_iri_index)
-    _add_object_properties(graph, namespace, canonical_object_properties, class_iri_index)
+    lower_class_index = {k.lower(): v for k, v in class_iri_index.items()}
+    _add_data_properties(graph, namespace, canonical_data_properties, class_iri_index, lower_class_index)
+    _add_object_properties(graph, namespace, canonical_object_properties, class_iri_index, lower_class_index)
     return graph
 
 
@@ -102,12 +103,15 @@ def _add_data_properties(
     namespace: Namespace,
     canonical_properties: Iterable[CanonicalDataProperty],
     class_iri_index: dict,
+    lower_class_index: dict,
 ) -> None:
     """Emit ``owl:DatatypeProperty`` triples."""
     seen: Set[str] = set()
     for canonical in canonical_properties:
         property_iri = namespace[slugify_camel_case(canonical.name)]
-        domain_iri = class_iri_index.get(canonical.domain)
+        domain_iri = class_iri_index.get(canonical.domain) or lower_class_index.get(
+            canonical.domain.lower() if canonical.domain else ""
+        )
         if domain_iri is None:
             _LOGGER.warning(
                 "Data property %r references unknown domain class %r; skipping.",
@@ -137,6 +141,7 @@ def _add_object_properties(
     namespace: Namespace,
     canonical_properties: Iterable[CanonicalObjectProperty],
     class_iri_index: dict,
+    lower_class_index: dict,
 ) -> None:
     """Emit ``owl:ObjectProperty`` triples with domains, ranges, inverses."""
     seen: Set[str] = set()
@@ -147,8 +152,12 @@ def _add_object_properties(
 
     for canonical in canonical_list:
         property_iri = name_to_iri[canonical.name]
-        domain_iri = class_iri_index.get(canonical.domain)
-        range_iri = class_iri_index.get(canonical.range)
+        domain_iri = class_iri_index.get(canonical.domain) or lower_class_index.get(
+            canonical.domain.lower() if canonical.domain else ""
+        )
+        range_iri = class_iri_index.get(canonical.range) or lower_class_index.get(
+            canonical.range.lower() if canonical.range else ""
+        )
         if domain_iri is None or range_iri is None:
             _LOGGER.warning(
                 "Object property %r references unknown class(es) (%r, %r); skipping.",

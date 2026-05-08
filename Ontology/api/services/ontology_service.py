@@ -20,15 +20,17 @@ logger = logging.getLogger(__name__)
 async def generate_ontology(files: List[UploadFile]) -> Path:
     """Save uploaded PDFs, preprocess to Markdown, run TBox pipeline, return ontology.ttl path."""
     config = get_config()
-    preprocessed_dir = config.PREPROCESSED_DIR
     ttl_path = Path(config.OUTPUT_DIR) / config.OUTPUT_ONTOLOGY_TTL
 
-    with tempfile.TemporaryDirectory() as tmp_pdf_dir:
+    with (
+        tempfile.TemporaryDirectory() as tmp_pdf_dir,
+        tempfile.TemporaryDirectory() as tmp_md_dir,
+    ):
         _save_uploads(files, Path(tmp_pdf_dir))
-        await asyncio.to_thread(_preprocess_pdfs, Path(tmp_pdf_dir), preprocessed_dir)
+        await asyncio.to_thread(_preprocess_pdfs, Path(tmp_pdf_dir), tmp_md_dir)
 
     logger.info("Preprocessing complete. Running ontology pipeline…")
-    await run_pipeline_async()
+    await run_pipeline_async(preprocessed_dir=tmp_md_dir)
 
     if not ttl_path.exists():
         raise RuntimeError(f"Pipeline finished but output file was not produced: {ttl_path}")

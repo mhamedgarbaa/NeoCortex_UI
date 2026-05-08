@@ -111,11 +111,18 @@ class SemaphoreWrappedLLM:
                         tools=[tool_def],
                         tool_choice=tool_choice,
                     )
+                    finish_reason = response.choices[0].finish_reason
+                    if finish_reason == "length":
+                        raise ValueError(
+                            f"Model output truncated (finish_reason=length) for "
+                            f"{schema.__name__} — increase LITELLM_MAX_TOKENS "
+                            f"(currently {max_tokens})."
+                        )
                     tool_calls = response.choices[0].message.tool_calls
                     if not tool_calls:
                         raise ValueError(
                             f"Model returned no tool call for {schema.__name__}. "
-                            f"finish_reason={response.choices[0].finish_reason}"
+                            f"finish_reason={finish_reason}"
                         )
                     return schema.model_validate_json(tool_calls[0].function.arguments)
 

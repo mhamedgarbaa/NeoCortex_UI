@@ -71,8 +71,7 @@ function _parseTurtleStats(ttl) {
   const classes     = count(/\ba\s+owl:Class\b/g)
   const objProps    = count(/\ba\s+owl:ObjectProperty\b/g)
   const dataProps   = count(/\ba\s+owl:DatatypeProperty\b/g)
-  const individuals = count(/\ba\s+owl:NamedIndividual\b/g)
-  return { classes, objProps, dataProps, individuals }
+  return { classes, objProps, dataProps }
 }
 
 export const useNeocortex = create((set, get) => ({
